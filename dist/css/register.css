@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* 待编译代码 */
+/* reset */
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+  margin: 0;
+  padding: 0; }
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th {
+  text-align: left;
+  font-weight: normal; }
+
+html, body, fieldset, img, iframe, abbr {
+  border: 0; }
+
+i, cite, em, var, address, dfn {
+  font-style: normal; }
+
+[hidefocus], summary {
+  outline: 0; }
+
+li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, small {
+  font-size: 100%; }
+
+sup, sub {
+  font-size: 83%; }
+
+pre, code, kbd, samp {
+  font-family: inherit; }
+
+q:before, q:after {
+  content: none; }
+
+textarea {
+  overflow: auto;
+  resize: none; }
+
+label, summary {
+  cursor: default; }
+
+a, button {
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6, em, strong, b {
+  font-weight: bold; }
+
+del, ins, u, s, a, a:hover {
+  text-decoration: none; }
+
+body, textarea, input, button, select, keygen, legend {
+  font: 12px/1.14 arial,\5b8b\4f53;
+  color: #333;
+  outline: 0; }
+
+body {
+  background: #fff; }
+
+.auth_bg {
+  width: 100%;
+  height: 601px;
+  overflow: hidden;
+  clear: both;
+  background: #f7e4db; }
+
+.auth_bg_new {
+  background: url(http://img.zbird.cn/ww3/auth/auth_bg_new.jpg) no-repeat center top; }
+
+.login_border {
+  width: 1180px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; }
+
+.login_left {
+  width: 728px;
+  height: 688px;
+  float: left;
+  overflow: hidden;
+  position: relative; }
+
+.auth_bar_right {
+  width: 366px;
+  height: 600px;
+  float: right;
+  position: relative;
+  padding-right: 50px;
+  padding-top: 60px; }
+
+.clearHeight {
+  width: 100%;
+  height: 37px;
+  overflow: hidden;
+  clear: both; }
+
+.skip_logina {
+  display: block;
+  color: #666;
+  font-size: 12px;
+  font-family: '宋体';
+  position: absolute;
+  right: 52px;
+  top: 99px;
+  z-index: 5; }
+  .skip_logina i {
+    font-style: normal;
+    color: #ff8a81;
+    padding-left: 10px; }
+
+.skip_logina2 {
+  display: block;
+  color: #000;
+  font-size: 20px;
+  font-family: '宋体';
+  position: absolute;
+  left: 0px;
+  top: 92px;
+  z-index: 5; }
+
+.form_reg {
+  margin-top: 30px;
+  background: #fcede9;
+  padding-top: 45px;
+  padding-left: 41px;
+  padding-bottom: 42px; }
+  .form_reg p {
+    text-align: left; }
+  .form_reg label {
+    height: 20px;
+    line-height: 20px;
+    padding: 6px 0 6px 10px;
+    font-family: Arial,'宋体';
+    font-size: 12px;
+    color: #000;
+    display: inline-block;
+    background: #fff;
+    vertical-align: middle;
+    border: 1px solid #fff; }
+
+.input_w01 label {
+  width: 271px; }
+
+.input_w01 input {
+  width: 250px;
+  margin-top: 2px;
+  color: #b0b0b0;
+  background: none;
+  display: inline-block;
+  border: none; }
+
+.errorMsg {
+  width: 100%;
+  height: 22px;
+  font-style: normal;
+  line-height: 22px;
+  display: inline-block;
+  text-align: left;
+  color: #f16d63; }
+
+.input_w02 label {
+  width: 126px; }
+
+.input_code {
+  width: 63px;
+  color: #999999;
+  background: none;
+  display: inline-block;
+  border: none; }
+
+.code_send {
+  background: #feaca0;
+  color: #fff;
+  margin-left: 12px;
+  width: 133px; }
+
+.code_resend, .code_send {
+  height: 34px;
+  display: inline-block;
+  border: none;
+  vertical-align: top;
+  cursor: pointer;
+  font-family: Arial,'宋体';
+  text-align: center; }
+
+.input_w03 {
+  line-height: 17px;
+  color: #505050 !important;
+  margin-bottom: 17px; }
+
+.forcheck {
+  background: url(http://img.zbird.cn/ww3/auth/login_phase.jpg) no-repeat right top !important; }
+
+.input_w03 label {
+  width: 13px !important;
+  height: 13px !important;
+  padding: 0px !important;
+  margin-right: 8px;
+  cursor: pointer; }
+
+.input_w03 a {
+  color: #505050 !important;
+  text-decoration: underline !important; }
+
+.reg_btn {
+  background: #ff8a81;
+  color: #fff;
+  width: 281px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  line-height: normal;
+  display: block;
+  margin: 0; }

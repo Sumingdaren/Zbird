@@ -1,0 +1,1240 @@
+@charset "UTF-8";
+/* 待编译代码 */
+/* reset */
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+  margin: 0;
+  padding: 0; }
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th {
+  text-align: left;
+  font-weight: normal; }
+
+html, body, fieldset, img, iframe, abbr {
+  border: 0; }
+
+i, cite, em, var, address, dfn {
+  font-style: normal; }
+
+[hidefocus], summary {
+  outline: 0; }
+
+li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, small {
+  font-size: 100%; }
+
+sup, sub {
+  font-size: 83%; }
+
+pre, code, kbd, samp {
+  font-family: inherit; }
+
+q:before, q:after {
+  content: none; }
+
+textarea {
+  overflow: auto;
+  resize: none; }
+
+label, summary {
+  cursor: default; }
+
+a, button {
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6, em, strong, b {
+  font-weight: bold; }
+
+del, ins, u, s, a, a:hover {
+  text-decoration: none; }
+
+body, textarea, input, button, select, keygen, legend {
+  font: 12px/1.14 arial,\5b8b\4f53;
+  color: #333;
+  outline: 0; }
+
+body {
+  background: #fff; }
+
+.services {
+  position: fixed;
+  top: 32%;
+  right: 0;
+  z-index: 100;
+  width: 67px; }
+
+.ser_img {
+  background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/img.png) left center no-repeat;
+  width: 88px;
+  height: 95px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -94px; }
+
+.ser_lnk1, .ser_lnk2, .ser_lnk3, .ser_lnk4, .ser_lnk5 {
+  width: 67px;
+  height: 67px;
+  display: block;
+  margin-bottom: 1px; }
+
+.ser_lnk1 {
+  background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/1.gif) left center no-repeat;
+  position: relative;
+  z-index: 1; }
+
+.ser_lnk2 {
+  background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/2.jpg) left center no-repeat;
+  text-align: center; }
+
+.ser_lnk3 {
+  background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/3.jpg) left center no-repeat; }
+
+.ser_lnk4 {
+  background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/4.jpg) left center no-repeat; }
+
+.ser_lnk5 {
+  background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/5.jpg) left center no-repeat;
+  position: relative;
+  z-index: 1; }
+  .ser_lnk5 em {
+    position: absolute;
+    left: -207px;
+    z-index: 1;
+    bottom: 0;
+    background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/code.jpg) left center no-repeat;
+    width: 206px;
+    height: 135px;
+    display: none; }
+
+a:hover {
+  color: #ff8a81; }
+
+.ser_lnk5:hover em {
+  display: inline-block; }
+
+.indexw_header {
+  width: 100%;
+  height: auto;
+  clear: both;
+  background: #fbf2f1; }
+
+.indexw_header_top {
+  width: 100%;
+  height: 34px;
+  clear: both;
+  background: #f8e3df; }
+
+.indexw_header_top_border {
+  width: 1180px;
+  height: 34px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.headerwelcome {
+  float: left;
+  height: 34px;
+  line-height: 34px;
+  font-weight: normal;
+  color: #333;
+  margin-right: 12px; }
+
+.indexw_header_topL {
+  width: auto;
+  height: 30px;
+  overflow: hidden;
+  float: left; }
+  .indexw_header_topL a {
+    width: auto;
+    height: 34px;
+    line-height: 34px;
+    display: block;
+    float: left;
+    color: #333 !important; }
+  .indexw_header_topL:nth-of-type(1) a {
+    margin: 0 10px; }
+  .indexw_header_topL:nth-of-type(2) a {
+    margin-left: 10px; }
+
+.indexw_header_topR {
+  width: auto;
+  height: 34px;
+  float: right; }
+  .indexw_header_topR ul {
+    width: auto;
+    height: auto; }
+    .indexw_header_topR ul li {
+      height: 34px;
+      float: left;
+      margin-left: 12px;
+      position: relative;
+      z-index: 3; }
+
+.indexw_header_gray {
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-top-color: #f2f1f1;
+  border-right-color: #f2f1f1;
+  border-left-color: #f2f1f1; }
+
+#my_cart_show {
+  padding-left: 7px;
+  margin-left: 0; }
+
+.indexw_header_img {
+  width: 12px;
+  height: 16px;
+  float: left;
+  margin-top: 7px;
+  margin-right: 10px; }
+
+.indexw_header_div_1 {
+  height: 34px;
+  display: block;
+  line-height: 34px;
+  color: #333 !important;
+  float: left;
+  width: 58px;
+  line-height: 32px; }
+
+.indexw_shop_text {
+  width: auto;
+  float: left;
+  color: #333;
+  display: block;
+  text-align: center; }
+
+.indexw_shop_num {
+  width: 20px;
+  text-align: center;
+  display: block;
+  float: left;
+  font-size: 13px;
+  color: #ff8a81;
+  font-weight: bold; }
+
+.indexw_header_arrow {
+  width: 5px;
+  height: 4px;
+  float: left;
+  margin-top: 14px;
+  background: url(http://img.zbird.cn/ww3/pubheaderfooter/icon_drop.png) no-repeat left top; }
+
+.indexw_shopCard_wushangpin {
+  width: 100%;
+  height: 61px;
+  line-height: 61px;
+  text-align: center; }
+
+.indexw_header_show {
+  width: 73px;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  padding-bottom: 0px;
+  left: 0px;
+  top: 32px;
+  border: 1px solid #f8a89c;
+  background-color: #FFF;
+  text-align: left;
+  z-index: 5; }
+
+#indexw_header_cart {
+  width: 240px;
+  top: 34px;
+  height: auto;
+  max-height: 399px;
+  min-height: 59px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none; }
+
+.indexw_header_white_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 6;
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer; }
+
+.indexw_header_show_a {
+  width: 100%;
+  height: 21px;
+  line-height: 21px;
+  display: block;
+  color: #686767;
+  padding-left: 6px;
+  text-align: left; }
+
+.u_hide_code {
+  width: 232px;
+  height: 156px;
+  position: absolute;
+  top: 33px;
+  left: -176px;
+  z-index: 50;
+  border: 1px solid #feb8ae;
+  display: none; }
+
+.phone_hover:hover .u_hide_code {
+  display: block; }
+
+.m_idx_snav_wp a:hover {
+  color: #ff8a81; }
+
+.indexw_header_middle {
+  width: 1180px;
+  height: 95px;
+  margin: 0 auto;
+  clear: both; }
+
+.indexw_header_middleL {
+  width: auto;
+  height: 95px;
+  overflow: hidden;
+  float: left; }
+
+.indexw_logo {
+  float: left;
+  margin-left: 35px;
+  margin-top: 28px; }
+
+.indexw_header_middleR {
+  width: auto;
+  height: 95px;
+  float: right; }
+
+.indexw_header_input_border {
+  height: 60px;
+  margin-top: 31px; }
+
+.indexw_header_input {
+  width: 204px;
+  height: 32px;
+  display: inline-block;
+  overflow: hidden;
+  float: left; }
+  .indexw_header_input a {
+    width: 40px;
+    height: 30px;
+    float: left;
+    display: block;
+    overflow: hidden;
+    background: url(http://img.zbird.cn/ww3/pubheaderfooter/icon_ser.jpg) no-repeat left top !important;
+    color: #fff !important;
+    line-height: 30px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; }
+
+.indexw_header_input_text {
+  width: 146px;
+  height: 16px;
+  border: none;
+  color: #999;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 7px 0 7px 10px;
+  margin: 0;
+  float: left;
+  display: block;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+
+.commGrayDDBox {
+  height: 18px;
+  line-height: 16px;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background: #fff url(http://img.zbird.cn/ww2/product/arrow.gif) right center no-repeat; }
+
+.a_head_order {
+  width: 78px;
+  height: 30px;
+  display: inline-block;
+  margin-left: 11px;
+  color: #666;
+  border: 1px solid #ccc;
+  line-height: 30px;
+  background: #fff;
+  text-align: center; }
+
+.indexw_header {
+  width: 100%;
+  height: auto;
+  clear: both;
+  background: #fbf2f1; }
+
+.indexw_nav {
+  width: 100%;
+  height: 33px;
+  clear: both;
+  background: #909090;
+  position: relative; }
+
+.indexw_nav_border {
+  width: 1180px;
+  height: 33px;
+  margin: 0 auto; }
+
+.m_idx_snav_hide {
+  background: url(http://img.zbird.cn/ww3/pubheaderfooter/snav_rept.png) top left repeat-x;
+  width: 100%;
+  position: absolute;
+  top: 33px;
+  left: 0px;
+  z-index: 90;
+  height: 361px;
+  display: none; }
+
+.m_idx_snav_wp {
+  width: 1180px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  display: none; }
+
+.snav_title {
+  position: relative;
+  float: left;
+  width: 153px;
+  height: 305px; }
+
+.snav_title_txtimg {
+  color: #000;
+  font-size: 24px;
+  font-family: Arail,"宋体";
+  left: 30px;
+  top: 29px;
+  z-index: 52; }
+
+.snav_title_txt {
+  left: 30px;
+  top: 63px;
+  z-index: 53;
+  color: #666;
+  letter-spacing: 1px; }
+
+.snav_lst {
+  float: left;
+  margin-top: 89px;
+  text-align: left;
+  padding-left: 30px;
+  width: 150px; }
+  .snav_lst a {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    line-height: 26px;
+    letter-spacing: 1px; }
+
+.navline {
+  width: 1px;
+  height: 265px;
+  float: left;
+  background: #e5e5e5;
+  margin-top: 31px;
+  margin-left: 0px; }
+
+.snav_lst {
+  float: left;
+  margin-top: 89px;
+  text-align: left;
+  padding-left: 30px;
+  width: 150px; }
+  .snav_lst a {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    line-height: 26px;
+    letter-spacing: 1px; }
+
+.lstpoa {
+  position: absolute;
+  left: 350px; }
+
+.snav_ads {
+  float: right;
+  text-align: right;
+  padding-top: 31px; }
+  .snav_ads a {
+    padding-left: 16px; }
+
+.snav_title_txtimg, .snav_title_txt, .snav_title_img {
+  position: absolute;
+  display: block; }
+
+.indexw_nav_ul_2 {
+  width: auto;
+  float: left; }
+
+.indexw_nav_li {
+  position: relative;
+  float: left;
+  z-index: 0; }
+
+.indexw_nav_a:hover, .indexw_nav_a_hover, .indexw_nav_a_hover02 {
+  background: #fdb2a4;
+  color: #fff; }
+
+.indexw_nav_a {
+  color: #fff !important;
+  font-size: 13px;
+  font-family: Arail,"宋体";
+  line-height: 33px;
+  width: 97px;
+  text-align: center;
+  display: block;
+  letter-spacing: 1px; }
+
+.indexw_nav_ul_3 {
+  width: auto;
+  float: right; }
+
+.ind_focus_wp {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  clear: both;
+  background-color: #f2f1f1;
+  z-index: 0; }
+  .ind_focus_wp .prev {
+    display: none;
+    margin-left: -527px;
+    background: url(http://img.zbird.cn/ww3/index/1180/prev_54.png) no-repeat left top; }
+  .ind_focus_wp .next {
+    display: none;
+    margin-left: 482px;
+    background: url(http://img.zbird.cn/ww3/index/1180/next_54.png) no-repeat left top; }
+
+.ind_focus_wp .prev, .ind_focus_wp .next {
+  width: 45px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  top: 264px;
+  z-index: 5;
+  cursor: pointer; }
+
+.ind_focus_ul {
+  position: absolute;
+  left: 50%;
+  margin-left: -960px;
+  top: 0px;
+  z-index: 0;
+  top: 0px;
+  z-index: 1;
+  width: 1920px;
+  height: 603px; }
+  .ind_focus_ul li {
+    position: absolute;
+    width: 1920px;
+    left: 0px;
+    top: 0px; }
+
+.num {
+  width: 300px;
+  height: 25px;
+  position: absolute;
+  z-index: 99999;
+  left: 50%;
+  margin-left: -150px;
+  bottom: 15px;
+  text-align: center; }
+  .num ul {
+    display: inline-block; }
+  .num li {
+    width: 14px;
+    height: 14px;
+    margin-right: 9px;
+    cursor: pointer;
+    display: inline-block;
+    background: url(http://img.zbird.cn/ww3/index/1180/superslide_btn.png) no-repeat left top; }
+    .num li.on {
+      background: url(http://img.zbird.cn/ww3/index/1180/superslide_btn.png) no-repeat right top;
+      z-index: 99999; }
+
+.gs_wht_wp {
+  width: 100%;
+  background: #fff;
+  overflow: hidden; }
+
+.g_main {
+  width: 1180px;
+  margin: 55px auto 0; }
+
+.u_pnk_btn:hover {
+  background: #f6827a;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  color: #fff; }
+
+.g_diy_shw {
+  background: #f7f7f7;
+  float: left;
+  width: 580px;
+  padding-bottom: 46px; }
+
+.u_st_tlt {
+  font-size: 26px;
+  margin: 0 auto;
+  padding: 45px 0 27px;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 2px; }
+
+.g_diy_shw_focus {
+  width: 352px;
+  height: 190px;
+  margin: 24px auto 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 0; }
+  .g_diy_shw_focus div {
+    width: 352px;
+    height: 190px;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+.u_diy_1 {
+  background: url(http://img.zbird.cn/ww3/160804newindex/diy_1.jpg) center no-repeat;
+  z-index: 2; }
+
+.u_diy_2 {
+  background: url(http://img.zbird.cn/ww3/160804newindex/diy_2.jpg) center no-repeat;
+  z-index: 2; }
+
+.u_diy_3 {
+  background: url(http://img.zbird.cn/ww3/160804newindex/diy_3.jpg) center no-repeat;
+  z-index: 2; }
+
+.u_pnk_btn {
+  width: 204px;
+  height: 34px;
+  line-height: 34px;
+  display: block;
+  margin: 0 auto;
+  background: #f6827a;
+  color: #fff;
+  text-align: center;
+  font-size: 12px; }
+
+.u_pnk_btn:first-of-type {
+  margin-bottom: 12px; }
+
+.g_diy_shw_pic {
+  float: right;
+  width: 578px;
+  height: 442px; }
+  .g_diy_shw_pic img {
+    opacity: 1; }
+
+.g_tab_wp {
+  background: #feb8ae;
+  text-align: center;
+  margin-top: 45px; }
+  .g_tab_wp em {
+    color: #fff;
+    font-size: 12px;
+    line-height: 37px;
+    display: inline-block;
+    width: 106px;
+    cursor: pointer; }
+
+.g_tab_cnt {
+  text-align: center;
+  margin-top: 20px;
+  display: none; }
+  .g_tab_cnt a {
+    float: left;
+    display: block; }
+  .g_tab_cnt span {
+    float: left;
+    width: 700px;
+    display: inline-block;
+    padding-right: 15px; }
+    .g_tab_cnt span:first-of-type a {
+      margin-bottom: 13px; }
+
+.f_rng_focus_wp {
+  position: relative;
+  z-index: 0;
+  width: 1180px;
+  margin: 45px auto 0; }
+
+.f_rng_focus {
+  width: 1096px;
+  overflow: hidden;
+  height: 193px;
+  position: relative;
+  z-index: 0;
+  margin: 0 auto; }
+  .f_rng_focus ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2200px;
+    margin: 0;
+    padding: 0; }
+    .f_rng_focus ul li {
+      width: 240px;
+      height: 193px;
+      float: left;
+      padding: 0 17px; }
+      .f_rng_focus ul li a {
+        display: inline-block;
+        margin-top: 0;
+        transition: 1s; }
+        .f_rng_focus ul li a:hover {
+          transform: translateY(-20px); }
+
+#u_rngs_prev, #u_rngs_next, #u_rngs_prev.on, #u_rngs_next.on {
+  width: 37px;
+  height: 51px;
+  display: block;
+  position: absolute;
+  top: 16%;
+  background: url(http://img.zbird.cn/ww3/160804newindex/icon_prev.jpg) no-repeat; }
+
+#u_rngs_prev {
+  background-position: -37px 0;
+  left: -35px; }
+
+#u_rngs_next {
+  background-position: 0 -51px;
+  cursor: pointer;
+  right: -35px; }
+
+.g_shp_wp {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 50px 0; }
+  .g_shp_wp .u_shp_1 i {
+    width: 104px;
+    background-position: 0 0; }
+  .g_shp_wp .u_shp_2 i {
+    width: 104px;
+    background-position: -104px 0; }
+  .g_shp_wp .u_shp_3 i {
+    width: 98px;
+    background-position: -208px 0; }
+  .g_shp_wp .u_shp_4 i {
+    width: 91px;
+    background-position: -306px 0; }
+  .g_shp_wp .u_shp_5 i {
+    width: 92px;
+    background-position: -397px 0; }
+  .g_shp_wp .u_shp_6 i {
+    width: 105px;
+    background-position: -489px 0; }
+  .g_shp_wp .u_shp_7 i {
+    width: 86px;
+    background-position: -594px 0; }
+  .g_shp_wp .u_shp_8 i {
+    width: 91px;
+    background-position: -680px 0; }
+  .g_shp_wp .u_shp_9 i {
+    width: 109px;
+    background-position: -771px 0; }
+  .g_shp_wp .u_shp_10 i {
+    width: 110px;
+    background-position: -880px 0; }
+  .g_shp_wp a {
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #b7b7b7;
+    font-size: 11px;
+    font-family: Arial;
+    letter-spacing: 1px; }
+    .g_shp_wp a i {
+      display: block;
+      background: url(http://img.zbird.cn/ww3/160804newindex/icon_shape.jpg) no-repeat;
+      height: 49px;
+      margin-bottom: 8px; }
+
+.u_shp_1:hover i {
+  background-position: 0 -49px; }
+
+.u_shp_2:hover i {
+  background-position: -104px -49px; }
+
+.u_shp_3:hover i {
+  background-position: -208px -49px; }
+
+.u_shp_4:hover i {
+  background-position: -306px -49px; }
+
+.u_shp_5:hover i {
+  background-position: -397px -49px; }
+
+.u_shp_6:hover i {
+  background-position: -489px -49px; }
+
+.u_shp_7:hover i {
+  background-position: -594px -49px; }
+
+.u_shp_8:hover i {
+  background-position: -680px -49px; }
+
+.u_shp_9:hover i {
+  background-position: -771px -49px; }
+
+.u_shp_10:hover i {
+  background-position: -880px -49px; }
+
+.f_ad_wp span {
+  display: block;
+  margin-bottom: 15px;
+  text-align: left; }
+  .f_ad_wp span .g_tab_cnt_spe_a {
+    margin-right: 15px; }
+
+.f_ad_wp span a {
+  display: block;
+  float: left; }
+  .f_ad_wp span a img {
+    opacity: 1; }
+
+.f_ad_wp span:after {
+  content: "";
+  clear: both;
+  height: 0;
+  font-size: 0;
+  visibility: hidden;
+  overflow: hidden;
+  display: block; }
+
+.stores_wp {
+  width: 1180px;
+  margin: 36px auto 0; }
+
+.tab_alist {
+  width: 1100px;
+  background: #fff;
+  border-top: 1px solid #000;
+  font-family: Arial, "宋体";
+  padding: 13px 40px;
+  text-align: center;
+  margin: 0 auto; }
+  .tab_alist a {
+    font-size: 12px;
+    color: #000;
+    padding: 0 16px;
+    line-height: 25px; }
+  .tab_alist i {
+    font-family: "宋体";
+    color: #ccc; }
+
+.tab_city_pic_focus .disc_border {
+  width: 700px;
+  height: 20px;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  left: 0;
+  bottom: 10px;
+  text-align: center;
+  z-index: 1; }
+
+.disc {
+  width: 9px;
+  height: 9px;
+  margin: 0 3px;
+  display: inline-block;
+  cursor: pointer;
+  background: url(http://img.zbird.cn/ww3/160804newindex/superslide_btn.png) no-repeat center; }
+
+.tab_city_pic {
+  width: 1180px;
+  background: #fdeaea;
+  height: 530px;
+  position: relative;
+  z-index: 0; }
+  .tab_city_pic .a_city {
+    width: 1180px;
+    position: relative;
+    z-index: 2;
+    display: block; }
+    .tab_city_pic .a_city i {
+      display: block;
+      width: 59px;
+      border-top: 1px solid #000;
+      margin: 38px auto 22px; }
+    .tab_city_pic .a_city a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-align: center; }
+
+.animateTShell {
+  width: 700px;
+  height: 530px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 0; }
+  .animateTShell .animate {
+    width: 700px;
+    height: 530px;
+    position: relative;
+    overflow: hidden; }
+
+.ani_ul {
+  width: 4200px;
+  height: 324px;
+  float: left; }
+  .ani_ul .ani_li {
+    width: 700px;
+    height: 530px;
+    float: left;
+    position: relative;
+    z-index: 0; }
+
+.f_city_send_tel {
+  position: absolute;
+  z-index: 8;
+  top: 0;
+  left: 700px; }
+  .f_city_send_tel .u_pnk_btn {
+    width: 142px;
+    height: 32px;
+    line-height: 32px;
+    display: block;
+    left: 168px;
+    top: 388px;
+    position: absolute;
+    z-index: 5;
+    text-align: center; }
+
+.f_city_form {
+  width: 310px;
+  height: 38px;
+  display: block;
+  left: 85px;
+  top: 317px;
+  position: absolute;
+  background: #fff;
+  z-index: 5; }
+
+.u_city_ipt {
+  width: 300px;
+  height: 38px;
+  line-height: 36px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  margin-left: 10px;
+  border: none;
+  color: #b7b7b7; }
+
+.u_city_map {
+  width: 52px;
+  height: 52px;
+  display: block;
+  left: 15px;
+  bottom: 15px;
+  position: absolute;
+  display: none;
+  background: url(http://img.zbird.cn/ww3/160804newindex/icon_map.png) no-repeat left center;
+  z-index: 5; }
+
+.world_map {
+  width: 480px;
+  display: block;
+  text-align: center;
+  height: 455px;
+  padding-left: 700px; }
+
+.world_map_title {
+  width: 100%;
+  font-size: 28px;
+  margin-top: 106px;
+  display: inline-block;
+  font-family: Arial,"宋体";
+  color: #000000; }
+
+.world_map_content {
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  display: inline-block;
+  font-family: Arial,"宋体";
+  color: #000; }
+
+.f_news_wp {
+  width: 1180px;
+  margin: 55px auto 75px;
+  text-align: left;
+  overflow: hidden; }
+
+.f_news {
+  width: 310px;
+  float: left;
+  padding-left: 20px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  height: 322px; }
+  .f_news dl {
+    padding: 20px 0; }
+    .f_news dl dt {
+      font-size: 12px;
+      color: #000;
+      padding: 27px 0 19px; }
+    .f_news dl dd a {
+      color: #333;
+      font-size: 12px;
+      line-height: 28px; }
+    .f_news dl dd:hover a {
+      color: #ff8a81; }
+
+.a_lnk_newsall a {
+  color: #333;
+  font-size: 12px; }
+
+.a_lnk_newsall:hover a {
+  color: #ff8a81; }
+
+.f_ad_pic {
+  float: right;
+  width: 480px;
+  height: 324px;
+  position: relative;
+  margin: 0 auto;
+  z-index: 0; }
+
+#animateT1 {
+  width: 480px;
+  height: 324px;
+  position: relative;
+  overflow: hidden; }
+
+.ani_ul {
+  width: 1920px;
+  height: 324px;
+  float: left; }
+  .ani_ul .ani_li {
+    width: 480px;
+    height: 324px;
+    float: left;
+    position: relative;
+    z-index: 0; }
+
+.disc_border {
+  width: 480px;
+  height: 20px;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  left: 0;
+  bottom: 10px;
+  text-align: center;
+  z-index: 1; }
+
+.indexw_footer_banner {
+  width: 100%;
+  height: 66px;
+  background: #fdf2ec; }
+  .indexw_footer_banner ul {
+    width: 1180px;
+    height: 66px;
+    margin: 0 auto;
+    background: url(http://img.zbird.cn/ww3/pubheaderfooter/footer_lnks.jpg) no-repeat; }
+    .indexw_footer_banner ul li {
+      float: left; }
+      .indexw_footer_banner ul li a {
+        height: 66px;
+        display: block; }
+
+.indexw_footer_banner_1 {
+  width: 201px; }
+
+.indexw_footer_banner_2 {
+  width: 195px; }
+
+.indexw_footer_banner_3 {
+  width: 227px; }
+
+.indexw_footer_banner_4 {
+  width: 197px; }
+
+.indexw_footer_banner_5 {
+  width: 198px; }
+
+.indexw_footer_banner_6 {
+  width: 162px; }
+
+.indexw_foot_service {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #fdf2ec;
+  clear: both;
+  font-family: Arial,"宋体"; }
+
+.indexw_foot_service_border {
+  width: 1180px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative; }
+
+.indexw_foot_service_left {
+  width: 85px;
+  height: 90px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 44px;
+  display: block;
+  background: url(http://img.zbird.cn/ww3/pubheaderfooter/logo85x90.jpg) no-repeat; }
+
+.indexw_foot_service_middle {
+  height: 110px;
+  float: left;
+  margin-top: 37px;
+  margin-left: 82px; }
+  .indexw_foot_service_middle ul {
+    width: 144px;
+    height: auto;
+    overflow: hidden;
+    float: left; }
+    .indexw_foot_service_middle ul li {
+      float: left; }
+      .indexw_foot_service_middle ul li span {
+        width: 96px;
+        height: 23px;
+        display: block;
+        color: #666666;
+        font-size: 12px;
+        text-align: left; }
+      .indexw_foot_service_middle ul li:hover a {
+        color: #ff8a81; }
+    .indexw_foot_service_middle ul a {
+      width: 96px;
+      line-height: 22px;
+      color: #999999;
+      display: block;
+      text-align: left; }
+
+.indexw_foot_service_right {
+  width: 214px;
+  height: 120px;
+  float: right;
+  margin-top: 30px;
+  margin-left: 6px;
+  background: url(http://img.zbird.cn/ww3/pubheaderfooter/web_code.jpg) no-repeat;
+  position: relative; }
+
+.xlwb {
+  width: 188px;
+  right: 0; }
+
+.indexw_foot_other {
+  background: #fdf2ec; }
+  .indexw_foot_other dt {
+    width: 1180px;
+    margin: 0 auto;
+    text-align: left;
+    color: #999;
+    overflow: hidden; }
+    .indexw_foot_other dt div {
+      width: 1180px;
+      height: auto;
+      overflow: hidden;
+      margin: 0 auto;
+      line-height: 36px;
+      text-align: center; }
+      .indexw_foot_other dt div a {
+        line-height: 33px;
+        margin: 0;
+        padding: 0;
+        color: #999;
+        text-decoration: none; }
+        .indexw_foot_other dt div a:hover {
+          color: #ff8a81; }
+      .indexw_foot_other dt div span {
+        padding: 0 8px 0 10px; }
+  .indexw_foot_other .copyright {
+    width: 980px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    color: #999999; }
+  .indexw_foot_other .img {
+    width: 624px;
+    margin: 0 auto;
+    padding-bottom: 90px;
+    color: #9FB1BA;
+    padding-left: 47px;
+    padding-top: 13px; }
+
+.ft_consult {
+  text-align: center;
+  padding: 21px 0; }
+  .ft_consult a {
+    margin-left: 46px;
+    background: url(http://img.zbird.cn/ww3/pubheaderfooter/fot_consult.jpg) left center no-repeat;
+    width: 488px;
+    height: 60px;
+    display: inline-block; }
+
+.indexw_friend_link {
+  width: 950px;
+  height: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  color: #BABABA;
+  line-height: 25px; }
+  .indexw_friend_link ul {
+    width: 950px;
+    height: 20px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .indexw_friend_link ul li {
+      display: block; }
+      .indexw_friend_link ul li a {
+        color: #999; }
+        .indexw_friend_link ul li a:hover {
+          color: #ff8a81; }
+
+#picp_span {
+  font-size: 8px;
+  color: #001b75;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  top: 20px;
+  left: 46px;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  left: 26px;
+  text-align: center; }
+
+.resetClear {
+  clear: both;
+  height: 0px;
+  line-height: 0px;
+  font-size: 0px;
+  margin: 0;
+  padding: 0; }
