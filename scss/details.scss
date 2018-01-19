@@ -781,3 +781,18 @@ tr {
 
 
 
+.magnifier{
+    width:210px;
+    height:215px;
+    position: absolute;
+    left:0;
+    top:0;
+    // border-width: 1px;
+    // visibility: visible;
+    // overflow: hidden;
+    background-color : #fbc9bf;
+    // z-index: 10;
+    opacity: 0.6;
+    // cursor: crosshair;
+    display: none;
+}

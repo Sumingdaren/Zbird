@@ -251,6 +251,9 @@ body {
   overflow: hidden;
   cursor: pointer; }
 
+.style_list .search li span:hover a {
+  color: #f6827a; }
+
 .right {
   width: 945px;
   float: left;
@@ -295,6 +298,72 @@ body {
       cursor: default;
       color: #f87d74;
       font-size: 12px; }
+
+.page_bg:hover {
+  box-sizing: border-box;
+  border-bottom: 5px solid #f6827a; }
+
+.page_bg:hover .page_img_2 {
+  display: block; }
+
+.left_category_no_close {
+  height: auto;
+  overflow: hidden;
+  cursor: pointer; }
+  .left_category_no_close li {
+    width: 181px;
+    float: left;
+    padding: 0;
+    background: none;
+    height: 221px;
+    text-align: center;
+    border-bottom: none; }
+
+.left_ring_link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: #666;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 5; }
+
+.link_a {
+  width: 180px;
+  height: 180px;
+  display: block;
+  position: static; }
+  .link_a img {
+    width: 100%;
+    height: 100%; }
+
+.left_ring_text_6 {
+  height: 20px;
+  line-height: 20px;
+  color: #666;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block; }
+
+.font_pink {
+  color: #f6827a;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px; }
+
+.font_gray {
+  color: #999;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5px; }
+  .font_gray em {
+    color: #333;
+    padding-left: 5px;
+    display: inline-block;
+    vertical-align: middle; }
 
 .button_C {
   clear: both;
@@ -364,7 +433,8 @@ body {
   width: 944px;
   height: 36px;
   overflow: hidden;
-  clear: both; }
+  clear: both;
+  padding-top: 20px; }
   .order_border .order {
     width: auto;
     height: 30px;
@@ -488,7 +558,8 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 0;
-  border-bottom: 1px solid #d6d6d6; }
+  border-bottom: 1px solid #d6d6d6;
+  box-sizing: border-box; }
 
 .page_img_bg {
   width: 304px;

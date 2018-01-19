@@ -653,3 +653,13 @@ tr {
   width: 1180px;
   height: 529px;
   background: url(http://img.zbird.cn/ww3/detail150815/brand_pic03.jpg) left top no-repeat; }
+
+.magnifier {
+  width: 210px;
+  height: 215px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fbc9bf;
+  opacity: 0.6;
+  display: none; }

@@ -6,6 +6,16 @@ require.config({
 		"navigation" : "scripts/navigation",
 		"banner" : "scripts/banner",
 		"search" : "scripts/search",
+		"design" : "scripts/design",
+		"shine" : "scripts/shine",
+		"carousel" : "scripts/carousel",
+		"seamless" : "scripts/seamless",
+		"yqlink" : "scripts/yqlink",
+		"product" : "scripts/product",
+		"display" : "scripts/display",
+		"details" : "scripts/details",
+		"cookie" : "scripts/jquery.cookie",
+		"dity" : "scripts/dity",
 	}
 })
 

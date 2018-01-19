@@ -1,12 +1,13 @@
-// 轮播图
+// 模糊搜索
 define(["jquery"], function($) {
 	function search(ele) {}
 	search.prototype = {
 		constructor: search,
-		init: function(ele,item) {
+		init: function(ele,show) {
 			//	console.log(ele,show)
 			// 初始化  获取元素
 			this.ele = ele;
+			this.show = show;
 			this.ele.on("input",$.proxy(this.introduce,this))
 	},
 	introduce : function(item){
@@ -14,17 +15,21 @@ define(["jquery"], function($) {
 		// 	console.log(item)
 		// })
 		var json_data = "";
+		var item = function(res){
+					var html = "";
+					// res.s.forEach(function(item){
+					// 	html += "<li>" + item + "</li>"
+ 				// 	})
+ 				console.log(res)
+					// show.append("html");
+				}
 		$.ajax({
 			url : "http://suggestion.baidu.com",
 			type : "GET",
-			dataType:"json",
-			success : function(data){
-				// console.log(res)
-				// console.log(data)
-				// json_data = data;
-			var result = JSON.stringify(data)
-			console.log(result)
-			}
+			data : {
+				cb : item,
+				wd : "question"	
+			},
 		})
 		// console.log(json_data)
 	}
