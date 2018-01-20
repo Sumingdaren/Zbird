@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/activit.css">
+</head>
+<body>
+	  <div class="services">
+        <a href="javascript:void(0)" class="ser_img"></a>
+        <span class="ser_lnk1"></span>
+        <a href="javascript:void(0)" class="ser_lnk2"></a>
+        <a href="javascript:void(0)" class="ser_lnk3"></a>
+        <a href="javascript:void(0)" class="ser_lnk4"></a>
+        <span class="ser_lnk5">
+			<em></em>
+		</span>
+    </div>
+    <!-- 头部 +搜索  -->
+    <div class="indexw_header">
+        <!-- 头部大块  scss : 19 -->
+        <div class="indexw_header_top">
+            <!-- 头部的内容区  scss : 26 -->
+            <div class="indexw_header_top_border">
+                <!-- 头部左边登录注册  scss : 41-->
+                <div class="indexw_header_topL">
+                    <h1 class="headerwelcome">
+					欢迎进入钻石小鸟官网
+				</h1>
+                    <a href="javascript:void(0)">登录</a>
+                    <a href="javascript:void(0)">注册</a>
+                </div>
+                <!-- 头部右边购物车部分 scss : 63-->
+                <div class="indexw_header_topR">
+                    <ul>
+                        <!-- 第一个li是购物车 -->
+                        <li style="width:105px">
+                            <!-- 购物车大块  scss : 81-->
+                            <div class="indexw_header_gray" id="my_cart_show">
+                                <img src="http://im1.zbird.cn/ww3/pubheaderfooter/header_box.png" class="indexw_header_img">
+                                <div class="indexw_header_div_1" style="width:73px">
+                                    <a href="javascript:void(0)" class="indexw_shop_text">购物车</a>
+                                    <span class="indexw_shop_num">0</span>
+                                    <span class="indexw_header_arrow"></span>
+                                </div>
+                            </div>
+                            <!-- 鼠标滑过购物车出现小型购物车商品列表 -->
+                            <div class="indexw_header_show" id="indexw_header_cart">
+                                <input type="hidden" name="" id="my_cart_all_count" value="0">
+                            </div>
+                        </li>
+                        <!-- 订单 -->
+                        <li style="width:58px">
+                            <a href="javascript:void(0)" class="indexw_header_div_1">我的订单</a>
+                        </li>
+                        <!-- 鸟巢有鼠标滑过事件 -->
+                        <li class="arrow_hover" style="width:73px">
+                            <!-- 滑过大块 -->
+                            <div class="indexw_header_gray" id="indexw_on">
+                                <a href="javascript:void(0)" class="indexw_header_div_1">我的鸟巢</a>
+                                <span class="indexw_header_arrow"></span>
+                            </div>
+                            <!-- 鸟巢二级菜单 -->
+                            <div class="indexw_header_show" id="indexw_show" style="display:none">
+                                <a href="javascript:void(0)" class="indexw_header_show_a">订单查询</a>
+                                <a href="javascript:void(0)" class="indexw_header_show_a">售后服务</a>
+                                <a href="javascript:void(0)" class="indexw_header_show_a">积分换礼</a>
+                            </div>
+                        </li>
+                        <li style="width:58px">
+                            <div><a href="javascript:void(0)" class="indexw_header_div_1">钻石课堂</a></div>
+                        </li>
+                        <li class="phone_hover">
+                            <a href="javascript:void(0)" class="indexw_header_div_1">手机官网 </a>
+                            <!-- 二维码二级菜单  scss : 203-->
+                            <div class="u_hide_code">
+                                <img src="http://im1.zbird.cn/ww3/pubheaderfooter/code_wechat.jpg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- logo + 搜索框  scss : 218 -->
+        <div class="indexw_header_middle">
+            <!-- logo -->
+            <div class="indexw_header_middleL">
+                <a href="javascript:void(0)">
+				<img src="http://im1.zbird.cn/picdb/555/518/e7d95bd4f523b9d296421613e6267360.png" class="indexw_logo">
+			</a>
+            </div>
+            <!-- 搜索框  scss :242 -->
+            <div class="indexw_header_middleR">
+                <div class="indexw_header_input_border">
+                    <div class="indexw_header_input">
+                        <form id="headCommSearchFrm" action="http://www.baidu.com/s method=" get " >
+						<!-- 搜索框内容区  scss : 272 -->
+						<input type=" " name="wd " id="headCommSearchKeyword " class="indexw_header_input_text " value="戒托 ">
+					<!-- 	<input type=" " name=" " id="headSearchTypeKey ">
+						<input type=" " name=" " id="headSearchTypeName " class="commGrayDDBox "> -->
+						<ul id="uuuuu "></ul>
+						<a href="javascript:void(0) "></a>
+					</form>
+				</div>
+				<a href="javascript:void(0) " class="a_head_order ">来电预约</a>
+			</div>
+		</div>
+	</div>
+
+<!-- nav 导航  scss : 313-->
+<div class="indexw_header ">
+	<div class="indexw_nav ">
+		<div class="indexw_nav_border ">
+			<div id="subnav ">
+				<!-- 二级菜单  scss : 339-->
+				<div class="m_idx_snav_hide ">
+					<div class="m_idx_snav_wp ">
+						<div class="snav_title ">
+							<a href="javascript:void(0) " class="snav_title_txtimg ">钻石</a>
+							<a href="javascript:void(0) " class="snav_title_txt ">探索所全部钻石</a>
+							<div class="snav_lst ">
+								<a href="javascript:void(0) ">30分裸钻</a>
+								<a href="javascript:void(0) ">50分裸钻</a>
+								<a href="javascript:void(0) ">70分裸钻</a>
+								<a href="javascript:void(0) ">克拉钻</a>
+								<a href="javascript:void(0) ">海淘钻石 立省50%</a>
+								<a href="javascript:void(0) ">北极光钻石</a>
+								<a href="javascript:void(0) ">FireCushion钻石</a>
+							</div>
+						</div>
+						<div class="snav_lst ">
+							<a href="javascript:void(0) ">圆形</a>
+							<a href="javascript:void(0) ">公主方</a>
+							<a href="javascript:void(0) ">祖母绿</a>
+							<a href="javascript:void(0) ">橄榄型</a>
+							<a href="javascript:void(0) ">椭圆形</a>
+							<a href="javascript:void(0) ">梨型</a>
+							<a href="javascript:void(0) ">心型</a>
+							<a href="javascript:void(0) "></a>
+						</div>
+						<div class="navline "></div>
+						<div class="snav_lst lstpoa ">
+							<a href="javascript:void(0) ">定制一款钻戒</a>
+							<a href="javascript:void(0) ">定制一款吊坠</a>
+							<a href="javascript:void(0) ">钻石4C知识</a>
+							<a href="javascript:void(0) ">钻石其他参数如何查看</a>
+							<a href="javascript:void(0) ">钻石证书知识</a>
+							<a href="javascript:void(0) ">甄选特惠裸钻专区</a>
+						</div>
+						<div class="snav_ads ">
+							<a href="javascript:void(0) ">
+								<img src="http://imu.zbird.cn/328/78/32878_2 " style="width:611px;height:262px; ">
+							</a>
+						</div>
+					</div>
+					<div class="m_idx_snav_wp ">
+						<div class="snav_title ">
+							<a href="javascript:void(0) " class="snav_title_txtimg ">婚戒</a>
+							<a href="javascript:void(0) " class="snav_title_txt ">探索所全部婚戒</a>
+							<div class="snav_lst ">
+								<a href="javascript:void(0) ">简约独钻</a>
+								<a href="javascript:void(0) ">奢华群镶</a>
+								<a href="javascript:void(0) ">克拉钻戒</a>
+								<a href="javascript:void(0) ">大气男戒</a>
+								<a href="javascript:void(0) ">纪念戒/花戒</a>
+								<a href="javascript:void(0) ">戒托款式</a>
+								<a href="javascript:void(0) ">人气热销</a>
+							</div>
+						</div>
+						<div class="snav_lst ">
+							<a href="javascript:void(0) ">TRIMARK系列</a>
+							<a href="javascript:void(0) ">北极光系列</a>
+							<a href="javascript:void(0) ">LADY NEW YORK</a>
+							<a href="javascript:void(0) ">心心相印系列</a>
+							<a href="javascript:void(0) ">钟情蕾丝系列</a>
+							<a href="javascript:void(0) ">宠爱系列</a>
+							<a href="javascript:void(0) ">玲珑系列</a>
+							<a href="javascript:void(0) ">幸福三指环</a>
+						</div>
+						<div class="navline "></div>
+						<div class="snav_lst lstpoa ">
+							<a href="javascript:void(0) ">如果测量手寸</a>
+							<a href="javascript:void(0) ">如何挑选合适的戒指款式</a>
+							<a href="javascript:void(0) ">如何选购戒托材质</a>
+							<a href="javascript:void(0) ">匠心工艺</a>
+						</div>
+						<div class="snav_ads ">
+							<a href="javascript:void(0) ">
+								<img src="http://imu.zbird.cn/346/56/34656_1 " style="width:611px;height:262px; ">
+							</a>
+						</div>
+					</div>
+					<div class="m_idx_snav_wp ">
+						<div class="snav_title ">
+							<a href="javascript:void(0) " class="snav_title_txtimg ">对戒</a>
+							<a href="javascript:void(0) " class="snav_title_txt ">探索全部对戒</a>
+							<div class="snav_lst ">
+								<a href="javascript:void(0) ">18K金对戒</a>
+								<a href="javascript:void(0) ">铂金对戒</a>
+								<a href="javascript:void(0) ">男款对戒</a>
+								<a href="javascript:void(0) ">女款对戒</a>
+								<a href="javascript:void(0) ">热销款式</a>
+							</div>
+						</div>
+						<div class="snav_lst ">
+							<a href="javascript:void(0) ">两人一世戒系列</a>
+							<a href="javascript:void(0) ">YOU&ME系列</a>
+							<a href="javascript:void(0) ">皇冠系列</a>
+							<a href="javascript:void(0) ">心声系列</a>
+							<a href="javascript:void(0) ">对戒的戴法和意义</a>
+							<a href="javascript:void(0) ">对戒刻字内容</a>
+						</div>
+						<div class="navline "></div>
+						<div class="snav_lst lstpoa ">
+							<a href="javascript:void(0) ">对戒的戴法和意义</a>
+							<a href="javascript:void(0) ">对戒刻字内容</a>
+						</div>
+						<div class="snav_ads ">
+							<a href="javascript:void(0) ">
+								<img src="http://imu.zbird.cn/410/92/41092_1 " style="width:611px;height:262px; ">
+							</a>
+						</div>
+					</div>
+					<div class="m_idx_snav_wp ">
+						<div class="snav_title ">
+							<a href="javascript:void(0) " class="snav_title_txtimg ">配饰</a>
+							<a href="javascript:void(0) " class="snav_title_txt ">探索所全部配饰</a>
+							<div class="snav_lst ">
+								<a href="javascript:void(0) ">挂坠</a>
+								<a href="javascript:void(0) ">项链坠</a>
+								<a href="javascript:void(0) ">耳钉</a>
+								<a href="javascript:void(0) ">手链</a>
+								<a href="javascript:void(0) ">手镯</a>
+								<a href="javascript:void(0) ">项链</a>
+								<a href="javascript:void(0) ">人气TOP</a>
+							</div>
+						</div>
+						<div class="snav_lst ">
+							<a href="javascript:void(0) ">珍珠系列</a>
+							<a href="javascript:void(0) ">闪耀芭比系列</a>
+							<a href="javascript:void(0) ">BLINK系列</a>
+							<a href="javascript:void(0) ">钟情蕾丝系列</a>
+							<a href="javascript:void(0) ">纪念戒系列</a>
+							<a href="javascript:void(0) "></a>
+							<a href="javascript:void(0) ">醉玲珑系列</a>
+							<a href="javascript:void(0) ">微光系列</a>
+						</div>
+						<div class="navline "></div>
+						<div class="snav_lst lstpoa ">
+							<a href="javascript:void(0) ">18K金的保养</a>
+							<a href="javascript:void(0) ">铂金的保养</a>
+							<a href="javascript:void(0) ">如何选购项链</a>
+							<a href="javascript:void(0) ">根据脸型来挑选耳环</a>
+							<a href="javascript:void(0) ">手链的佩戴方法</a>
+						</div>
+						<div class="snav_ads ">
+							<a href="javascript:void(0) ">
+								<img src="http://imu.zbird.cn/407/60/40760_1 " style="width:611px;height:262px; ">
+							</a>
+						</div>
+					</div>
+					<div class="m_idx_snav_wp ">
+						<div class="snav_title ">
+							<a href="javascript:void(0) " class="snav_title_txtimg ">钻石</a>
+							<a href="javascript:void(0) " class="snav_title_txt ">探索所全部钻石</a>
+							<div class="snav_lst ">
+								<a href="javascript:void(0) ">30分裸钻</a>
+								<a href="javascript:void(0) ">50分裸钻</a>
+								<a href="javascript:void(0) ">70分裸钻</a>
+								<a href="javascript:void(0) ">克拉钻</a>
+								<a href="javascript:void(0) ">海淘钻石 立省50%</a>
+								<a href="javascript:void(0) ">北极光钻石</a>
+								<a href="javascript:void(0) ">FireCushion钻石</a>
+							</div>
+						</div>
+						<div class="snav_lst ">
+							<a href="javascript:void(0) ">圆形</a>
+							<a href="javascript:void(0) ">公主方</a>
+							<a href="javascript:void(0) ">祖母绿</a>
+							<a href="javascript:void(0) ">橄榄型</a>
+							<a href="javascript:void(0) ">椭圆形</a>
+							<a href="javascript:void(0) ">梨型</a>
+							<a href="javascript:void(0) ">心型</a>
+							<a href="javascript:void(0) "></a>
+						</div>
+						<div class="navline "></div>
+						<div class="snav_lst lstpoa ">
+							<a href="javascript:void(0) ">定制一款钻戒</a>
+							<a href="javascript:void(0) ">定制一款吊坠</a>
+							<a href="javascript:void(0) ">钻石4C知识</a>
+							<a href="javascript:void(0) ">钻石其他参数如何查看</a>
+							<a href="javascript:void(0) ">钻石证书知识</a>
+							<a href="javascript:void(0) ">甄选特惠裸钻专区</a>
+						</div>
+						<div class="snav_ads ">
+							<a href="javascript:void(0) ">
+								<img src="http://imu.zbird.cn/328/78/32878_2 " style="width:611px;height:262px; ">
+							</a>
+						</div>
+					</div>
+					<div class="m_idx_snav_wp ">
+						<div class="snav_title ">
+							<a href="javascript:void(0) " class="snav_title_txtimg ">体验中心</a>
+							<a href="javascript:void(0) " class="snav_title_txt ">探索全部体验中心</a>
+							<div class="snav_lst ">
+								<a href="javascript:void(0) ">上海体验中心</a>
+								<a href="javascript:void(0) ">北京体验中心</a>
+								<a href="javascript:void(0) ">广州体验中心</a>
+								<a href="javascript:void(0) ">杭州体验中心</a>
+								<a href="javascript:void(0) ">成都体验中心</a>
+								<a href="javascript:void(0) ">宿迁体验中心</a>
+								<a href="javascript:void(0) ">南昌体验中心</a>
+							</div>
+						</div>
+						<div class="snav_lst ">
+							<a href="javascript:void(0) ">南京体验中心</a>
+							<a href="javascript:void(0) ">合肥体验中心</a>
+							<a href="javascript:void(0) ">天津体验中心</a>
+							<a href="javascript:void(0) ">宁波体验中心</a>
+							<a href="javascript:void(0) ">盐城体验中心</a>
+							<a href="javascript:void(0) ">常州体验中心</a>
+							<a href="javascript:void(0) ">烟台体验中心</a>
+							<a href="javascript:void(0) ">苏州体验中心</a>
+						</div>
+						<div class="navline "></div>
+						<div class="snav_lst lstpoa ">
+							<a href="javascript:void(0) ">武汉体验中心</a>
+							<a href="javascript:void(0) ">重庆体验中心</a>
+							<a href="javascript:void(0) ">西安体验中心</a>
+							<a href="javascript:void(0) ">郑州体验中心</a>
+							<a href="javascript:void(0) ">济宁体验中心</a>
+						</div>
+						<div class="snav_ads ">
+							<a href="javascript:void(0) ">
+								<img src="http://imu.zbird.cn/416/02/41602_1 " style="width:611px;height:262px; ">
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- 一级菜单 scss : 445-->
+				<ul class="indexw_nav_ul_2 ">
+					<li class="indexw_nav_li ">
+						<a href="javascript:void(0) " class="indexw_nav_a_hover indexw_nav_a ">首页</a>
+					</li>
+					<li class="indexw_nav_li ">
+						<a href="javascript:void(0) " class="indexw_nav_a ">钻石</a>
+					</li>
+					<li class="indexw_nav_li ">
+						<a href="javascript:void(0) " class="indexw_nav_a ">婚戒</a>
+					</li>
+					<li class="indexw_nav_li ">
+						<a href="javascript:void(0) " class="indexw_nav_a ">对戒</a>
+					</li>
+					<li class="indexw_nav_li ">
+						<a href="javascript:void(0) " class="indexw_nav_a ">配饰</a>
+					</li>
+					<li class="indexw_nav_li ">
+						<a href="javascript:void(0) " class="indexw_nav_a ">定制</a>
+					</li>
+					<li class="indexw_nav_li ">
+						<a href="javascript:void(0) " class="indexw_nav_a ">体验中心</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 导航右边部分  scss : 474-->
+			<div id="subnav_02 ">
+				<ul class="indexw_nav_ul_3 ">
+					<li class="indexw_nav_li ">
+						<a href="javascript:void(0) " class="indexw_nav_a ">商务加盟</a>
+					</li>
+					<li class="indexw_nav_li ">
+						<a href="javascript:void(0) " class="indexw_nav_a ">品牌故事</a>
+					</li>
+					<li class="indexw_nav_li ">
+						<a href="javascript:void(0) " class="indexw_nav_a ">鸟巢论坛</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+
+
+<!-- banner -->
+<div id="banner">
+	<div class="border"></div>
+</div>
+
+
+
+<!-- 套装选择 -->
+<div id="navbor">
+	<div class="border">
+		<div class="navflow">
+			<div class="nav1"></div>
+			<div class="nav2 nav2_hover"></div>
+			<div class="nav3"></div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- 套装内容 -->
+<div class="opabor">
+	<div class=opa1>
+		<div class="bg1">
+			<div class="border">
+				<div class="clearHeight"></div>
+				<div class="bx-wrapper">
+					<div class="bx-viewport">
+						<div class="slider1">
+							<div class="img1">
+								<a href="" class="an1"></a>
+							</div>
+							<div class="img2">
+								<a href="" class="an2"></a>
+							</div>
+							<div class="img3">
+								<a href="" class="an1"></a>
+							</div>
+							<div class="img4">
+								<a href="" class="an1"></a>
+							</div>
+						</div>
+						<div class="box">
+							<div class="btn">
+								<a href="" class="bx_prev"></a>
+								<a href="" class="bx_next"></a>
+							</div>
+							<div class="pager">
+								<div class="pager1">
+									<a href="" class="link1"></a>
+								</div>
+								<div class="pager2">
+									<a href="" class="link2"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg2"></div>
+		<div class="bg3"></div>
+	</div>
+	<div class="opa2"></div>
+	<div class="opa3"></div>
+</div>
+
+
+</body>
+</html>

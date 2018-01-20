@@ -1,9 +1,10 @@
 /* 待编译代码 */
+
 @import "reset";
 
-@mixin block_center{
-	margin-left : auto;
-	margin-right:auto;
+@mixin block_center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -15,6 +16,7 @@
     z-index: 100;
     width: 67px;
 }
+
 .ser_img {
     background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/img.png) left center no-repeat;
     width: 88px;
@@ -25,123 +27,139 @@
     top: -94px;
 }
 
-.ser_lnk1, .ser_lnk2, .ser_lnk3, .ser_lnk4, .ser_lnk5 {
+.ser_lnk1,
+.ser_lnk2,
+.ser_lnk3,
+.ser_lnk4,
+.ser_lnk5 {
     width: 67px;
     height: 67px;
     display: block;
     margin-bottom: 1px;
 }
+
 .ser_lnk1 {
     background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/1.gif) left center no-repeat;
     position: relative;
     z-index: 1;
 }
-.ser_lnk2{ 
-background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/2.jpg) left center no-repeat;
+
+.ser_lnk2 {
+    background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/2.jpg) left center no-repeat;
     text-align: center;
 }
+
 .ser_lnk3 {
     background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/3.jpg) left center no-repeat;
 }
+
 .ser_lnk4 {
     background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/4.jpg) left center no-repeat;
 }
+
 .ser_lnk5 {
     background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/5.jpg) left center no-repeat;
     position: relative;
     z-index: 1;
-	    em {
-		    position: absolute;
-		    left: -207px;
-		    z-index: 1;
-		    bottom: 0;
-		    background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/code.jpg) left center no-repeat;
-		    width: 206px;
-		    height: 135px;
-		    display: none;
-	}
+    em {
+        position: absolute;
+        left: -207px;
+        z-index: 1;
+        bottom: 0;
+        background: url(http://img.zbird.cn/ww3/pubheaderfooter/service/code.jpg) left center no-repeat;
+        width: 206px;
+        height: 135px;
+        display: none;
+    }
 }
-a:hover{
-	color:#ff8a81;
+
+a:hover {
+    color: #ff8a81;
 }
-.ser_lnk5:hover em{
-	display:inline-block;
+
+.ser_lnk5:hover em {
+    display: inline-block;
 }
 
 
 
 // 头部 +搜索
-.indexw_header{
-	width:100%;
-	height:auto;
-	clear:both;
-	background:#fbf2f1;
+.indexw_header {
+    width: 100%;
+    height: auto;
+    clear: both;
+    background: #fbf2f1;
 }
+
 //头部
-.indexw_header_top{
-		width:100%;
-		height:34px;
-		clear:both;
-		background:#f8e3df;
+.indexw_header_top {
+    width: 100%;
+    height: 34px;
+    clear: both;
+    background: #f8e3df;
 }
+
 //头部内容区
-.indexw_header_top_border{
-			width:1180px;
-			height:34px;
-			@include block_center;
+.indexw_header_top_border {
+    width: 1180px;
+    height: 34px;
+    @include block_center;
 }
+
 //h1
-.headerwelcome{
-	    float: left;
-	    height: 34px;
-	    line-height: 34px;
-	    font-weight: normal;
-	    color: #333;
-	    margin-right: 12px;
+.headerwelcome {
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    font-weight: normal;
+    color: #333;
+    margin-right: 12px;
 }
+
 //登录注册
-.indexw_header_topL{
-		width:auto;
-		height:30px;
-		overflow: hidden;
-		float: left;
-		a{
-			width: auto;
-		    height: 34px;
-		    line-height: 34px;
-		    display: block;
-		    float: left;
-		    color: #333!important;
-}
-		&:nth-of-type(1) a{
-		 	margin:0 10px;
- 			}
-		&:nth-of-type(2) a{
-			margin-left:10px;
-	   }
+.indexw_header_topL {
+    width: auto;
+    height: 30px;
+    overflow: hidden;
+    float: left;
+    a {
+        width: auto;
+        height: 34px;
+        line-height: 34px;
+        display: block;
+        float: left;
+        color: #333!important;
+    }
+    &:nth-of-type(1) a {
+        margin: 0 10px;
+    }
+    &:nth-of-type(2) a {
+        margin-left: 10px;
+    }
 }
 
 //购物车订单
-.indexw_header_topR{
+.indexw_header_topR {
     width: auto;
     height: 34px;
     float: right;
 
-    ul{
-    	width:auto;
-    	height:auto;
-    	li{
-		    height: 34px;
-		    float: left;
-		    margin-left: 12px;
-		    position: relative;
-		    z-index: 3;
-    	}
+    ul {
+        width: auto;
+        height: auto;
+        li {
+            height: 34px;
+            float: left;
+            margin-left: 12px;
+            position: relative;
+            z-index: 3;
+        }
     }
 }
+
 //购物车大块
-.indexw_header_gray{
-	border-top-width: 1px;
+.indexw_header_gray {
+    border-top-width: 1px;
     border-right-width: 1px;
     border-left-width: 1px;
     border-top-style: solid;
@@ -151,20 +169,23 @@ a:hover{
     border-right-color: #f2f1f1;
     border-left-color: #f2f1f1;
 }
-#my_cart_show{
-	padding-left: 7px;
+
+#my_cart_show {
+    padding-left: 7px;
     margin-left: 0;
 }
+
 //购物车的图片
-.indexw_header_img{
-	width: 12px;
+.indexw_header_img {
+    width: 12px;
     height: 16px;
     float: left;
     margin-top: 7px;
     margin-right: 10px;
 }
+
 //公共div
-.indexw_header_div_1{
+.indexw_header_div_1 {
     height: 34px;
     display: block;
     line-height: 34px;
@@ -173,17 +194,19 @@ a:hover{
     width: 58px;
     line-height: 32px;
 }
+
 //购物车文本
-.indexw_shop_text{
-	width: auto;
+.indexw_shop_text {
+    width: auto;
     float: left;
     color: #333;
     display: block;
     text-align: center;
 }
+
 //购物车商品的数量
-.indexw_shop_num{
-	width: 20px;
+.indexw_shop_num {
+    width: 20px;
     text-align: center;
     display: block;
     float: left;
@@ -191,24 +214,26 @@ a:hover{
     color: #ff8a81;
     font-weight: bold;
 }
+
 //箭头
-.indexw_header_arrow{
-	width: 5px;
+.indexw_header_arrow {
+    width: 5px;
     height: 4px;
     float: left;
     margin-top: 14px;
     background: url(http://img.zbird.cn/ww3/pubheaderfooter/icon_drop.png) no-repeat left top;
-}			
+}
+
 //购物车小清单文字说明
-.indexw_shopCard_wushangpin{
-	width: 100%;
+.indexw_shopCard_wushangpin {
+    width: 100%;
     height: 61px;
     line-height: 61px;
     text-align: center;
 }
 
 //会变化的购物车商品列表
-.indexw_header_show{
+.indexw_header_show {
     width: 73px;
     height: auto;
     overflow: hidden;
@@ -221,8 +246,9 @@ a:hover{
     text-align: left;
     z-index: 5
 }
+
 //同上
-#indexw_header_cart{
+#indexw_header_cart {
     width: 240px;
     top: 34px;
     height: auto;
@@ -234,25 +260,22 @@ a:hover{
 }
 
 //鼠标滑过增加的class名字
-.indexw_header_white_bg{
-	position: absolute;
-	left:0;
-	top:0;
-	z-index:6;
-	overflow:hidden;
-	width:100%;
-	cursor:pointer;
+.indexw_header_white_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 6;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
 }
+
 //待改正
 // .indexw_header_gray:hover #indexw_header_cart{
-// 	display:block;
+//  display:block;
 // }
-
-
-
-
 // 鸟巢滑过出现的二级菜单
-.indexw_header_show_a{
+.indexw_header_show_a {
     width: 100%;
     height: 21px;
     line-height: 21px;
@@ -261,9 +284,10 @@ a:hover{
     padding-left: 6px;
     text-align: left;
 }
+
 //二维码二级菜单
-.u_hide_code{
-	width: 232px;
+.u_hide_code {
+    width: 232px;
     height: 156px;
     position: absolute;
     top: 33px;
@@ -273,30 +297,31 @@ a:hover{
     display: none;
 }
 
-.phone_hover:hover .u_hide_code{
-	display: block;
+.phone_hover:hover .u_hide_code {
+    display: block;
 }
 
-.m_idx_snav_wp a:hover{
-	color:#ff8a81;
+.m_idx_snav_wp a:hover {
+    color: #ff8a81;
 }
 
 // 搜索框 + logo
-.indexw_header_middle{
+.indexw_header_middle {
     width: 1180px;
     height: 95px;
     margin: 0 auto;
     clear: both;
 }
+
 // logo
-.indexw_header_middleL{
+.indexw_header_middleL {
     width: auto;
     height: 95px;
     overflow: hidden;
     float: left;
 }
 
-.indexw_logo{
+.indexw_logo {
     float: left;
     margin-left: 35px;
     margin-top: 28px
@@ -305,39 +330,41 @@ a:hover{
 
 
 // 搜索框
-.indexw_header_middleR{
-	width: auto;
+.indexw_header_middleR {
+    width: auto;
     height: 95px;
     float: right;
 }
-.indexw_header_input_border{
-	height: 60px;
+
+.indexw_header_input_border {
+    height: 60px;
     margin-top: 31px;
 }
+
 // 搜索框输入
-.indexw_header_input{
-	width: 204px;
+.indexw_header_input {
+    width: 204px;
     height: 32px;
-    display: inline-block;
-    overflow: hidden;
+    display: inline-block; // overflow: hidden;
     float: left;
-	    a{
-		    width: 40px;
-		    height: 30px;
-		    float: left;
-		    display: block;
-		    overflow: hidden;
-		    background: url(http://img.zbird.cn/ww3/pubheaderfooter/icon_ser.jpg) no-repeat left top!important;
-		    color: #fff !important;
-		    line-height: 30px;
-		    border-top: 1px solid #ccc;
-		    border-right: 1px solid #ccc;
-		    border-bottom: 1px solid #ccc;
-	    }
+    a {
+        width: 40px;
+        height: 30px;
+        float: left;
+        display: block;
+        overflow: hidden;
+        background: url(http://img.zbird.cn/ww3/pubheaderfooter/icon_ser.jpg) no-repeat left top!important;
+        color: #fff !important;
+        line-height: 30px;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
 }
+
 // 搜索框的内容区
-.indexw_header_input_text{
-	    width: 146px;
+.indexw_header_input_text {
+    width: 146px;
     height: 16px;
     border: none;
     color: #999;
@@ -352,8 +379,25 @@ a:hover{
     border-bottom: 1px solid #ccc;
 }
 
-.commGrayDDBox{
-	height: 18px;
+
+#headCommSearchFrm {
+    position: relative;
+}
+
+#uuuuu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: #fff;
+    z-index: 99999;
+    li {
+        width: 196px;
+        height: 30px;
+    }
+}
+
+.commGrayDDBox {
+    height: 18px;
     line-height: 16px;
     margin: 0px;
     padding: 0px;
@@ -363,7 +407,7 @@ a:hover{
 }
 
 // 来电预约
-.a_head_order{
+.a_head_order {
     width: 78px;
     height: 30px;
     display: inline-block;
@@ -372,22 +416,21 @@ a:hover{
     border: 1px solid #ccc;
     line-height: 30px;
     background: #fff;
-    text-align:center;
+    text-align: center;
 }
 
 
 // nav 导航
-
-.indexw_header{
-	width: 100%;
+.indexw_header {
+    width: 100%;
     height: auto;
     clear: both;
     background: #fbf2f1;
 }
 
 // 导航
-.indexw_nav{
-	width: 100%;
+.indexw_nav {
+    width: 100%;
     height: 33px;
     clear: both;
     background: #909090;
@@ -395,8 +438,8 @@ a:hover{
 }
 
 // 导航内容区
-.indexw_nav_border{
-	width: 1180px;
+.indexw_nav_border {
+    width: 1180px;
     height: 33px;
     margin: 0 auto;
 }
@@ -405,44 +448,47 @@ a:hover{
 
 
 // 二级菜单
-.m_idx_snav_hide{
-	    background: url(http://img.zbird.cn/ww3/pubheaderfooter/snav_rept.png) top left repeat-x;
+.m_idx_snav_hide {
+    background: url(http://img.zbird.cn/ww3/pubheaderfooter/snav_rept.png) top left repeat-x;
     width: 100%;
     position: absolute;
     top: 33px;
     left: 0px;
     z-index: 90;
     height: 361px;
-    display:none;
+    display: none;
 }
+
 // 每一组二级菜单
-.m_idx_snav_wp{
+.m_idx_snav_wp {
     width: 1180px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
     display: none;
 }
+
 // 二级菜单的头部
-.snav_title{
-	position: relative;
+.snav_title {
+    position: relative;
     float: left;
     width: 153px;
     height: 305px;
 }
 
 // 二级菜单标题
-.snav_title_txtimg{
-	color: #000;
+.snav_title_txtimg {
+    color: #000;
     font-size: 24px;
-    font-family: Arail,"宋体";
+    font-family: Arail, "宋体";
     left: 30px;
     top: 29px;
     z-index: 52;
 }
+
 // 二级菜单标题的介绍
-.snav_title_txt{
-	    left: 30px;
+.snav_title_txt {
+    left: 30px;
     top: 63px;
     z-index: 53;
     color: #666;
@@ -450,24 +496,24 @@ a:hover{
 }
 
 // 所有钻石的分类
-.snav_lst{
-	float: left;
+.snav_lst {
+    float: left;
     margin-top: 89px;
     text-align: left;
     padding-left: 30px;
     width: 150px;
-    a{
-    	display: block;
-	    font-size: 12px;
-	    color: #666;
-	    line-height: 26px;
-	    letter-spacing: 1px;
+    a {
+        display: block;
+        font-size: 12px;
+        color: #666;
+        line-height: 26px;
+        letter-spacing: 1px;
     }
 }
 
 // 边框
-.navline{
-	width: 1px;
+.navline {
+    width: 1px;
     height: 265px;
     float: left;
     background: #e5e5e5;
@@ -476,62 +522,67 @@ a:hover{
 }
 
 // 钻石的形状
-.snav_lst{
+.snav_lst {
     float: left;
     margin-top: 89px;
     text-align: left;
     padding-left: 30px;
     width: 150px;
-    a{
-    	display: block;
-		font-size: 12px;
-		color: #666;
-		line-height: 26px;
-		letter-spacing: 1px;
+    a {
+        display: block;
+        font-size: 12px;
+        color: #666;
+        line-height: 26px;
+        letter-spacing: 1px;
     }
 }
 
 // 定制钻石
-.lstpoa{
-	position: absolute;
+.lstpoa {
+    position: absolute;
     left: 350px;
 }
 
 // 钻石的图片
-.snav_ads{
-	float: right;
+.snav_ads {
+    float: right;
     text-align: right;
     padding-top: 31px;
-	    a{
-	    	padding-left: 16px;
-	    }
+    a {
+        padding-left: 16px;
+    }
 }
 
-.snav_title_txtimg, .snav_title_txt, .snav_title_img{
+.snav_title_txtimg,
+.snav_title_txt,
+.snav_title_img {
     position: absolute;
     display: block;
 }
+
 // 导航的一级菜单
-.indexw_nav_ul_2{
-	width: auto;
+.indexw_nav_ul_2 {
+    width: auto;
     float: left;
 }
 
-.indexw_nav_li{
-	position: relative;
+.indexw_nav_li {
+    position: relative;
     float: left;
     z-index: 0;
 }
 
-.indexw_nav_a:hover, .indexw_nav_a_hover, .indexw_nav_a_hover02{
-	background: #fdb2a4;
+.indexw_nav_a:hover,
+.indexw_nav_a_hover,
+.indexw_nav_a_hover02 {
+    background: #fdb2a4;
     color: #fff;
 }
 
-.indexw_nav_a{
-	color: #fff!important;
+.indexw_nav_a {
+    color: #fff!important;
     font-size: 13px;
-    font-family: Arail,"宋体";
+    font-family: Arail, "宋体";
     line-height: 33px;
     width: 97px;
     text-align: center;
@@ -548,36 +599,33 @@ a:hover{
 
 
 // 轮播图
-.ind_focus_wp{
+.ind_focus_wp {
     width: 100%;
     height: 600px;
     overflow: hidden;
     position: relative;
     clear: both;
     background-color: #f2f1f1;
-    z-index: 0;
-    // 轮播图的按钮
+    z-index: 0; // 轮播图的按钮
     .prev {
-    	display: none;
-	    margin-left: -527px;
-	    background: url(http://img.zbird.cn/ww3/index/1180/prev_54.png) no-repeat left top;
-
-		}
-	.next {
-    	display: none;
-	    margin-left: 482px;
-	    background: url(http://img.zbird.cn/ww3/index/1180/next_54.png) no-repeat left top;
-
-	}
+        display: none;
+        margin-left: -527px;
+        background: url(http://img.zbird.cn/ww3/index/1180/prev_54.png) no-repeat left top;
+    }
+    .next {
+        display: none;
+        margin-left: 482px;
+        background: url(http://img.zbird.cn/ww3/index/1180/next_54.png) no-repeat left top;
+    }
 }
 
-.ind_focus_wp .prev, .ind_focus_wp .next {
+.ind_focus_wp .prev,
+.ind_focus_wp .next {
     width: 45px;
     height: 70px;
     position: absolute;
     left: 50%;
-    top: 264px;
-    // display: none;
+    top: 264px; // display: none;
     z-index: 5;
     cursor: pointer;
 }
@@ -593,17 +641,17 @@ a:hover{
     z-index: 1;
     width: 1920px;
     height: 603px;
-    li{
-    	    position: absolute;
-		    width: 1920px;
-		    left: 0px;
-		    top: 0px;
+    li {
+        position: absolute;
+        width: 1920px;
+        left: 0px;
+        top: 0px;
     }
 }
 
 // 选项卡
-.num{
-	width: 300px;
+.num {
+    width: 300px;
     height: 25px;
     position: absolute;
     z-index: 99999;
@@ -611,35 +659,36 @@ a:hover{
     margin-left: -150px;
     bottom: 15px;
     text-align: center;
-    ul{
-    	display:inline-block;
+    ul {
+        display: inline-block;
     }
-    li{
-    	width: 14px;
-	    height: 14px;
-	    margin-right: 9px;
-	    cursor: pointer;
-	    display: inline-block;
-	    background: url(http://img.zbird.cn/ww3/index/1180/superslide_btn.png) no-repeat left top;
-	     &.on{
-			  background: url(http://img.zbird.cn/ww3/index/1180/superslide_btn.png) no-repeat right top;
-			  z-index: 99999;
-	    }
+    li {
+        width: 14px;
+        height: 14px;
+        margin-right: 9px;
+        cursor: pointer;
+        display: inline-block;
+        background: url(http://img.zbird.cn/ww3/index/1180/superslide_btn.png) no-repeat left top;
+        &.on {
+            background: url(http://img.zbird.cn/ww3/index/1180/superslide_btn.png) no-repeat right top;
+            z-index: 99999;
+        }
     }
 }
 
 
 
 // 设计订婚戒指
-.gs_wht_wp{
-	width:100%;
-	background:#fff;
-	overflow:hidden;
+.gs_wht_wp {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
 }
+
 // 订婚戒指内容区
-.g_main{
-	width:1180px;
-	margin:55px auto 0;
+.g_main {
+    width: 1180px;
+    margin: 55px auto 0;
 }
 
 .u_pnk_btn:hover {
@@ -649,55 +698,59 @@ a:hover{
     color: #fff;
 }
 
-.g_diy_shw{
-	background:#f7f7f7;
-	float:left;
-	width:580px;
-	padding-bottom:46px;
+.g_diy_shw {
+    background: #f7f7f7;
+    float: left;
+    width: 580px;
+    padding-bottom: 46px;
 }
-// h2文字
-.u_st_tlt{
-	font-size:26px;
-	margin:0 auto;
-	padding:45px 0 27px;
-	text-align:center;
-	font-weight:normal;
-	letter-spacing:2px;
-}
-.g_diy_shw_focus{
-	width:352px;
-	height:190px;
-	margin:24px auto 0;
-	overflow:hidden;
-	position:relative;
-	z-index:0;
 
-	div{
-		width:352px;
-		height:190px;
-		position:absolute;
-		left:0;
-		top:0;
-	}	
+// h2文字
+.u_st_tlt {
+    font-size: 26px;
+    margin: 0 auto;
+    padding: 45px 0 27px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.g_diy_shw_focus {
+    width: 352px;
+    height: 190px;
+    margin: 24px auto 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+
+    div {
+        width: 352px;
+        height: 190px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }
 
 // 钻石三张图
-.u_diy_1{
-	background:url(http://img.zbird.cn/ww3/160804newindex/diy_1.jpg)center no-repeat;
-	z-index : 2;
+.u_diy_1 {
+    background: url(http://img.zbird.cn/ww3/160804newindex/diy_1.jpg)center no-repeat;
+    z-index: 2;
 }
-.u_diy_2{
-	background:url(http://img.zbird.cn/ww3/160804newindex/diy_2.jpg)center no-repeat;
-	z-index : 2;
+
+.u_diy_2 {
+    background: url(http://img.zbird.cn/ww3/160804newindex/diy_2.jpg)center no-repeat;
+    z-index: 2;
 }
-.u_diy_3{
-	background:url(http://img.zbird.cn/ww3/160804newindex/diy_3.jpg)center no-repeat;
-	z-index : 2;
+
+.u_diy_3 {
+    background: url(http://img.zbird.cn/ww3/160804newindex/diy_3.jpg)center no-repeat;
+    z-index: 2;
 }
 
 
-.u_pnk_btn{
-	width: 204px;
+.u_pnk_btn {
+    width: 204px;
     height: 34px;
     line-height: 34px;
     display: block;
@@ -708,99 +761,97 @@ a:hover{
     font-size: 12px;
 }
 
-.u_pnk_btn:first-of-type{
-	margin-bottom:12px;
+.u_pnk_btn:first-of-type {
+    margin-bottom: 12px;
 }
 
 
 
-.g_diy_shw_pic{
-	float:right;
-	width:578px;
-	height:442px;
-	img{
-		opacity: 1;
-	}
+.g_diy_shw_pic {
+    float: right;
+    width: 578px;
+    height: 442px;
+    img {
+        opacity: 1;
+    }
 }
 
 
 
 // 系列产品
-
-.g_tab_wp{
-	background:#feb8ae;
-	text-align:center;
-	margin-top:45px;
-	em{
-		    color: #fff;
-		    font-size: 12px;
-		    line-height: 37px;
-		    display: inline-block;
-		    width: 106px;
-		    cursor: pointer;
-	}
+.g_tab_wp {
+    background: #feb8ae;
+    text-align: center;
+    margin-top: 45px;
+    em {
+        color: #fff;
+        font-size: 12px;
+        line-height: 37px;
+        display: inline-block;
+        width: 106px;
+        cursor: pointer;
+    }
 }
 
 
 // 产品的图片
-.g_tab_cnt{
-	text-align:center;
-	margin-top:20px;
-	display:none;
-	a{
-	    	float:left;
-	    	display: block
-	    }
-	span{
-		float: left;
-	    width: 700px;
-	    display: inline-block;
-	    padding-right: 15px;
+.g_tab_cnt {
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+    a {
+        float: left;
+        display: block
+    }
+    span {
+        float: left;
+        width: 700px;
+        display: inline-block;
+        padding-right: 15px;
 
-	    &:first-of-type a{
-	    	margin-bottom:13px;
-	    }
-	}
+        &:first-of-type a {
+            margin-bottom: 13px;
+        }
+    }
 }
 
-.f_rng_focus_wp{
-	    position: relative;
-	    z-index: 0;
-	    width: 1180px;
-	    margin: 45px auto 0;
+.f_rng_focus_wp {
+    position: relative;
+    z-index: 0;
+    width: 1180px;
+    margin: 45px auto 0;
 }
 
 
-.f_rng_focus{
-	width: 1096px;
+.f_rng_focus {
+    width: 1096px;
     overflow: hidden;
     height: 193px;
     position: relative;
     z-index: 0;
     margin: 0 auto;
-    ul{
-	    position: absolute;
-		top: 0;
-		left: 0;
-		width: 2200px;
-		margin: 0;
-		padding: 0;
+    ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2200px;
+        margin: 0;
+        padding: 0;
 
-		li{
-			width: 240px;
-		    height: 193px;
-		    float: left;
-		    padding: 0 17px;
-		    a{
-		    	display: inline-block;
-   				margin-top: 0;
-   				transition:1s;
-   				&:hover{
-   					transform:translateY(-20px)
-   				}
-		    }
-	   }
-
+        li {
+            width: 240px;
+            height: 193px;
+            float: left;
+            padding: 0 17px;
+            a {
+                display: inline-block;
+                margin-top: 0;
+                transition: 1s;
+                &:hover {
+                    transform: translateY(-20px)
+                }
+            }
+        }
     }
 }
 
@@ -809,7 +860,10 @@ a:hover{
 
 
 // 轮播钻石
-#u_rngs_prev, #u_rngs_next, #u_rngs_prev.on, #u_rngs_next.on {
+#u_rngs_prev,
+#u_rngs_next,
+#u_rngs_prev.on,
+#u_rngs_next.on {
     width: 37px;
     height: 51px;
     display: block;
@@ -821,133 +875,143 @@ a:hover{
 
 #u_rngs_prev {
     background-position: -37px 0;
-    left:-35px;
+    left: -35px;
 }
 
 
 #u_rngs_next {
     background-position: 0 -51px;
     cursor: pointer;
-    right:-35px;
+    right: -35px;
 }
 
 
 // 精灵图
+.g_shp_wp {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 50px 0;
 
-.g_shp_wp{
-	    background: #f5f5f5;
-	    text-align: center;
-	    padding: 50px 0;
+    .u_shp_1 i {
+        width: 104px;
+        background-position: 0 0;
+    }
+    .u_shp_2 i {
+        width: 104px;
+        background-position: -104px 0;
+    }
+    .u_shp_3 i {
+        width: 98px;
+        background-position: -208px 0;
+    }
+    .u_shp_4 i {
+        width: 91px;
+        background-position: -306px 0;
+    }
+    .u_shp_5 i {
+        width: 92px;
+        background-position: -397px 0;
+    }
+    .u_shp_6 i {
+        width: 105px;
+        background-position: -489px 0;
+    }
+    .u_shp_7 i {
+        width: 86px;
+        background-position: -594px 0;
+    }
+    .u_shp_8 i {
+        width: 91px;
+        background-position: -680px 0;
+    }
+    .u_shp_9 i {
+        width: 109px;
+        background-position: -771px 0;
+    }
+    .u_shp_10 i {
+        width: 110px;
+        background-position: -880px 0;
+    }
 
-	    .u_shp_1 i{
-		width:104px;
-		background-position:0 0 ;
-		}
-		.u_shp_2 i{
-			width:104px;
-			background-position:-104px 0 ;
-		}
-		.u_shp_3 i{
-			width:98px;
-			background-position:-208px 0 ;
-		}
-		.u_shp_4 i{
-			width:91px;
-			background-position:-306px 0 ;
-		}
-		.u_shp_5 i{
-			width:92px;
-			background-position:-397px 0 ;
-		}
-		.u_shp_6 i{
-			width:105px;
-			background-position:-489px 0 ;
-		}
-		.u_shp_7 i{
-			width:86px;
-			background-position:-594px 0 ;
-		}
-		.u_shp_8 i{
-			width:91px;
-			background-position:-680px 0 ;
-		}
-		.u_shp_9 i{
-			width:109px;
-			background-position:-771px 0 ;
-		}
-		.u_shp_10 i{
-			width:110px;
-			background-position:-880px 0 ;
-		}
-
-	    a{
-			display: inline-block;
-		    line-height: 20px;
-		    text-align: center;
-		    text-transform: uppercase;
-		    color: #b7b7b7;
-		    font-size: 11px;
-		    font-family: Arial;
-		    letter-spacing: 1px;
-		    i{
-		    	display: block;
-			    background: url(http://img.zbird.cn/ww3/160804newindex/icon_shape.jpg) no-repeat;
-			    height: 49px;
-			    margin-bottom: 8px;
-		    }
-	    }
+    a {
+        display: inline-block;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #b7b7b7;
+        font-size: 11px;
+        font-family: Arial;
+        letter-spacing: 1px;
+        i {
+            display: block;
+            background: url(http://img.zbird.cn/ww3/160804newindex/icon_shape.jpg) no-repeat;
+            height: 49px;
+            margin-bottom: 8px;
+        }
+    }
 }
+
 // 划过精灵图效果
-.u_shp_1:hover i{
-	background-position:0 -49px ;
+.u_shp_1:hover i {
+    background-position: 0 -49px;
 }
-.u_shp_2:hover i{
-	background-position:-104px -49px ;
+
+.u_shp_2:hover i {
+    background-position: -104px -49px;
 }
-.u_shp_3:hover i{
-	background-position:-208px -49px ;
+
+.u_shp_3:hover i {
+    background-position: -208px -49px;
 }
-.u_shp_4:hover i{
-	background-position:-306px -49px ;
+
+.u_shp_4:hover i {
+    background-position: -306px -49px;
 }
-.u_shp_5:hover i{
-	background-position:-397px -49px ;
+
+.u_shp_5:hover i {
+    background-position: -397px -49px;
 }
-.u_shp_6:hover i{
-	background-position:-489px -49px ;
+
+.u_shp_6:hover i {
+    background-position: -489px -49px;
 }
-.u_shp_7:hover i{
-	background-position:-594px -49px ;
+
+.u_shp_7:hover i {
+    background-position: -594px -49px;
 }
-.u_shp_8:hover i{
-	background-position:-680px -49px ;
+
+.u_shp_8:hover i {
+    background-position: -680px -49px;
 }
-.u_shp_9:hover i{
-	background-position:-771px -49px ;
+
+.u_shp_9:hover i {
+    background-position: -771px -49px;
 }
-.u_shp_10:hover i{
-	background-position:-880px -49px;
+
+.u_shp_10:hover i {
+    background-position: -880px -49px;
 }
 
 
 // gif图
-.f_ad_wp{
-		span {
-		    display: block;
-		    margin-bottom: 15px;
-		    text-align: left;
+.f_ad_wp {
+    span {
+        display: block;
+        margin-bottom: 15px;
+        text-align: left;
 
 
-	.g_tab_cnt_spe_a{
-		margin-right:15px
-		}
-	}
+        .g_tab_cnt_spe_a {
+            margin-right: 15px
+        }
+    }
 }
+
 .f_ad_wp span a {
     display: block;
     float: left;
-    img{
-    	opacity:1;
+    img {
+        opacity: 1;
     }
 }
 
@@ -962,9 +1026,9 @@ a:hover{
 }
 
 // 地理位置
-.stores_wp{
-	width:1180px;
-	margin:36px auto 0;
+.stores_wp {
+    width: 1180px;
+    margin: 36px auto 0;
 }
 
 
@@ -977,41 +1041,40 @@ a:hover{
     padding: 13px 40px;
     text-align: center;
     margin: 0 auto;
-    	a {
-		    font-size: 12px;
-		    color: #000;
-		    padding: 0 6px;
-		    line-height: 25px;
-            i{
-            padding-left:15px;
+    a {
+        font-size: 12px;
+        color: #000;
+        padding: 0 6px;
+        line-height: 25px;
+        i {
+            padding-left: 15px;
             font-family: "宋体";
             color: #ccc;
         }
-	}
-
+    }
 }
 
-.tab_city_pic_focus{
-	.disc_border{
-		width: 700px;
-	    height: 20px;
-	    position: absolute;
-	    display: block;
-	    overflow: hidden;
-	    left: 0;
-	    bottom: 10px;
-	    text-align: center;
-	    z-index: 1;
-	}
+.tab_city_pic_focus {
+    .disc_border {
+        width: 700px;
+        height: 20px;
+        position: absolute;
+        display: block;
+        overflow: hidden;
+        left: 0;
+        bottom: 10px;
+        text-align: center;
+        z-index: 1;
+    }
 }
 
 
-.disc{
-	width: 9px;
+.disc {
+    width: 9px;
     height: 9px;
-	margin:0 3px;
-	display:inline-block;
-	cursor:pointer;
+    margin: 0 3px;
+    display: inline-block;
+    cursor: pointer;
     background: url(http://img.zbird.cn/ww3/160804newindex/superslide_btn.png) no-repeat center;
 }
 
@@ -1020,32 +1083,33 @@ a:hover{
 
 
 // 可更改的文字
-.tab_city_pic{
-	width:1180px;
-	background:#fdeaea;
-	height:530px;
-	position:relative;
-	z-index:0;
+.tab_city_pic {
+    width: 1180px;
+    background: #fdeaea;
+    height: 530px;
+    position: relative;
+    z-index: 0;
 
-	.a_city{
-		width: 1180px;
-	    position: relative;
-	    z-index: 2;
-	    display: block;
-	    i {
-	    display: block;
-	    width: 59px;
-	    border-top: 1px solid #000;
-	    margin: 38px auto 22px;
-	}
-	    a{
-	    	width:100%;
-	    	height:100%;
-	    	display: block;
-			text-align:center;
-	    }
-	}
+    .a_city {
+        width: 1180px;
+        position: relative;
+        z-index: 2;
+        display: block;
+        i {
+            display: block;
+            width: 59px;
+            border-top: 1px solid #000;
+            margin: 38px auto 22px;
+        }
+        a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
 }
+
 .animateTShell {
     width: 700px;
     height: 530px;
@@ -1054,71 +1118,70 @@ a:hover{
     left: 0;
     margin: 0;
     z-index: 0;
-    .animate{
-    	    width: 700px;
-		    height: 530px;
-		    position: relative;
-		    overflow: hidden;
+    .animate {
+        width: 700px;
+        height: 530px;
+        position: relative;
+        overflow: hidden;
     }
 }
 
 
 // 鼠标划过更改背景图片
-.disc_hover{
+.disc_hover {
     background: url(http://img.zbird.cn/ww3/160804newindex/superslide_btn2.png) no-repeat center;
 }
 
 
 
-.ani_ull{
-    width:1920px;
-    height:324px;
-    float:left;
-    position:relative;
-    .ani_li{
+.ani_ull {
+    width: 1920px;
+    height: 324px;
+    float: left;
+    position: relative;
+    .ani_li {
         width: 480px;
         height: 324px;
-        float: left;
-        // position: relative;
+        float: left; // position: relative;
         z-index: 0;
     }
 }
 
 
 // 轮播
-.ani_ul{
-	width:4200px;
-	height:324px;
-	float:left;
-    position:relative;
-	.ani_li{
-		width: 700px;
-	    height: 530px;
-	    float: left;
-	    // position: relative;
-	    z-index: 0;
-	}
-}
-//预约进店
-.f_city_send_tel{
-	position:absolute;
-	z-index:8;
-	top:0;
-	left:700px;
-	.u_pnk_btn{
-		    width: 142px;
-		    height: 32px;
-		    line-height: 32px;
-		    display: block;
-		    left: 168px;
-		    top: 388px;
-		    position: absolute;
-		    z-index: 5;
-		    text-align: center;
-	}
+.ani_ul {
+    width: 4200px;
+    height: 324px;
+    float: left;
+    position: relative;
+    .ani_li {
+        width: 700px;
+        height: 530px;
+        float: left; // position: relative;
+        z-index: 0;
+    }
 }
 
-.f_city_form{
+//预约进店
+.f_city_send_tel {
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    left: 700px;
+    .u_pnk_btn {
+        width: 142px;
+        height: 32px;
+        line-height: 32px;
+        display: block;
+        left: 168px;
+        top: 388px;
+        position: absolute;
+        z-index: 5;
+        text-align: center;
+    }
+}
+
+.f_city_form {
     width: 310px;
     height: 38px;
     display: block;
@@ -1128,6 +1191,7 @@ a:hover{
     background: #fff;
     z-index: 5;
 }
+
 .u_city_ipt {
     width: 300px;
     height: 38px;
@@ -1141,8 +1205,8 @@ a:hover{
     color: #b7b7b7;
 }
 
-.u_city_map{
-	width: 52px;
+.u_city_map {
+    width: 52px;
     height: 52px;
     display: block;
     left: 15px;
@@ -1154,8 +1218,8 @@ a:hover{
 }
 
 
-.world_map{
-	width: 480px;
+.world_map {
+    width: 480px;
     display: block;
     text-align: center;
     height: 455px;
@@ -1167,18 +1231,18 @@ a:hover{
     font-size: 28px;
     margin-top: 106px;
     display: inline-block;
-    font-family: Arial,"宋体";
+    font-family: Arial, "宋体";
     color: #000000;
 }
 
 
-.world_map_content{
-	width: 100%;
+.world_map_content {
+    width: 100%;
     height: 22px;
     line-height: 22px;
     font-size: 12px;
     display: inline-block;
-    font-family: Arial,"宋体";
+    font-family: Arial, "宋体";
     color: #000;
 }
 
@@ -1191,8 +1255,8 @@ a:hover{
 
 
 // 新闻动态
-.f_news_wp{
-	width: 1180px;
+.f_news_wp {
+    width: 1180px;
     margin: 55px auto 75px;
     text-align: left;
     overflow: hidden;
@@ -1206,67 +1270,66 @@ a:hover{
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     height: 322px;
-    dl{
-    	padding: 20px 0;
-    	dt{
-    		    font-size: 12px;
-			    color: #000;
-			    padding: 27px 0 19px;
-    	}
-    	dd{
-    		a{
-    		    color: #333;
-			    font-size: 12px;
-			    line-height: 28px;
-    		}
-    		&:hover a{
-    			color:#ff8a81;
-    		}
-    	} 
-    	
+    dl {
+        padding: 20px 0;
+        dt {
+            font-size: 12px;
+            color: #000;
+            padding: 27px 0 19px;
+        }
+        dd {
+            a {
+                color: #333;
+                font-size: 12px;
+                line-height: 28px;
+            }
+            &:hover a {
+                color: #ff8a81;
+            }
+        }
     }
 }
 
 .a_lnk_newsall {
-		a {
-	    color: #333;
-	    font-size: 12px;
-		}
-		&:hover a{
-			color:#ff8a81;
-		}
+    a {
+        color: #333;
+        font-size: 12px;
+    }
+    &:hover a {
+        color: #ff8a81;
+    }
 }
 
 
-.f_ad_pic{
-	float:right;
-	width:480px;
-	height:324px;
-	position:relative;
-	margin: 0 auto;
-	z-index:0;
+.f_ad_pic {
+    float: right;
+    width: 480px;
+    height: 324px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
 }
 
 
 // 右边图片
-#animateT1{
-	width:480px;
-	height:324px;
-	position:relative;
-	overflow:hidden;
+#animateT1 {
+    width: 480px;
+    height: 324px;
+    position: relative;
+    overflow: hidden;
 }
 
-.ani_ul{
-	width:1920px;
-	height:324px;
-	float:left;
-	.ani_li{
-		    width: 480px;
-		    height: 324px;
-		    float: left;
-		    position: relative;
-		    z-index: 0;
-	}
+.ani_ul {
+    width: 1920px;
+    height: 324px;
+    float: left;
+    .ani_li {
+        width: 480px;
+        height: 324px;
+        float: left;
+        position: relative;
+        z-index: 0;
+    }
 }
 
 
@@ -1300,43 +1363,48 @@ a:hover{
 
 
 // 底部
-.indexw_footer_banner{
-	    width: 100%;
-	    height: 66px;
-	    background: #fdf2ec;
-	    ul{
-	    	width: 1180px;
-		    height: 66px;
-		    margin: 0 auto;
-		    background: url(http://img.zbird.cn/ww3/pubheaderfooter/footer_lnks.jpg) no-repeat;
-		    li{
-		    	float:left;
-		    	a{
-		    		height:66px;
-		    		display: block;
-		    	}
-		    }
-	    }
-}
-// 6个跳转路径
-.indexw_footer_banner_1{
-	width:201px;
+.indexw_footer_banner {
+    width: 100%;
+    height: 66px;
+    background: #fdf2ec;
+    ul {
+        width: 1180px;
+        height: 66px;
+        margin: 0 auto;
+        background: url(http://img.zbird.cn/ww3/pubheaderfooter/footer_lnks.jpg) no-repeat;
+        li {
+            float: left;
+            a {
+                height: 66px;
+                display: block;
+            }
+        }
+    }
 }
 
-.indexw_footer_banner_2{
-	width:195px;
+// 6个跳转路径
+.indexw_footer_banner_1 {
+    width: 201px;
 }
-.indexw_footer_banner_3{
-	width:227px;
+
+.indexw_footer_banner_2 {
+    width: 195px;
 }
-.indexw_footer_banner_4{
-	width:197px;
+
+.indexw_footer_banner_3 {
+    width: 227px;
 }
-.indexw_footer_banner_5{
-	width:198px;
+
+.indexw_footer_banner_4 {
+    width: 197px;
 }
-.indexw_footer_banner_6{
-	width:162px;
+
+.indexw_footer_banner_5 {
+    width: 198px;
+}
+
+.indexw_footer_banner_6 {
+    width: 162px;
 }
 
 // 关于我们
@@ -1346,7 +1414,7 @@ a:hover{
     overflow: hidden;
     background: #fdf2ec;
     clear: both;
-    font-family: Arial,"宋体";
+    font-family: Arial, "宋体";
 }
 
 .indexw_foot_service_border {
@@ -1368,38 +1436,38 @@ a:hover{
 
 
 .indexw_foot_service_middle {
-	height:110px;
+    height: 110px;
     float: left;
     margin-top: 37px;
     margin-left: 82px;
-	    ul {
-		    width: 144px;
-		    height: auto;
-		    overflow: hidden;
-		    float: left;
-		    li{
-		    	float:left;
+    ul {
+        width: 144px;
+        height: auto;
+        overflow: hidden;
+        float: left;
+        li {
+            float: left;
 
-		    	span {
-			    width: 96px;
-			    height: 23px;
-			    display: block;
-			    color: #666666;
-			    font-size: 12px;
-			    text-align: left;
-				}
-				&:hover a{
-					color:#ff8a81;
-				}
-		    }
-		    a {
-			    width: 96px;
-			    line-height: 22px;
-			    color: #999999;
-			    display: block;
-			    text-align: left;
-}
-		}
+            span {
+                width: 96px;
+                height: 23px;
+                display: block;
+                color: #666666;
+                font-size: 12px;
+                text-align: left;
+            }
+            &:hover a {
+                color: #ff8a81;
+            }
+        }
+        a {
+            width: 96px;
+            line-height: 22px;
+            color: #999999;
+            display: block;
+            text-align: left;
+        }
+    }
 }
 
 
@@ -1413,99 +1481,101 @@ a:hover{
     background: url(http://img.zbird.cn/ww3/pubheaderfooter/web_code.jpg) no-repeat;
     position: relative;
 }
-.xlwb{
-	width:188px;
-	right:0;
+
+.xlwb {
+    width: 188px;
+    right: 0;
 }
 
 
 // 底部
 .indexw_foot_other {
     background: #fdf2ec;
-	    dt {
-		    width: 1180px;
-		    margin: 0 auto;
-		    text-align: left;
-		    color: #999;
-		    overflow: hidden;
-		    div{
-			    width: 1180px;
-			    height: auto;
-			    overflow: hidden;
-			    margin: 0 auto;
-			    line-height: 36px;
-			    text-align: center;
+    dt {
+        width: 1180px;
+        margin: 0 auto;
+        text-align: left;
+        color: #999;
+        overflow: hidden;
+        div {
+            width: 1180px;
+            height: auto;
+            overflow: hidden;
+            margin: 0 auto;
+            line-height: 36px;
+            text-align: center;
 
-			    a{
-			    	line-height: 33px;
-				    margin: 0;
-				    padding: 0;
-				    color: #999;
-				    text-decoration: none;
-				    &:hover{
-				    	color:#ff8a81;
-				    }
-			    }
-			    span{
-			    	padding: 0 8px 0 10px;
-			    }
-		    }
-	}
-	.copyright{
-	width: 980px;
-    margin: 0 auto;
-    padding-bottom: 10px;
-    color: #999999;
+            a {
+                line-height: 33px;
+                margin: 0;
+                padding: 0;
+                color: #999;
+                text-decoration: none;
+                &:hover {
+                    color: #ff8a81;
+                }
+            }
+            span {
+                padding: 0 8px 0 10px;
+            }
+        }
+    }
+    .copyright {
+        width: 980px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        color: #999999;
+    }
+    .img {
+        width: 624px;
+        margin: 0 auto;
+        padding-bottom: 90px;
+        color: #9FB1BA;
+        padding-left: 47px;
+        padding-top: 13px;
+    }
 }
-	.img{
-	width: 624px;
-    margin: 0 auto;
-    padding-bottom: 90px;
-    color: #9FB1BA;
-    padding-left: 47px;
-    padding-top: 13px;
-}
-}
+
 .ft_consult {
     text-align: center;
     padding: 21px 0;
-	    a {
-		    margin-left: 46px;
-		    background: url(http://img.zbird.cn/ww3/pubheaderfooter/fot_consult.jpg) left center no-repeat;
-		    width: 488px;
-		    height: 60px;
-		    display: inline-block;
-	}
+    a {
+        margin-left: 46px;
+        background: url(http://img.zbird.cn/ww3/pubheaderfooter/fot_consult.jpg) left center no-repeat;
+        width: 488px;
+        height: 60px;
+        display: inline-block;
+    }
 }
 
-.indexw_friend_link{
-	    width: 950px;
-	    height: 20px;
-	    overflow: hidden;
-	    margin: 0 auto;
-	    color: #BABABA;
-	    line-height: 25px;
-        position: relative;
-	    ul{
-	    	width: 950px;
-		    height: 20px;
-		    margin: 0 auto;
-            position: absolute;
-		    li{
-		    	display: block;
-		    	a{
-		    		color:#999;
-		    		&:hover{
-		    			color:#ff8a81;
-		    		}
-		    	}
-		    }
-	    }
+.indexw_friend_link {
+    width: 950px;
+    height: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    color: #BABABA;
+    line-height: 25px;
+    position: relative;
+    ul {
+        width: 950px;
+        height: 20px;
+        margin: 0 auto;
+        position: absolute;
+        li {
+            display: block;
+            a {
+                color: #999;
+                &:hover {
+                    color: #ff8a81;
+                }
+            }
+        }
+    }
 }
 
 
 
-#picp_span{
+#picp_span {
     font-size: 8px;
     color: #001b75;
     padding: 0;
@@ -1516,7 +1586,7 @@ a:hover{
     position: absolute;
     cursor: pointer;
     display: block;
-    left:26px;
+    left: 26px;
     text-align: center;
 }
 
@@ -1549,6 +1619,7 @@ a:hover{
     margin-top: 5px;
     margin-left: 8px;
 }
+
 .index_shopCard_yuan_1 {
     float: left;
     width: auto;
@@ -1564,10 +1635,16 @@ a:hover{
     width: auto;
     color: #ff8a81;
     font-size: 14px;
-    font-family: Arial,"宋体";
+    font-family: Arial, "宋体";
 }
 
 
-.shopcar_content_shop_list{
-    margin : 0 auto;
+.shopcar_content_shop_list {
+    margin: 0 auto;
+}
+
+
+.shopcar_content {
+    padding-top: 40px;
+    padding-bottom: 40px
 }

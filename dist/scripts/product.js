@@ -3,12 +3,12 @@ define(["jquery"], function($) {
 	function product(ele) {}
 	product.prototype = {
 		constructor: product,
-		init: function(ele,pop) {
+		init: function(ele, pop) {
 			//	console.log(ele,show)
 			// 初始化  获取元素
 			this.ele = ele;
 			this.callback;
-			this.load();				
+			this.load();
 		},
 		// 加载ajax
 		load: function() {
@@ -21,18 +21,15 @@ define(["jquery"], function($) {
 				// 用callback接收返回的数据
 				success: function(stm) {
 					_this.callback = stm;
-					// console.log(_this.callback)
 				}
 			})
-	//		console.log(this.callback)
 			// 调用接收的数据加载放入页面
 			this.push(this.callback)
 		},
+		// 把获取到的元素送到页面
 		push: function(item) {
 			var html = "";
-		//	console.log(item)
 			item.forEach(function(emm, index) {
-		//		console.log(item[index].sold)
 				html += '<div class="page_bg">' +
 					'<a href="javascript:void(0)" class="page_img_bg">' + '</a>' +
 					'<a href="javascript:void(0)" class="page_img_bg_p">' + '</a>' +
@@ -60,15 +57,10 @@ define(["jquery"], function($) {
 					'</div>' +
 					'</div>' +
 					'</div>'
-					// console.log($(".page_img_bg"))
 
 			})
 			this.ele.append(html)
-			// console.log(pop)
-
 		}
 	}
-
 	return product
-
 })

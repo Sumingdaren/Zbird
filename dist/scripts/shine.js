@@ -18,9 +18,6 @@ define(["jquery"], function($) {
 				})
 			})
 	},
-
 }
-
 return shine
-
 })

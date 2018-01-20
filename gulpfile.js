@@ -41,3 +41,9 @@ gulp.task("js",()=>{
     // .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('dist/scripts'));
 })
+
+// gulp.task("html",()=>{
+//      return gulp.src(['Zbird/*.html',"libs/*.html"])
+//     // .pipe(sass().on('error', sass.logError))
+//     .pipe(gulp.dest('dist/html'));
+// })

@@ -1,0 +1,234 @@
+/* 待编译代码 */
+
+@import "reset";
+
+
+
+
+#banner{
+	width:100%;
+	height:654px;
+	position:relative;
+	z-index: 0;
+	background:url(http://img.zbird.cn/ww3/2017collections/banner.jpg) top center no-repeat;
+}
+.border{
+	display: block;
+	width:1180px;
+	height:100%;
+	margin: 0 auto;
+	position : relative;
+	overflow: visible;
+}
+
+
+#navbor{
+	width:100%;
+	height:150px;
+	position:relative;
+	z-index: 1;
+	overflow: visible;
+}
+
+.navflow{
+	width:1180px;
+	height:150px;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-590px;
+	z-index: 5;
+}
+.nav1{
+	cursor: pointer;
+	width:392px;
+	height:100px;
+	position:absolute;
+	left:4px;
+	top:-45px;
+	background:url(http://img.zbird.cn/ww3/2017collections/nav1.jpg) top center no-repeat;
+	z-index: 5;
+}
+.nav2{
+       cursor: pointer;
+    width: 392px;
+    height: 100px;
+    position: absolute;
+    left: 396px;
+    top: -45px;
+    background: url(http://img.zbird.cn/ww3/2017collections/nav2.jpg) top center no-repeat;
+    z-index: 5;
+}
+.nav3 {
+    cursor: pointer;
+    width: 392px;
+    height: 100px;
+    position: absolute;
+    left: 787px;
+    top: -45px;
+    background: url(http://img.zbird.cn/ww3/2017collections/nav3.jpg) top center no-repeat;
+    z-index: 5;
+}
+
+
+.nav2_hover {
+    cursor: pointer;
+    width: 411px;
+    height: 132px;
+    position: absolute;
+    left: 387px;
+    top: -59px;
+    background: url(http://img.zbird.cn/ww3/2017collections/nav2_hover.png) top center no-repeat;
+    z-index: 15;
+}
+
+
+
+.opabor{
+	margin-top:-150px;
+	width:100%;
+	height:2290px;
+	position:relative;
+	z-index: 0;
+	overflow: hidden;
+}
+
+#opa1{
+	width:100%;
+	height:auto;
+	position:absolute;
+	left:50%;
+	margin-left:-50%;
+	top:0px;
+	z-index: 10;
+	opacity: 1;
+	overflow: hidden;
+	 .bg1{
+	 	width:100%;
+	 	height:750px;
+	 	position:relative;
+	 	z-index: 0;
+	 	background: url(http://img.zbird.cn/ww3/2017collections/opa1bg1.jpg) center top no-repeat;
+	 }
+}
+.clientHeight{
+	width:100%;
+	height:255px;
+	overflow: hidden;
+	clear: both;
+}
+.bx-viewport{
+	max-width:2360px;
+	
+}
+
+#opa1 .bg1 .bx-wrapper {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+.bx-wrapper {
+    position: relative;
+    margin: 0 auto 60px;
+    padding: 0;
+}
+.bx-viewport{
+	width:100%;
+	overflow: hidden;
+	position: relative;
+	height: 463px;
+
+}
+
+// .slider1{ 
+//    width: 2215%;
+//     position: relative;
+//     transition-duration: 0s;
+//     transform: translate3d(-2360px, 0px, 0px);
+// }
+
+.img1{
+	float: left;
+	position: relative;
+	width:1180px;
+	.an1{
+		display: block;
+		width:1180px;
+		height:463px;
+		background:url(http://img.zbird.cn/ww3/2017collections/an/bg2.1.jpg) center center no-repeat
+	}
+}
+
+.img2{
+	float: left;
+	position: relative;
+	width:1180px;
+	.an2{
+		    display: block;
+		    width: 1180px;
+		    height: 463px;
+		    background: url(http://img.zbird.cn/ww3/2017collections/an/bg2.2.jpg) center center no-repeat;
+	}
+}
+
+
+.bx_prev{
+	margin-top:-15px;
+	width:18px;
+	height:33px;
+	left:35px;
+	background:url(http://img.zbird.cn/ww3/2017collections/an/prev.png) center center no-repeat
+}
+.btn{
+	a{
+		    position: absolute;
+		    top: 50%;
+		    margin-top: -16px;
+		    outline: 0;
+		    width: 32px;
+		    height: 32px;
+		    text-indent: -9999px;
+		    z-index: 9999;
+	}
+}
+
+
+.bx_next{
+	margin-top: -15px;
+	width:18px;
+	height:33px;
+	right:35px;
+	background:url(http://img.zbird.cn/ww3/2017collections/an/next.png) center center no-repeat;
+}
+
+
+.pager{
+	width: 150px;
+    height: 20px;
+    text-align: right;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    z-index: 5;
+    a{
+    	display: inline-block;
+    }
+}
+
+.pager1{
+	margin-left:120px;
+	float:left;
+}
+.pager2{
+	float:right;
+}
+.link1{
+	    width: 11px;
+    height: 12px;
+    background: url(http://img.zbird.cn/ww3/2017collections/an/gray.png) right center no-repeat;
+}
+.link2{
+	    width: 11px;
+    height: 12px;
+    background: url(http://img.zbird.cn/ww3/2017collections/an/gray.png) left center no-repeat;
+}

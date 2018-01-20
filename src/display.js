@@ -1,4 +1,4 @@
-// json动态生成
+// 列表页的下拉数据详情
 define(["jquery"], function($) {
 	function display(ele) {}
 	display.prototype = {

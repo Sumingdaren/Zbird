@@ -1,4 +1,4 @@
-// 导航
+// 小轮播图
 define(["jquery"], function($) {
 	function Navigation(ele, show) {}
 	Navigation.prototype = {
@@ -17,32 +17,26 @@ define(["jquery"], function($) {
 			sum.each(function(index, val) {
 				// 遍历所有的一级菜单 获取index 根据index 来显示和隐藏
 				this.index = index
-				// if(ele.length == 7){
-				// 	index = index + 1;
-				// }else{
-				// 	index = index;
-				// }
-
 				// 判断两次为了下面的模块可以使用
 				// 第一次是轮播图
-				if(sum.length == 7){
+				if (sum.length == 7) {
 					tem.eq(index).on("mouseover", function() {
-					// console.log(this)
-					show.show()
-					tem.eq(index).css({
-						display: "block",
-						zIndex: "999"
+						// console.log(this)
+						show.show()
+						tem.eq(index).css({
+							display: "block",
+							zIndex: "999"
+						})
 					})
-				})
-				tem.eq(index).on("mouseout", function() {
-					// console.log(this)
-					show.hide()
-					tem.eq(index).css({
-						display: "none",
-						zIndex: "999"
+					tem.eq(index).on("mouseout", function() {
+						// console.log(this)
+						show.hide()
+						tem.eq(index).css({
+							display: "none",
+							zIndex: "999"
+						})
 					})
-				})
-						sum.eq(index +1).on("mouseover", function() {
+					sum.eq(index + 1).on("mouseover", function() {
 						// console.log(this)
 						show.show()
 						tem.eq(index).css({
@@ -59,21 +53,21 @@ define(["jquery"], function($) {
 						})
 					})
 					// 第二次是选项卡
-				}else{
+				} else {
 					tem.eq(index).on("mouseover", function() {
-					// console.log(this)
-					show.show()
-					tem.eq(index).show()
+						// console.log(this)
+						show.show()
+						tem.eq(index).show()
 					})
 					sum.eq(index).on("mouseover", function() {
-					for(var i = 0 ; i < tem.length;i++){
-						tem.hide()
-					}
-					show.show()
-					tem.eq(index).show()
+						for (var i = 0; i < tem.length; i++) {
+							tem.hide()
+						}
+						show.show()
+						tem.eq(index).show()
 					})
 				}
-				
+
 			})
 		}
 	}

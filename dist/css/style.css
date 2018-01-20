@@ -80,7 +80,11 @@ body {
   right: 0;
   top: -94px; }
 
-.ser_lnk1, .ser_lnk2, .ser_lnk3, .ser_lnk4, .ser_lnk5 {
+.ser_lnk1,
+.ser_lnk2,
+.ser_lnk3,
+.ser_lnk4,
+.ser_lnk5 {
   width: 67px;
   height: 67px;
   display: block;
@@ -325,7 +329,6 @@ a:hover {
   width: 204px;
   height: 32px;
   display: inline-block;
-  overflow: hidden;
   float: left; }
   .indexw_header_input a {
     width: 40px;
@@ -354,6 +357,19 @@ a:hover {
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
   border-bottom: 1px solid #ccc; }
+
+#headCommSearchFrm {
+  position: relative; }
+
+#uuuuu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: #fff;
+  z-index: 99999; }
+  #uuuuu li {
+    width: 196px;
+    height: 30px; }
 
 .commGrayDDBox {
   height: 18px;
@@ -419,7 +435,7 @@ a:hover {
 .snav_title_txtimg {
   color: #000;
   font-size: 24px;
-  font-family: Arail,"宋体";
+  font-family: Arail, "宋体";
   left: 30px;
   top: 29px;
   z-index: 52; }
@@ -476,7 +492,9 @@ a:hover {
   .snav_ads a {
     padding-left: 16px; }
 
-.snav_title_txtimg, .snav_title_txt, .snav_title_img {
+.snav_title_txtimg,
+.snav_title_txt,
+.snav_title_img {
   position: absolute;
   display: block; }
 
@@ -489,14 +507,16 @@ a:hover {
   float: left;
   z-index: 0; }
 
-.indexw_nav_a:hover, .indexw_nav_a_hover, .indexw_nav_a_hover02 {
+.indexw_nav_a:hover,
+.indexw_nav_a_hover,
+.indexw_nav_a_hover02 {
   background: #fdb2a4;
   color: #fff; }
 
 .indexw_nav_a {
   color: #fff !important;
   font-size: 13px;
-  font-family: Arail,"宋体";
+  font-family: Arail, "宋体";
   line-height: 33px;
   width: 97px;
   text-align: center;
@@ -524,7 +544,8 @@ a:hover {
     margin-left: 482px;
     background: url(http://img.zbird.cn/ww3/index/1180/next_54.png) no-repeat left top; }
 
-.ind_focus_wp .prev, .ind_focus_wp .next {
+.ind_focus_wp .prev,
+.ind_focus_wp .next {
   width: 45px;
   height: 70px;
   position: absolute;
@@ -706,7 +727,10 @@ a:hover {
         .f_rng_focus ul li a:hover {
           transform: translateY(-20px); }
 
-#u_rngs_prev, #u_rngs_next, #u_rngs_prev.on, #u_rngs_next.on {
+#u_rngs_prev,
+#u_rngs_next,
+#u_rngs_prev.on,
+#u_rngs_next.on {
   width: 37px;
   height: 51px;
   display: block;
@@ -987,7 +1011,7 @@ a:hover {
   font-size: 28px;
   margin-top: 106px;
   display: inline-block;
-  font-family: Arial,"宋体";
+  font-family: Arial, "宋体";
   color: #000000; }
 
 .world_map_content {
@@ -996,7 +1020,7 @@ a:hover {
   line-height: 22px;
   font-size: 12px;
   display: inline-block;
-  font-family: Arial,"宋体";
+  font-family: Arial, "宋体";
   color: #000; }
 
 .f_news_wp {
@@ -1118,7 +1142,7 @@ a:hover {
   overflow: hidden;
   background: #fdf2ec;
   clear: both;
-  font-family: Arial,"宋体"; }
+  font-family: Arial, "宋体"; }
 
 .indexw_foot_service_border {
   width: 1180px;
@@ -1293,7 +1317,11 @@ a:hover {
   width: auto;
   color: #ff8a81;
   font-size: 14px;
-  font-family: Arial,"宋体"; }
+  font-family: Arial, "宋体"; }
 
 .shopcar_content_shop_list {
   margin: 0 auto; }
+
+.shopcar_content {
+  padding-top: 40px;
+  padding-bottom: 40px; }

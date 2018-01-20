@@ -4,18 +4,12 @@ define(["jquery"], function($) {
 	carousel.prototype = {
 		constructor: carousel,
 		init: function(ele, left, right) {
-			//	console.log(ele,show)
 			// 初始化  获取元素
 			this.ele = ele.find("ul");
 			// 滑过出现亮光
-			// console.log(this.ele)
-			// this.width = this.ele.find("li").width()
 			this.right = right;
-			//		console.log(this.width)
 			this.left = left;
 			this.num = 0;
-			//		console.log(this.width)
-			//		console.log(this.right)
 			this.right.on("click", $.proxy(this.rightover, this))
 			this.left.on("click", $.proxy(this.leftover, this))
 		},
