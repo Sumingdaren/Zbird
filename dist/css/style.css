@@ -1265,3 +1265,35 @@ a:hover {
   font-size: 0px;
   margin: 0;
   padding: 0; }
+
+.indexw_shopCard_border {
+  width: 217px;
+  margin-left: 15px;
+  border-bottom: 1px solid #f2f1f1; }
+
+.indexw_shopCard_text {
+  width: 135px;
+  height: 22px;
+  overflow: hidden;
+  float: left;
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 8px; }
+
+.index_shopCard_yuan_1 {
+  float: left;
+  width: auto;
+  color: #ff8a81;
+  margin-top: 1px;
+  font-family: "微软雅黑";
+  font-size: 12px; }
+
+.index_shopCard_yuan_2 {
+  float: left;
+  width: auto;
+  color: #ff8a81;
+  font-size: 14px;
+  font-family: Arial,"宋体"; }
+
+.shopcar_content_shop_list {
+  margin: 0 auto; }

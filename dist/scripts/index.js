@@ -1,6 +1,6 @@
 // 业务逻辑 
 require(["scripts/config.js"],function(){
-	require(["jquery","mouseover","navigation","banner","search","design","shine","carousel","seamless","yqlink","product","display","details","cookie","dity"],function($,mouseover,navigation,banner,search,design,shine,carousel,seamless,yqlink,product,display,details,cookie,dity){
+	require(["jquery","mouseover","navigation","banner","search","design","shine","carousel","seamless","yqlink","product","display","details","cookie","dity","picture","shoppingcar","dist","car"],function($,mouseover,navigation,banner,search,design,shine,carousel,seamless,yqlink,product,display,details,cookie,dity,picture,shoppingcar,dist,car){
 
 		// 鼠标划过购物车
 	new mouseover().init($("#my_cart_show"),$("#indexw_header_cart"))
@@ -71,7 +71,19 @@ require(["scripts/config.js"],function(){
 	// console.log($(".page_bg"))
 
 
-	new dity().init($(".page_detlnow"),$(".loadImgWithTransEffect"),$(".list_small_pic"),$(".g_pro_sys"),$(".u_psys_pri"),$(".u_psys_sale"),$(".magnifier"),$(".jqzoom"))
+	new dity().init($(".page_detlnow"),$(".loadImgWithTransEffect"),$(".list_small_pic"),$(".g_pro_sys"),$(".u_psys_pri"),$(".u_psys_sale"),$(".magnifier"),$("#imgMove_change"),$(".styleImg"),$(".fire"),$(".fireimg"))
+
+	new picture().init($("#buyNowPopBtn"),$(".indexw_shop_num"),$(".indexw_header_show"))
+
+	new shoppingcar().init($(".shopcar_bg"),$(".indexw_shop_text"),$(".f_car_lst_tlt"))
+
+	new dist().init($(".indexw_header_show"),$(".indexw_shop_num"))
+
+
+	new car().init($(".indexw_header_div_1"),$(".shopcar_footer_left_2"),$(".shopcar_show_menu_all"))
+
+
+
 
 
 

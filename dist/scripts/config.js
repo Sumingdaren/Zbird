@@ -16,6 +16,10 @@ require.config({
 		"details" : "scripts/details",
 		"cookie" : "scripts/jquery.cookie",
 		"dity" : "scripts/dity",
+		"picture" : "scripts/picture",
+		"shoppingcar" : "scripts/shoppingcar",
+		"dist" : "scripts/dist",
+		"car" : "scripts/car",
 	}
 })
 

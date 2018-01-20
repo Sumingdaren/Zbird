@@ -30,10 +30,11 @@ define(["jquery"], function($) {
 		},
 		push: function(item) {
 			var html = "";
+		//	console.log(item)
 			item.forEach(function(emm, index) {
 		//		console.log(item[index].sold)
 				html += '<div class="page_bg">' +
-					'<a href="javascript:void(0)" class="page_img_bg" target="_black">' + '</a>' +
+					'<a href="javascript:void(0)" class="page_img_bg">' + '</a>' +
 					'<a href="javascript:void(0)" class="page_img_bg_p">' + '</a>' +
 					'<a href="javascript:void(0)" class="page_text_1">' +
 					'<span class="page_text_1_span">' + item[index].title + '</span>' +

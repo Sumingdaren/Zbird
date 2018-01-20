@@ -9,7 +9,7 @@
 <body>
 	<!-- 右侧 -->
 	<div class="services">
-		<a href="javascript:void(0)" class="ser_mg"></a>
+		<a href="javascript:void(0)" class="ser_img"></a>
 		<span class="ser_lnk1"></span>
 		<a href="javascript:void(0)" class="ser_lnk2"></a>
 		<a href="javascript:void(0)" class="ser_lnk3"></a>
@@ -48,7 +48,6 @@
 						</div>
 						<!-- 鼠标滑过购物车出现小型购物车商品列表 -->
 						<div class="indexw_header_show" id="indexw_header_cart">
-							<div class="indexw_shopCard_wushangpin">购物车中无商品</div>
 							<input type="hidden" name="" id="my_cart_all_count" value="0">
 						</div>
 					</li>
@@ -59,12 +58,12 @@
 					<!-- 鸟巢有鼠标滑过事件 -->
 					<li class="arrow_hover" style="width:73px">
 						<!-- 滑过大块 -->
-						<div class="indexw_header_gray">
+						<div class="indexw_header_gray" id="indexw_on" >
 							<a href="javascript:void(0)" class="indexw_header_div_1">我的鸟巢</a>
 							<span class="indexw_header_arrow"></span>
 						</div>
 						<!-- 鸟巢二级菜单 -->
-						<div class="indexw_header_show" style="display:none">
+						<div class="indexw_header_show" id="indexw_show" style="display:none">
 							<a href="javascript:void(0)" class="indexw_header_show_a">订单查询</a>
 							<a href="javascript:void(0)" class="indexw_header_show_a">售后服务</a>
 							<a href="javascript:void(0)" class="indexw_header_show_a">积分换礼</a>
@@ -86,7 +85,7 @@
 	</div>
 
 
-	<!-- logo -->
+	<!-- logo + 搜索框  scss : 218 -->
 	<div class="indexw_header_middle">
 		<!-- logo -->
 		<div class="indexw_header_middleL">
@@ -94,8 +93,23 @@
 				<img src="http://im1.zbird.cn/picdb/555/518/e7d95bd4f523b9d296421613e6267360.png" class="indexw_logo">
 			</a>
 		</div>
+		<!-- 搜索框  scss :242 -->
+		<div class="indexw_header_middleR">
+			<div class="indexw_header_input_border">
+				<div class="indexw_header_input">
+					<form id="headCommSearchFrm">
+						<!-- 搜索框内容区  scss : 272 -->
+						<input type="" name="" id="headCommSearchKeyword" class="indexw_header_input_text" placeholder="戒托">
+					<!-- 	<input type="" name="" id="headSearchTypeKey">
+						<input type="" name="" id="headSearchTypeName" class="commGrayDDBox"> -->
+						<ul id="uuuuu"></ul>
+						<a href="javascript:void(0)"></a>
+					</form>
+				</div>
+				<a href="javascript:void(0)" class="a_head_order">来电预约</a>
+			</div>
+		</div>
 	</div>
-
 
 <!-- nav 导航  scss : 313-->
 <div class="indexw_header">
@@ -288,6 +302,44 @@
 							</a>
 						</div>
 					</div>
+					<div class="m_idx_snav_wp">
+						<div class="snav_title">
+							<a href="javascript:void(0)" class="snav_title_txtimg">体验中心</a>
+							<a href="javascript:void(0)" class="snav_title_txt">探索全部体验中心</a>
+							<div class="snav_lst">
+								<a href="javascript:void(0)">上海体验中心</a>
+								<a href="javascript:void(0)">北京体验中心</a>
+								<a href="javascript:void(0)">广州体验中心</a>
+								<a href="javascript:void(0)">杭州体验中心</a>
+								<a href="javascript:void(0)">成都体验中心</a>
+								<a href="javascript:void(0)">宿迁体验中心</a>
+								<a href="javascript:void(0)">南昌体验中心</a>
+							</div>
+						</div>
+						<div class="snav_lst">
+							<a href="javascript:void(0)">南京体验中心</a>
+							<a href="javascript:void(0)">合肥体验中心</a>
+							<a href="javascript:void(0)">天津体验中心</a>
+							<a href="javascript:void(0)">宁波体验中心</a>
+							<a href="javascript:void(0)">盐城体验中心</a>
+							<a href="javascript:void(0)">常州体验中心</a>
+							<a href="javascript:void(0)">烟台体验中心</a>
+							<a href="javascript:void(0)">苏州体验中心</a>
+						</div>
+						<div class="navline"></div>
+						<div class="snav_lst lstpoa">
+							<a href="javascript:void(0)">武汉体验中心</a>
+							<a href="javascript:void(0)">重庆体验中心</a>
+							<a href="javascript:void(0)">西安体验中心</a>
+							<a href="javascript:void(0)">郑州体验中心</a>
+							<a href="javascript:void(0)">济宁体验中心</a>
+						</div>
+						<div class="snav_ads">
+							<a href="javascript:void(0)">
+								<img src="http://imu.zbird.cn/416/02/41602_1" style="width:611px;height:262px;">
+							</a>
+						</div>
+					</div>
 				</div>
 				<!-- 一级菜单 scss : 445-->
 				<ul class="indexw_nav_ul_2">
@@ -332,8 +384,6 @@
 	</div>
 </div>
 </div>
-
-
 
 <!-- 背景图 -->
 <div class="wide_pic_jiezhi">

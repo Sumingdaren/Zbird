@@ -46,17 +46,9 @@ define(["jquery", "cookie"], function($) {
 		//	console.log(typeof $bodyEl)
 			var ele = $bodyEl.parent(".page_bg")
 			var dataid = ele.attr("data_id");
-			//console.log(dataid)
-			$.cookie("zs", dataid);
-			// if($.cookie("zs")){
-			// 	return JSON.parse($.cookie("zs"))
-			// };
-			var num = $.cookie("zs");
-			console.log(num);
-			ele.find("a:first").attr('open', 'http://localhost:81/dist/details.html')
-			// ele.find("a:first").attr('target', '_Blankl')
-			// window.open("http://localhost:81/dist/details.html")
-			// ele.find("a:first").target = "_new"
+			$.cookie("zs",'[{"id":'+dataid+', "num" : 1}]',{expires: 7});
+				var zs =  JSON.parse($.cookie("zs"))
+			ele.find("a:first").attr('href', 'http://localhost:81/dist/details.html')
 		}
 	}
 	return details

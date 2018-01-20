@@ -8,8 +8,12 @@ define(["jquery"], function($) {
 			// 初始化  获取元素
 			this.ele = ele;
 			this.show = show;
+			// this.callback()
 			this.ele.on("input",$.proxy(this.introduce,this))
 	},
+	// callback : function(res){
+	// 	return res;
+	// },
 	introduce : function(item){
 		// $.getJSON("http://suggestion.baidu.com/",function(item){
 		// 	console.log(item)
@@ -23,16 +27,31 @@ define(["jquery"], function($) {
  				console.log(res)
 					// show.append("html");
 				}
-		$.ajax({
-			url : "http://suggestion.baidu.com",
+				let  $val = this.ele.val();
+		//		console.log($val)
+				let $qsData = {'p': '3'}
+				let $sum;
+				// function data(res){
+				// 	return res
+				// }
+				var _this = this;
+				setInterval(function(){
+					$.ajax({
+			url : 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + $val + "&cb=callback",
 			type : "GET",
-			data : {
-				cb : item,
-				wd : "question"	
-			},
-		})
+			dataType : "jsonp",
+			jsonpCallback : "callback",
+			seccess : function(data){
+				console.log(data)
+			}
+				})
+		
+			
+		},500);
+	//	console.log($sum)
 		// console.log(json_data)
-	}
+	},
+	
 }
 
 return search
