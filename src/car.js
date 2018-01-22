@@ -3,7 +3,7 @@ define(["jquery", "cookie"], function($) {
 	function car(ele) {}
 	car.prototype = {
 		constructor: car,
-		init: function(ele, show, remove, em, jump,logo) {
+		init: function(ele, show, remove, em, jump,logo,jiesuan) {
 			// 初始化 选取元素
 			this.ele = ele;
 			this.show = show;
@@ -11,6 +11,7 @@ define(["jquery", "cookie"], function($) {
 			this.jump = jump;
 			this.remove = remove;
 			this.logo = logo;
+			this.jiesuan = jiesuan;
 			// 点击页面最上面的小购物车跳转到购物车
 			this.ele.on("click", $.proxy(this.move, this))
 			// 点击清空购物车把所有商品清空
@@ -23,12 +24,13 @@ define(["jquery", "cookie"], function($) {
 			this.jump.find("li").eq(0).on("click", $.proxy(this.jp2, this))
 
 			this.logo.on("click",$.proxy(this.lo,this))
+			this.jiesuan.on("click",$.proxy(this.mm,this))
 		},
 		move: function() {
 			window.location.href = 'http://localhost:81/dist/shopping.html';
 		},
 		link: function() {
-			$.cookie("zs", '')
+			$.cookie("jrgwc", '')
 			window.location.reload()
 		},
 		bind: function() {
@@ -42,6 +44,9 @@ define(["jquery", "cookie"], function($) {
 		},
 		lo : function(){
 			window.location.href = 'http://localhost:81/dist/index.html';
+		},
+		mm : function(){
+			window.location.href = 'http://localhost:81/dist/shopping.html';
 		}
 	}
 	return car

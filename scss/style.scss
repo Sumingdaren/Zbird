@@ -247,6 +247,22 @@ a:hover {
     z-index: 5
 }
 
+.indexw_header_show1 {
+    width: 73px;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    padding-bottom: 0px;
+    left: 0px;
+    top: 32px;
+    border: 1px solid #f8a89c;
+    background-color: #FFF;
+    text-align: left;
+    z-index: 5
+}
+
+
+
 //同上
 #indexw_header_cart {
     width: 240px;
@@ -1127,6 +1143,13 @@ a:hover {
 }
 
 
+.animate {
+        width: 700px;
+        height: 530px;
+        position: relative;
+        overflow: hidden;
+    }
+
 // 鼠标划过更改背景图片
 .disc_hover {
     background: url(http://img.zbird.cn/ww3/160804newindex/superslide_btn2.png) no-repeat center;
@@ -1647,4 +1670,154 @@ a:hover {
 .shopcar_content {
     padding-top: 40px;
     padding-bottom: 40px
+}
+
+
+
+
+
+
+
+.js{
+    width:240px;
+    height:40px;
+    background:#fff;
+
+}
+.jiage{
+    float:left;
+    margin-left:20px;
+    span{
+        line-height:40px;
+    }
+
+}
+.span1{
+    float:left;
+    font-size:12px;
+    color:#ccc;
+}
+.span2{
+    float:left;
+    font-size:12px;
+    color:#ff8a81;
+}
+.span3{
+    float:left;
+    font-size:12px;
+    color:#ff8a81;
+}
+.jiesuan{
+    margin-top:5px;
+    float:right;
+    width:54px;
+    height:24px;
+    display: inline-block;
+    background:#ff8a81;
+    color:#fff;
+    line-height:24px;
+    text-align: center;
+    margin-right:20px;
+}
+.jiesuan:hover{
+    color:#fff;
+    opacity: 0.9
+}
+
+.indexw_shopCard_del {
+    width: 15px;
+    height: 15px;
+    float: right;
+    display: block;
+    margin-top: 2px;
+    background: url(http://img.zbird.cn/ww3/index/1180/header/indexw_shopCard_del.jpg) no-repeat left top;
+    // position:absolute;
+    // top:10px;
+    // right:10px;
+}
+
+
+
+
+
+
+#commonPromptPop{
+           width: 400px;
+           background: #FFFFFF;
+           z-index: 9999;
+           position: absolute;
+           top: 210px;
+           left: 520px;
+           display: none;
+
+.top {
+    width: 400px;
+    height: 35px;
+    line-height: 35px;
+    color: #FFF;
+    background: url(http://img.zbird.cn/ww3/common/pop/pop_top_bg.gif) repeat-x;
+    dd{
+       color: #8A8A8A;
+       font-weight: bold;
+    }
+}
+
+}
+
+
+#commonPromptPop .topL {
+    width: 15px;
+    height: 35px;
+    float: left;
+    background: #FFF url(http://img.zbird.cn/ww3/common/pop/pop_top_l.gif) no-repeat;
+}
+
+.floatL {
+    color: #666666;
+    float: left;
+    margin: auto;
+}
+#commonPromptPop .topR {
+    width: 15px;
+    height: 35px;
+    float: right;
+    background: #FFF url(http://img.zbird.cn/ww3/common/pop/pop_top_r.gif) no-repeat;
+}
+
+
+
+#commonPromptPop .middle {
+    width: 378px;
+    padding: 10px 7px 5px;
+    line-height: 200%;
+    border-left: 4px solid #AABFC4;
+    border-right: 4px solid #AABFC4;
+}
+#commonPromptPop{
+    p{
+        text-align: center;
+        line-height: 39px;
+    }
+}
+
+#commonPromptPop .footer {
+    width: 400px;
+    height: 15px;
+    line-height: 15px;
+    background: url(http://img.zbird.cn/ww3/common/pop/pop_bottom_bg.gif) repeat-x;
+}
+#commonPromptPop .footerL {
+    width: 15px;
+    height: 15px;
+    float: left;
+    background: #FFF url(http://img.zbird.cn/ww3/common/pop/pop_bottom_l.gif) no-repeat;
+}
+.footerR {
+    width: 15px;
+    height: 15px;
+    float: right;
+    background: #FFF url(http://img.zbird.cn/ww3/common/pop/pop_bottom_r.gif) no-repeat;
+}
+#commonPromptPopClose{
+    float:right
 }

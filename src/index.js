@@ -72,8 +72,7 @@ require(["scripts/config.js"], function() {
 		new dity().init($(".page_detlnow"), $(".loadImgWithTransEffect"), $(".list_small_pic"), $(".g_pro_sys"), $(".u_psys_pri"), $(".u_psys_sale"), $(".magnifier"), $("#imgMove_change"), $(".styleImg"), $(".fire"), $(".fireimg"))
 
 		// 点击加入购物车动态生成小购物车的数据
-		new picture().init($("#buyNowPopBtn"), $(".indexw_shop_num"), $(".indexw_header_show"))
-
+		new picture().init($("#buyNowPopBtn"), $(".indexw_shop_num"), $(".indexw_header_show"),$("#commonPromptPop"),$("#commonPromptPopClose"))
 		// 购物车界面 动态生出数据
 		new shoppingcar().init($(".shopcar_bg"), $(".indexw_shop_text"), $(".f_car_lst_tlt"))
 
@@ -81,7 +80,7 @@ require(["scripts/config.js"], function() {
 		new dist().init($(".indexw_header_show"), $(".indexw_shop_num"))
 
 		// 所有的跳转页面
-		new car().init($(".indexw_header_div_1"), $(".shopcar_footer_left_2"), $(".shopcar_show_menu_all"), $(".ser_lnk2"), $(".indexw_nav_ul_2"),$(".indexw_header_middleL"))
+		new car().init($(".indexw_header_div_1"), $(".shopcar_footer_left_2"), $(".shopcar_show_menu_all"), $(".ser_lnk2"), $(".indexw_nav_ul_2"),$(".indexw_header_middleL"),$(".jiesuan"))
 
 		// 注册
 		new register().init($("#phone"),$(".input_code"),$(".phone_mi"),$(".phone_mi2"),$(".p_pMsg1"),$(".p_pMsg2"),$(".p_pMsg3"),$(".p_pMsg4"),$("#get_checknum"),$("#regphone_submit"))
@@ -94,8 +93,7 @@ require(["scripts/config.js"], function() {
 
 
 
-
-
+	
 
 
 

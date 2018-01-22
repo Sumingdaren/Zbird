@@ -160,7 +160,7 @@ body {
     z-index: 0;
     background: url(http://img.zbird.cn/ww3/2017collections/opa1bg1.jpg) center top no-repeat; }
 
-.clientHeight {
+.clearHeight {
   width: 100%;
   height: 255px;
   overflow: hidden;
@@ -185,6 +185,11 @@ body {
   position: relative;
   height: 463px; }
 
+.slider1 {
+  width: 2215%;
+  position: relative;
+  transition-duration: 0s; }
+
 .img1 {
   float: left;
   position: relative;
@@ -200,6 +205,26 @@ body {
   position: relative;
   width: 1180px; }
   .img2 .an2 {
+    display: block;
+    width: 1180px;
+    height: 463px;
+    background: url(http://img.zbird.cn/ww3/2017collections/an/bg2.2.jpg) center center no-repeat; }
+
+.img3 {
+  float: left;
+  position: relative;
+  width: 1180px; }
+  .img3 .an1 {
+    display: block;
+    width: 1180px;
+    height: 463px;
+    background: url(http://img.zbird.cn/ww3/2017collections/an/bg2.1.jpg) center center no-repeat; }
+
+.img4 {
+  float: left;
+  position: relative;
+  width: 1180px; }
+  .img4 .an2 {
     display: block;
     width: 1180px;
     height: 463px;
@@ -256,3 +281,43 @@ body {
   width: 11px;
   height: 12px;
   background: url(http://img.zbird.cn/ww3/2017collections/an/gray.png) left center no-repeat; }
+
+#opa1 .bg1_2 {
+  background: url(http://img.zbird.cn/ww3/2017collections/opa1bg1_2.jpg) top center no-repeat;
+  width: 100%;
+  height: 748px;
+  position: relative;
+  z-index: 0; }
+
+.border {
+  display: block;
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; }
+
+#opa1 .bg2 {
+  background: url(http://img.zbird.cn/ww3/2017collections/opa1bg2.jpg) top center no-repeat;
+  width: 100%;
+  height: 796px;
+  position: relative;
+  z-index: 0; }
+
+.a_mono {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 5; }
+
+.opa1bg2a {
+  display: block;
+  width: 136px;
+  height: 37px;
+  position: absolute;
+  right: 39px;
+  top: 486px;
+  z-index: 6; }

@@ -13,7 +13,6 @@ define(["jquery"], function($) {
 	},
 	// 判断如果大于元素的scrollTop值就让元素吸顶，如果小于就还原
 	move : function(e){
-		console.log($(window).scrollTop())	
 		if( $(window).scrollTop() >= this.scroll){
 			this.ele.css({
 				position : "fixed",

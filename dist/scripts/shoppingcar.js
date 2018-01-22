@@ -30,10 +30,10 @@ define(["jquery", "cookie"], function($) {
 		load: function() {
 			var item = this.callback;
 			var html = "";
-			if ($.cookie("zs")) {
-				var zs = JSON.parse($.cookie("zs"))
+			if ($.cookie("jrgwc")) {
+				var zs = JSON.parse($.cookie("jrgwc"))
 			}
-			if ($.cookie("zs")) {
+			if ($.cookie("jrgwc")) {
 				// 如果有cookie 就在页面输入这个
 				html +=
 					'<div class="shopcar_title">' +
@@ -62,14 +62,14 @@ define(["jquery", "cookie"], function($) {
 					'<span class="f_car_lst_tlt_06">' + "操作" + '</span>' +
 					'</div>'
 				this.ele.append(html)
-
-
-
 				var shuai = "";
 				var _this = this;
 				this.n = 0;
 				// 遍历所有的cookie 在页面输入json里面cookie的id的下标就是商品在获取对应的数据拼接到页面上
 				zs.forEach(function(str, index) {
+					// for( var i = 0 ; i <  )
+					// console.log(zs.num)
+					// console.log(item[zs[index].num])
 					_this.n += JSON.parse(item[zs[index].num].price * zs[index].num)
 					shuai += '<div class="shopcar_content_shop_list">' +
 						'<div class="shopcar_content_shop_list_1">' +

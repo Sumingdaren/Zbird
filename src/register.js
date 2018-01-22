@@ -1,4 +1,4 @@
-// 加入购物车
+// 注册验证
 define(["jquery", "cookie"], function($) {
 	function register(ele) {}
 	register.prototype = {

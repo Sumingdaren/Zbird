@@ -48,7 +48,7 @@ define(["jquery", "cookie"], function($) {
 			if ($.cookie("zs")) {
 				var scookie = $.cookie("zs")
 				var zs = JSON.parse($.cookie("zs"))
-				console.log(zs)
+			//	console.log(zs)
 				var flag = false;
 				zs.forEach(function(item) {
 					// console.log(item.id)
@@ -69,7 +69,6 @@ define(["jquery", "cookie"], function($) {
 				$.cookie("zs", scookie)
 
 			} else {
-				console.log($.cookie("zs"))
 				$.cookie("zs", '[{"id":' + dataid + ', "num" : 1}]', {
 					expires: 7
 				});
