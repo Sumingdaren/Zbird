@@ -43,19 +43,13 @@ define(["jquery"], function($) {
 			}
 		},
 		btn : function(){
-			// if( $("zhanghao") ){
-
-			// }
-			// console.log($.cookie("zhanghao"))
-			var stm = JSON.parse($.cookie("zhanghao"));
+			if( $.cookie(this.phone.val()) ){
+					var stm = JSON.parse($.cookie(this.phone.val()));
 			var zh = stm[0].id;
 			var mm = stm[0].password;
 			console.log(zh,mm)
 			console.log(this.phone.val(),this.password.val())
-			// console.log(JSON.parse(stm)[0].id)
-			// console.log(JSON.parse(stm)[0].password)
 			if( this.phone.val() == zh && this.password.val() == mm ){
-				// console.log("成功")
 				var div = $("<div></div>")
 				div.css({
 					position : "fixed",
@@ -78,7 +72,9 @@ define(["jquery"], function($) {
 					$(div).remove()
 				},3000)
 			}
-
+			}else{
+				return 0;
+			}
 		}
 	}
 

@@ -21,7 +21,7 @@ define(["jquery", "cookie"], function($) {
 			this.num2 = 0;
 			this.num3 = 0;
 			this.num4 = 0;
-			// console.log(this.phone.parent())
+			this.callback;
 			// 手机号验证  获取焦点和失去焦点
 			this.phone.focus($.proxy(this.cation1, this))
 			this.phone.blur($.proxy(this.cation2, this))
@@ -43,8 +43,11 @@ define(["jquery", "cookie"], function($) {
 			// 提交
 			this.submit.on("click", $.proxy(this.winner, this))
 			// console.log(this.submit)
-
+			this.mark()
 		},
+		// load : function(){
+			
+		// },
 		// 输入框获取到焦时判断是否有文字如果是初始的文字 清空
 		cation1: function() {
 			if (this.phone.val() == "请输入手机号") {
@@ -187,12 +190,46 @@ define(["jquery", "cookie"], function($) {
 			var _this = this;
 			var password = this.password.val()
 			if (this.num1 == 1 && this.num2 == 1 && this.num3 == 1 && this.num4 == 1) {
-				$.cookie("zhanghao", '[{"id":' + this.phone.val() + ', "password" : ' + password + '}]')
+				$.cookie(this.phone.val(), '[{"id":' + this.phone.val() + ', "password" : ' + password + '}]')
+				// http://localhost:81/dist/success.html
+				window.location.href = 'http://localhost:81/dist/success.html';
+
 			}
 		},
-
-
-
+		mark : function(){
+				console.log( $(".ppppp") )
+			var strCookie = document.cookie;
+            var arrCookie = strCookie.split("; ");
+            for(var i = 0; i < arrCookie.length; i++){
+                var arr = arrCookie[i].split("=");
+                if("ltype" == arr[0]){
+                    return arr[1];
+                }
+            }
+            arrCookie.forEach(function(item){
+            	var nb = item.split("=")
+            	var arr = []
+            	for(var i in nb[0]){
+            		arr.push(nb[0])
+            	}
+            	let no = new Set(arr)
+            	var zz =  /^1\d{10}$/
+            	var oo = zz.test(no)
+            	// console.log(no.keys())
+            	for(let item of no.keys() ){
+            		// console.log(item)
+            		var res =/^\d{1,}$/ 
+            		// if( item  )
+            		var haha = res.test(item)
+            		// console.log(haha)
+            		if( haha == true ){
+            			$(".ppppp").html("您好，"+ item+ "，您现在是钻石小鸟超级牛逼的会员")
+            		}else{
+            			return 0;
+            		}
+            	}
+            })
+		}
 	}
 	return register
 })

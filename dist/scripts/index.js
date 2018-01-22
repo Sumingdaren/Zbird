@@ -15,7 +15,7 @@ require(["scripts/config.js"], function() {
 		new banner().init($(".ind_focus_ul"), $(".num"), $(".prev"), $(".next"))
 
 		// 模糊搜索
-		new search().init($("#headCommSearchKeyword"), $("#uuuuu"))
+		new search().init($("#headCommSearchKeyword"),$("#uuuuu"))
 
 		// 轮播钻石
 		new design().init($("#div_focus_jq"))

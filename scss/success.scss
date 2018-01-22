@@ -1,0 +1,116 @@
+/* 待编译代码 */
+
+@import "reset";
+
+
+
+
+.auth_bg {
+    width: 100%;
+    height: 601px;
+    overflow: hidden;
+    clear: both;
+    background: #f7e4db;
+}
+.login_border {
+    width: 1180px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.reg_success_title {
+    text-align: left;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+.reg_success_title span {
+    float: right;
+    color: #8c8b8b;
+    line-height: 25px;
+}
+
+
+.reg_success_hy {
+    float: left;
+    font-weight: normal;
+    font-family: Arial,"宋体";
+    font-size: 20px;
+    color: #000;
+}
+.reg_success_title span a {
+    font-family: Arial,'宋体';
+    font-size: 13px;
+    color: #7a7a7a;
+    font-weight: normal;
+    margin-left: 10px;
+}
+.reg_success_text_01{
+	text-align: center;
+}
+.reg_success_text_01 dt {
+    font-family: "宋体";
+    margin: 0 auto;
+    strong{
+		    font-size: 22px;
+		    line-height: 38px;
+		    color: #000;
+		    font-family: "宋体";
+		    font-weight: normal;
+    }
+    p{
+    	    font-size: 12px;
+		    margin-top: 25px;
+		    color: #666;
+		    font-family: Arial,"宋体";
+	}
+}
+
+
+
+.reg_success_text_01 .a_shopping {
+    margin-top: 28px;
+    background: #ff8a81;
+    color: #fff;
+    font-size: 12px;
+    font-family: "宋体";
+    width: 285px;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.text_tips {
+    color: #7a7a7a;
+    font-family: "宋体";
+    font-size: 12px;
+    margin-top: 90px;
+    display: block;
+}
+
+
+.info_verify, .complete_info {
+    width: 138px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

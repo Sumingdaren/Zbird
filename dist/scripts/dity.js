@@ -7,8 +7,6 @@ define(["jquery", "cookie"], function($) {
 		} else {
 			return dity.instahce = dity.prototype
 		}
-
-
 	}
 	dity.prototype = {
 		constructor: dity,
@@ -120,6 +118,11 @@ define(["jquery", "cookie"], function($) {
 				let jj = index;
 				// 鼠标移入到大图下面的小图 让对应的大图也开始变化 右边的放大镜也跟着变
 				_this.picture.find("img").eq(index).on("mouseover", function() {
+					for(var i = 0 ; i < 3;i++){
+					_this.picture.find("li").addClass("off")
+					_this.picture.find("li").removeClass("on")
+					}
+					_this.picture.find("li").eq(index).addClass("on")
 					var lk = eval(`_this.callback[num[0].id].bigpicture${jj}`)
 					img.attr("src", lk)
 					_this.fireimg.attr("src", lk)

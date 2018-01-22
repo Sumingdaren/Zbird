@@ -30,7 +30,7 @@ define(["jquery", "cookie"], function($) {
 			window.location.href = 'http://localhost:81/dist/shopping.html';
 		},
 		link: function() {
-			$.cookie("jrgwc", '')
+			$.cookie("jrgwc", null,{expires: -1,path: '/'})
 			window.location.reload()
 		},
 		bind: function() {

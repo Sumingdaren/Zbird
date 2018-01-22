@@ -33,7 +33,7 @@ define(["jquery", "cookie"], function($) {
 			if ($.cookie("jrgwc")) {
 				var zs = JSON.parse($.cookie("jrgwc"))
 			}
-			if ($.cookie("jrgwc")) {
+			if (zs != null ) {
 				// 如果有cookie 就在页面输入这个
 				html +=
 					'<div class="shopcar_title">' +
@@ -65,21 +65,22 @@ define(["jquery", "cookie"], function($) {
 				var shuai = "";
 				var _this = this;
 				this.n = 0;
+				var MM= 0;
+				// console.log(zs)
 				// 遍历所有的cookie 在页面输入json里面cookie的id的下标就是商品在获取对应的数据拼接到页面上
-				zs.forEach(function(str, index) {
-					// for( var i = 0 ; i <  )
-					// console.log(zs.num)
-					// console.log(item[zs[index].num])
-					_this.n += JSON.parse(item[zs[index].num].price * zs[index].num)
+				// zs.forEach(function(str, index) {
+
+					for( var i = 0 ; i < zs.length;i++ ){
+					_this.n += JSON.parse(item[zs[i].num].price * zs[i].num)
 					shuai += '<div class="shopcar_content_shop_list">' +
 						'<div class="shopcar_content_shop_list_1">' +
 						'<a href="">' +
-						'<img class="shopcar_content_pic" src=" ' + item[zs[index].id].src + ' "></img>' +
+						'<img class="shopcar_content_pic" src=" ' + item[zs[i].id].src + ' "></img>' +
 						'</a>' +
 						'<div class="shopcar_content_shop_list_text vert_wrap">' +
 						'<div class="vert_subwrap">' +
 						'<div class="vert_cont">' +
-						'	<a href=""> ' + item[zs[index].id].title + '</a>' +
+						'	<a href=""> ' + item[zs[i].id].title + '</a>' +
 						'</div>' +
 						'</div>' +
 						'</div>' +
@@ -97,13 +98,13 @@ define(["jquery", "cookie"], function($) {
 						'	</div>' +
 						'<div class="shopcar_content_shop_list_2 vert_wrap">' +
 						'<div class="vert_subwrap">' +
-						'<div class="vert_cont">' + "￥" + item[zs[index].id].price + '</div>' +
+						'<div class="vert_cont">' + "￥" + item[zs[i].id].price + '</div>' +
 						'	</div>' +
 						'</div>' +
 						'<div class="shopcar_content_shop_list_4 vert_wrap">' +
 						'<div class="vert_subwrap">' +
 						'<div class="vert_cont">' +
-						"￥" + item[zs[index].id].price +
+						"￥" + item[zs[i].id].price +
 						'</div>' +
 						'</div>' +
 						'</div>' +
@@ -115,9 +116,12 @@ define(["jquery", "cookie"], function($) {
 						'</div>' +
 						'</div>' +
 						'</div>'
+						var ll = parseInt(item[zs[i].id].price)
+						MM+=ll
 
+				// })
+			}
 					_this.ele.append(shuai)
-				})
 
 				var niu = "";
 				niu += '<div class="shopcar_footer">' +
@@ -128,12 +132,12 @@ define(["jquery", "cookie"], function($) {
 					'<div class="shopcar_footer_right_2">' +
 					'<span style="color:#666">' + "订单总额" + '</span>' +
 					'<span class="shopcar_content_yuan" style="padding-top:1px; margin-left:8px;">' + "￥" + '</span>' +
-					'	<span style="font-size:12px;">' + this.n + '</span>' +
+					'	<span style="font-size:12px;">' + MM + '</span>' +
 					'</div>' +
 					'<div class="shopcar_footer_right_1">' +
 					'<span style="color:#666">' + "本次应付" + '</span>' +
 					'<span class="shopcar_content_yuan" style="padding-top:1px; margin-left:8px; color:#ff8a81;">' + "￥" + '</span>' +
-					'	<span style="color:#ff8a81;font-size:18px;font-weight: bold;">' + this.n + '</span>' +
+					'	<span style="color:#ff8a81;font-size:18px;font-weight: bold;">' + MM + '</span>' +
 					'</div>' +
 					'</div>' +
 					'</div>' +

@@ -21,16 +21,22 @@ define(["jquery"], function($) {
 			this.ele.on("mouseout", $.proxy(this.enterout, this));
 			this.left.on("mouseover", $.proxy(this.leftover, this));
 			this.right.on("mouseover", $.proxy(this.rightover, this));
+			// 分别点击左右按钮
+			this.right.on("click", $.proxy(this.rightclick, this))
+			this.left.on("click", $.proxy(this.leftclick, this))
+
 			this.move(dots, sum)
 			this.app()
 		},
 		// 划过左边按钮保证不会发抖
 		leftover: function() {
+			clearInterval(this.timer)
 			this.left.show()
 			this.right.show()
 		},
 		// 划过右边按钮保证不会发抖
 		rightover: function() {
+			clearInterval(this.timer)
 			this.left.show()
 			this.right.show()
 		},
@@ -54,10 +60,11 @@ define(["jquery"], function($) {
 		// 轮播图运动
 		move: function(dots, sum) {
 			var _this = this;
-			dots.each(function(index) {
+			dots.each(function(index){
 				// 划过出现红色的点 
 				dots.eq(index).on("mouseover", function() {
 					_this.number++;
+					_this.num=index
 					for (var i = 0; i < dots.length; i++) {
 						// 让所有的图片初始透明度都为0.6
 						sum.eq(i).css({
@@ -78,9 +85,6 @@ define(["jquery"], function($) {
 					}, 1000)
 				})
 			})
-			// 分别点击左右按钮
-			this.right.on("click", $.proxy(this.rightclick, this))
-			this.left.on("click", $.proxy(this.leftclick, this))
 
 		},
 		// 点击右边按钮的事件

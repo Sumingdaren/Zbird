@@ -36,6 +36,9 @@ define(["jquery", "cookie", "picture"], function($) {
 			//console.log($.cookie("jrgwc"))
 			if ($.cookie("jrgwc")) {
 				var zs = JSON.parse($.cookie("jrgwc"))
+			}
+			if (zs != null ) {
+				var zs = JSON.parse($.cookie("jrgwc"))
 				var _this = this;
 				var MM = 0;
 				this.num.html(zs.length)
@@ -43,21 +46,30 @@ define(["jquery", "cookie", "picture"], function($) {
 							html += ' <div class="indexw_shopCard_border" style="margin-top:0px;padding-top:8px; height: 70px;">' +
 						'<img src=" ' + _this.callback[zs[i].id].src + '" alt="" style="float:left;width:52px;height:52px">' +
 						'<div class="indexw_shopCard_text" style="height: 33px;">' + _this.callback[zs[i].id].title + '</div>' +
-						'<a href="" class="indexw_shopCard_del"></a>' +
+						'<a href="javascript:void(0)" class="indexw_shopCard_del"></a>' +
 						'<div class="indexw_shopCard_text" style="margin-top:0px;">' +
 						'<div class="index_shopCard_yuan_1">' + "￥" + '</div>' +
 						'<div class="index_shopCard_yuan_2">' + _this.callback[zs[i].id].price + '</div>' +
 						'</div>' +
 						'</div>'
 						var ll = parseInt(_this.callback[zs[i].id].price)
-						console.log(ll)
 						MM += ll;
-						// console.log(MM)
-
 					}
 							_this.show.append(html);
-							console.log(MM)
-							
+						var btn = $(".indexw_shopCard_del")
+						btn.each(function(index,item){
+							$(btn[index]).on("click",(function(){
+									// console.log(zs[index])
+									zs.splice(zs[index],1)
+									var acookie = JSON.stringify(zs)
+									$.cookie("jrgwc",acookie,{path:'/dist'})
+									window.location.reload()
+									if( zs.length == 0 ){
+										$.cookie("jrgwc",'',{expires:-1,path:'/dist'})
+										console.log($.cookie("jrgwc"))
+									}
+							}))
+						})
 				jiesuan += '<div class="js">' +
 										'<div class="jiage">' +
 										 '<span class="span1">' +"价格"+ '</span>' +
@@ -67,31 +79,14 @@ define(["jquery", "cookie", "picture"], function($) {
 										'<a class="jiesuan">' + "结算"+ '</a>'+
 									'</div>'
 						_this.show.append(jiesuan)
-						
-	// })
-				// console.log(sm)
-				// 			nb.forEach(function(item){
-				// 				if( sm == item ){
-				// 					return false;
-				// 				}
-				// 				if( item != sm ){
-				// 					_this.show.append(html);
-				// 					console.log(_this.show)
-				// 				}
-				// 			})
-
-
-
-
 			}
 			// 如果没有就输出购物车中无商品
 			else {
 				html +=
 					'<div class="indexw_shopCard_wushangpin">' + "购物车中无商品" + '</div>'
 			this.show.append(html)
-
 			}
-		}
+		},
 	}
 	return dist
 })

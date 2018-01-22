@@ -45,7 +45,7 @@ define(["jquery", "cookie"], function($) {
 				// 判断是否有这个cookie 如果没有就放进购物车 如果有就自增 
 				// 放进购物车的时候判断购物车的数量 遍历所有的数组 让里面点击的数量自增
 				// 最后放入页面 
-			if ($.cookie("jrgwc")) {
+			if ( $.cookie("jrgwc")  ) {
 					var scookie = $.cookie("jrgwc")
 					var zs = JSON.parse($.cookie("jrgwc"))
 					var flag = false;
@@ -67,9 +67,9 @@ define(["jquery", "cookie"], function($) {
 					scookie = JSON.stringify(zs);
 					$.cookie("jrgwc", scookie)
 			}else{
-				$.cookie("jrgwc",'[{"id":' + dataid + ', "num" : 1}]',{expires: 7})
+				$.cookie("jrgwc",'[{"id":' + dataid + ', "num" : 1}]',{path: '/dist'})
 			}
-			if ($.cookie("jrgwc")) {
+			// if (zs != null) {
 				// 判断是否有cookie 解析json 然后遍历
 				var gwc = JSON.parse($.cookie("jrgwc"))
 				// 在转成json
@@ -78,9 +78,9 @@ define(["jquery", "cookie"], function($) {
 				// 判断点击次数 如果大于一次就不放进购物车里挑出
 				_this.car.html(gwc.length)
 					var _this = this;
-					if( _this.number >1 ){
-						_this.jin.show()
-					}else{
+					// if( _this.number >1 ){
+						// _this.jin.show()
+					// }else{
 						html += ' <div class="indexw_shopCard_border" style="margin-top:0px;padding-top:8px; height: 70px;">' +
 						'<img src=" ' + this.callback[gwc[gwc.length-1].id].src + ' " alt="" style="float:left;width:52px;height:52px">' +
 						'<div class="indexw_shopCard_text" style="height: 33px;">' + this.callback[gwc[gwc.length-1].id].title + '</div>' +
@@ -90,10 +90,20 @@ define(["jquery", "cookie"], function($) {
 						'<div class="index_shopCard_yuan_2">' + this.callback[gwc[gwc.length-1].id].price + '</div>' +
 						'</div>' +
 						'</div>'
+						// this.show.datagrid('reload')
+						// console.log(this.show)
+					// console.log($(".indexw_shopCard_text:first").html()  )
+					if( $(".indexw_shopCard_text:first").html(html) ){
+						// _this.jin.show()
+
 					}
-			}
-			//把商品加入到购物车的时候同时刷新页面
+
 			this.show.append(html)
+					// }
+			// }
+			//把商品加入到购物车的时候同时刷新页面
+			//console.log(this.show)
+			// window.location.reload()
 		},
 		bian : function(){
 			this.jin.hide()

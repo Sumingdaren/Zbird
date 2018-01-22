@@ -45,7 +45,7 @@ define(["jquery"], function($) {
 		// 文本框失去焦点的时候判断是否有文字如果没有文字让他的默认值为初始值
 		prp: function() {
 			var _this = this;
-			console.log(_this.ele.val())
+			// console.log(_this.ele.val())
 			if (_this.ele.val() == "") {
 				_this.ele.val("戒托")
 			}

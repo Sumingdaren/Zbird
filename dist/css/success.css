@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* 待编译代码 */
+/* reset */
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+  margin: 0;
+  padding: 0; }
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th {
+  text-align: left;
+  font-weight: normal; }
+
+html, body, fieldset, img, iframe, abbr {
+  border: 0; }
+
+i, cite, em, var, address, dfn {
+  font-style: normal; }
+
+[hidefocus], summary {
+  outline: 0; }
+
+li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, small {
+  font-size: 100%; }
+
+sup, sub {
+  font-size: 83%; }
+
+pre, code, kbd, samp {
+  font-family: inherit; }
+
+q:before, q:after {
+  content: none; }
+
+textarea {
+  overflow: auto;
+  resize: none; }
+
+label, summary {
+  cursor: default; }
+
+a, button {
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6, em, strong, b {
+  font-weight: bold; }
+
+del, ins, u, s, a, a:hover {
+  text-decoration: none; }
+
+body, textarea, input, button, select, keygen, legend {
+  font: 12px/1.14 arial,\5b8b\4f53;
+  color: #333;
+  outline: 0; }
+
+body {
+  background: #fff; }
+
+.auth_bg {
+  width: 100%;
+  height: 601px;
+  overflow: hidden;
+  clear: both;
+  background: #f7e4db; }
+
+.login_border {
+  width: 1180px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; }
+
+.reg_success_title {
+  text-align: left;
+  overflow: hidden;
+  padding-top: 50px; }
+
+.reg_success_title span {
+  float: right;
+  color: #8c8b8b;
+  line-height: 25px; }
+
+.reg_success_hy {
+  float: left;
+  font-weight: normal;
+  font-family: Arial,"宋体";
+  font-size: 20px;
+  color: #000; }
+
+.reg_success_title span a {
+  font-family: Arial,'宋体';
+  font-size: 13px;
+  color: #7a7a7a;
+  font-weight: normal;
+  margin-left: 10px; }
+
+.reg_success_text_01 {
+  text-align: center; }
+
+.reg_success_text_01 dt {
+  font-family: "宋体";
+  margin: 0 auto; }
+  .reg_success_text_01 dt strong {
+    font-size: 22px;
+    line-height: 38px;
+    color: #000;
+    font-family: "宋体";
+    font-weight: normal; }
+  .reg_success_text_01 dt p {
+    font-size: 12px;
+    margin-top: 25px;
+    color: #666;
+    font-family: Arial,"宋体"; }
+
+.reg_success_text_01 .a_shopping {
+  margin-top: 28px;
+  background: #ff8a81;
+  color: #fff;
+  font-size: 12px;
+  font-family: "宋体";
+  width: 285px;
+  height: 35px;
+  line-height: 35px;
+  display: inline-block;
+  vertical-align: top; }
+
+.text_tips {
+  color: #7a7a7a;
+  font-family: "宋体";
+  font-size: 12px;
+  margin-top: 90px;
+  display: block; }
+
+.info_verify, .complete_info {
+  width: 138px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 30px; }
