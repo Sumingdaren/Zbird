@@ -1,6 +1,5 @@
 <html lang="en"><head>
     <meta charset="UTF-8">
-    <title></title>
 </head>
 <body marginheight="0"><h1><strong>Zbird钻石小鸟</strong> <br></h1>
 <p>
@@ -97,5 +96,4 @@
 <p>
 </p>
 <h5>未完成</h5>
-<p>Edit By <a href="http://mahua.jser.me">MaHua</a></p>
 </body></html>
