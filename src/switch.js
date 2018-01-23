@@ -1,4 +1,4 @@
-// 跳转页面 
+// 活动页
 define(["jquery"], function($) {
 	function show() {}
 	show.prototype = {
@@ -10,16 +10,22 @@ define(["jquery"], function($) {
 			// console.log(this.ele,this.show)
 			this.logo = this.ele.children()
 			this.new = this.show.children()
+			// 点击第一个活动列跳转
 			this.logo.eq(0).on("click",$.proxy(this.load,this))
+			// 点击第二个活动列跳转
 			this.logo.eq(1).on("click",$.proxy(this.load1,this))
+			// 点击第三个活动列跳转
 			this.logo.eq(2).on("click",$.proxy(this.load2,this))
 		},
 		load : function(){
+			// 点击第一个的时候改变class同事清除其他的class
 			this.logo.eq(0).addClass("nav1_hover")
 			this.logo.eq(1).removeClass("nav2_hover")
 			this.logo.eq(2).removeClass("nav3_hover")
 			// console.log(this.new)
+			// 改变父元素的高
 			this.show.height("2294px")
+			// 改变属于第一块的透明度和z-index，同时让别的清除
 			this.new.eq(0).css({
 				opacity: 1,
 				zIndex : 10

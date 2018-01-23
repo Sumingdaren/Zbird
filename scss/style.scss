@@ -1668,13 +1668,19 @@ a:hover {
 
 
 .shopcar_content {
-    padding-top: 40px;
-    padding-bottom: 40px
+    // padding-top: 40px;
+    // padding-bottom: 40px
 }
 
 
 
-
+.lisp{
+    text-align: center;
+    line-height: 12px;
+    &:hover{
+        color:#ff8a81;
+    }
+}
 
 
 

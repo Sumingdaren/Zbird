@@ -1,4 +1,4 @@
-// 小轮播图
+// 活动页回到顶部
 define(["jquery"], function($) {
 	function otop(ele) {}
 	otop.prototype = {
@@ -10,7 +10,6 @@ define(["jquery"], function($) {
 			
 		},
 		move : function(){
-			// console.log($("body,html").scrollTop())
 			$("body,html").scrollTop("0")
 		}
 	}

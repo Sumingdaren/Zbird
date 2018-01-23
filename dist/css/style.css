@@ -1341,9 +1341,11 @@ a:hover {
 .shopcar_content_shop_list {
   margin: 0 auto; }
 
-.shopcar_content {
-  padding-top: 40px;
-  padding-bottom: 40px; }
+.lisp {
+  text-align: center;
+  line-height: 12px; }
+  .lisp:hover {
+    color: #ff8a81; }
 
 .js {
   width: 240px;
