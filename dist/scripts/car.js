@@ -46,8 +46,9 @@ define(["jquery", "cookie"], function($) {
 			this.bang.on("click",$.proxy(this.bbb,this))
 		},
 		move: function() {
-			window.location.href = 'http://localhost:81/dist/shopping.html';
-									// https://sumingdaren.github.io/Zbird/dist/activit.html
+			// window.location.href = 'http://localhost:81/dist/shopping.html';
+			window.location.href = 'https://sumingdaren.github.io/Zbird/dist/shopping.html';
+			// https://sumingdaren.github.io/Zbird/dist/activit.html
 		},
 		link: function() {
 			// 点击清除购物车的时候把所有的cookie删除然后刷新页面
@@ -56,43 +57,53 @@ define(["jquery", "cookie"], function($) {
 		},
 		bind: function() {
 			// 跳转购物车页面
-			window.location.href = 'http://localhost:81/dist/shopping.html';
+			// window.location.href = 'http://localhost:81/dist/shopping.html';
+			window.location.href = 'https://sumingdaren.github.io/Zbird/dist/shopping.html';
 		},
 		jp: function() {
 			// 跳转列表页
-			window.location.href = 'http://localhost:81/dist/list.html';
+			// window.location.href = 'http://localhost:81/dist/list.html';
+			window.location.href = 'https://sumingdaren.github.io/Zbird/dist/list.html';
 		},
 		jp2: function() {
 			// 首页跳转主页
-			window.location.href = 'http://localhost:81/dist/index.html';
+			// window.location.href = 'http://localhost:81/dist/index.html';
+			window.location.href = 'https://sumingdaren.github.io/Zbird/dist/index.html';
 		},
 		lo : function(){
 			// LOGO跳转主页
-			window.location.href = 'http://localhost:81/dist/index.html';
+			// window.location.href = 'http://localhost:81/dist/index.html';
+			window.location.href = 'https://sumingdaren.github.io/Zbird/dist/index.html';
 		},
 		mm : function(){
 			// 小购物车跳主页
-			window.location.href = 'http://localhost:81/dist/shopping.html';
+			// window.location.href = 'http://localhost:81/dist/shopping.html';
+			window.location.href = 'https://sumingdaren.github.io/Zbird/dist/shopping.html';
 		},
 		mmp : function(){
 			// 注册页
-			window.location.href = 'http://localhost:81/dist/sign.html';
+			// window.location.href = 'http://localhost:81/dist/sign.html';
+			window.location.href = 'https://sumingdaren.github.io/Zbird/dist/sign.html';
 		},
 		mmm : function(){
 			// 登录页
 			window.location.href = 'http://localhost:81/dist/register.html';
+			window.location.href = 'https://sumingdaren.github.io/Zbird/dist/register.html';
 		},
 		hd : function(){
 			// 活动页
-			window.location.href = 'http://localhost:81/dist/activit.html';
+			// window.location.href = 'http://localhost:81/dist/activit.html';
+			window.location.href = 'https://sumingdaren.github.io/Zbird/dist/activit.html';
 		},
 		ppp : function(){
 			// 列表页
-			window.location.href = 'http://localhost:81/dist/list.html';
+			// window.location.href = 'http://localhost:81/dist/list.html';
+			window.location.href = 'https://sumingdaren.github.io/Zbird/dist/list.html';
 		},
 		fff : function(){
 			// 返回首页
-			window.location.href = 'http://localhost:81/dist/index.html';
+			// window.location.href = 'http://localhost:81/dist/index.html';
+			window.location.href = 'https://sumingdaren.github.io/Zbird/dist/index.html';
 		},
 		bbb : function(){
 			alert("没有帮助再点就打死你")
