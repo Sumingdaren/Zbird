@@ -1,6 +1,6 @@
 // 业务逻辑 
 require(["scripts/config.js"], function() {
-	require(["jquery", "mouseover", "navigation", "banner", "search", "design", "shine", "carousel", "seamless", "yqlink", "product", "display", "details", "cookie", "dity", "picture", "shoppingcar", "dist", "car","register","sign","tab"], function($, mouseover, navigation, banner, search, design, shine, carousel, seamless, yqlink, product, display, details, cookie, dity, picture, shoppingcar, dist, car,register,sign,tab) {
+	require(["jquery", "mouseover", "navigation", "banner", "search", "design", "shine", "carousel", "seamless", "yqlink", "product", "display", "details", "cookie", "dity", "picture", "shoppingcar", "dist", "car","register","sign","tab","mmp","switch","figure","tabs","top","coping"], function($, mouseover, navigation, banner, search, design, shine, carousel, seamless, yqlink, product, display, details, cookie, dity, picture, shoppingcar, dist, car,register,sign,tab,mmp,show,see,tabs,otop,coping) {
 
 		// 鼠标划过购物车
 		new mouseover().init($("#my_cart_show"), $("#indexw_header_cart"))
@@ -80,28 +80,37 @@ require(["scripts/config.js"], function() {
 		new dist().init($(".indexw_header_show"), $(".indexw_shop_num"))
 
 		// 所有的跳转页面
-		new car().init($(".indexw_header_div_1"), $(".shopcar_footer_left_2"), $(".shopcar_show_menu_all"), $(".ser_lnk2"), $(".indexw_nav_ul_2"),$(".indexw_header_middleL"),$(".jiesuan"))
-
+		new car().init($(".indexw_header_div_1"), $(".shopcar_footer_left_2"), $(".shopcar_show_menu_all"), $(".ser_lnk2"), $(".indexw_nav_ul_2"),$(".indexw_header_middleL"),$(".jiesuan"),$(".dl"),$(".zc"),$(".activity"))
+		console.log($(".activity"))
 		// 注册
 		new register().init($("#phone"),$(".input_code"),$(".phone_mi"),$(".phone_mi2"),$(".p_pMsg1"),$(".p_pMsg2"),$(".p_pMsg3"),$(".p_pMsg4"),$("#get_checknum"),$("#regphone_submit"))
 
 		// 登录验证
-		new sign().init($(".btn_login_6"),$("#user"),$("#pass"))
+		new sign().init($(".btn_login_6"),$("#user"),$("#pass"),$(".dl"),$(".zc"),$(".headerwelcome"))
 
 		// 详情页吸顶
 		new tab().init($(".f_sys_tab"))
 
+		// 判断登录是否成功
+		new mmp().init($(".dl"),$(".zc"),$(".headerwelcome"))
 
+		// 活动页鼠标点击更换元素
+		new show().init($(".navflow"),$(".opabor"))
 
-	
+		//  活动页轮播图1
+		new see().init($(".slider1"),$(".bx_prev"),$(".bx_next"))
 
+		// 活动页轮播图2
+		new see().init($(".slider2"),$(".bx-prev"),$(".bx-next"))
 
+		// 活动页选项卡
+		new tabs().init($(".bb_bimg"),$(".bb_img"))
 
+		// 活动页回到顶部
+		new otop().init($(".f_icon_top"))
 
-
-
-
-
+		// 
+		new coping().init($(".navflow"),$(".nav1"))
 	})
 
 })

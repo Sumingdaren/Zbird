@@ -13,7 +13,6 @@ define(["jquery", "cookie"], function($) {
 			this.jin = jin;
 			this.number = 0;
 			this.make()
-			console.log(this.jin)
 			// 当点击加入购物车的时候把商品加入到小型购物车里
 			this.ele.on("click", $.proxy(this.load, this))
 			this.x.on("click",$.proxy(this.bian,this))
@@ -25,7 +24,7 @@ define(["jquery", "cookie"], function($) {
 				type: "get",
 				url: "scripts/commodity.json",
 				// 让数据是同步
-				async: false,
+				// async: false,
 				// 用callback接收返回的数据
 				success: function(stm) {
 					_this.callback = stm;
@@ -78,9 +77,6 @@ define(["jquery", "cookie"], function($) {
 				// 判断点击次数 如果大于一次就不放进购物车里挑出
 				_this.car.html(gwc.length)
 					var _this = this;
-					// if( _this.number >1 ){
-						// _this.jin.show()
-					// }else{
 						html += ' <div class="indexw_shopCard_border" style="margin-top:0px;padding-top:8px; height: 70px;">' +
 						'<img src=" ' + this.callback[gwc[gwc.length-1].id].src + ' " alt="" style="float:left;width:52px;height:52px">' +
 						'<div class="indexw_shopCard_text" style="height: 33px;">' + this.callback[gwc[gwc.length-1].id].title + '</div>' +
@@ -90,20 +86,12 @@ define(["jquery", "cookie"], function($) {
 						'<div class="index_shopCard_yuan_2">' + this.callback[gwc[gwc.length-1].id].price + '</div>' +
 						'</div>' +
 						'</div>'
-						// this.show.datagrid('reload')
-						// console.log(this.show)
-					// console.log($(".indexw_shopCard_text:first").html()  )
-					if( $(".indexw_shopCard_text:first").html(html) ){
-						// _this.jin.show()
-
-					}
-
+						_this.jin.show()
+						setTimeout(function(){
+							window.location.reload()
+						},2000)
 			this.show.append(html)
-					// }
-			// }
 			//把商品加入到购物车的时候同时刷新页面
-			//console.log(this.show)
-			// window.location.reload()
 		},
 		bian : function(){
 			this.jin.hide()

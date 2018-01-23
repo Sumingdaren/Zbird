@@ -192,20 +192,20 @@ define(["jquery", "cookie"], function($) {
 			if (this.num1 == 1 && this.num2 == 1 && this.num3 == 1 && this.num4 == 1) {
 				$.cookie(this.phone.val(), '[{"id":' + this.phone.val() + ', "password" : ' + password + '}]')
 				// http://localhost:81/dist/success.html
+				$.cookie("dlcg","1")
 				window.location.href = 'http://localhost:81/dist/success.html';
 
 			}
 		},
 		mark : function(){
-				console.log( $(".ppppp") )
 			var strCookie = document.cookie;
             var arrCookie = strCookie.split("; ");
-            for(var i = 0; i < arrCookie.length; i++){
-                var arr = arrCookie[i].split("=");
-                if("ltype" == arr[0]){
-                    return arr[1];
-                }
-            }
+            // for(var i = 0; i < arrCookie.length; i++){
+            //     var arr = arrCookie[i].split("=");
+            //     if("ltype" == arr[0]){
+            //         return arr[1];
+            //     }
+            // }
             arrCookie.forEach(function(item){
             	var nb = item.split("=")
             	var arr = []
@@ -215,13 +215,9 @@ define(["jquery", "cookie"], function($) {
             	let no = new Set(arr)
             	var zz =  /^1\d{10}$/
             	var oo = zz.test(no)
-            	// console.log(no.keys())
             	for(let item of no.keys() ){
-            		// console.log(item)
             		var res =/^\d{1,}$/ 
-            		// if( item  )
             		var haha = res.test(item)
-            		// console.log(haha)
             		if( haha == true ){
             			$(".ppppp").html("您好，"+ item+ "，您现在是钻石小鸟超级牛逼的会员")
             		}else{

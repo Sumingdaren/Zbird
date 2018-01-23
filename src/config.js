@@ -22,6 +22,12 @@ require.config({
 		"car": "scripts/car",
 		"register" : "scripts/register",
 		"sign" : "scripts/sign",
-		"tab" : "scripts/tab"
+		"tab" : "scripts/tab",
+		"mmp" : "scripts/mmp",
+		"switch" : "scripts/switch",
+		"figure" : "scripts/figure",
+		"tabs" : "scripts/tabs",
+		"top" : "scripts/top",
+		"coping" : "scripts/coping"
 	}
 })

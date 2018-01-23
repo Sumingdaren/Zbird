@@ -83,8 +83,7 @@ body {
   width: 100%;
   height: 150px;
   position: relative;
-  z-index: 1;
-  overflow: visible; }
+  z-index: 1; }
 
 .navflow {
   width: 1180px;
@@ -124,16 +123,6 @@ body {
   top: -45px;
   background: url(http://img.zbird.cn/ww3/2017collections/nav3.jpg) top center no-repeat;
   z-index: 5; }
-
-.nav2_hover {
-  cursor: pointer;
-  width: 411px;
-  height: 132px;
-  position: absolute;
-  left: 387px;
-  top: -59px;
-  background: url(http://img.zbird.cn/ww3/2017collections/nav2_hover.png) top center no-repeat;
-  z-index: 15; }
 
 .opabor {
   margin-top: -150px;
@@ -239,7 +228,7 @@ body {
 
 .btn a {
   position: absolute;
-  top: 50%;
+  top: 36%;
   margin-top: -16px;
   outline: 0;
   width: 32px;
@@ -321,3 +310,564 @@ body {
   right: 39px;
   top: 486px;
   z-index: 6; }
+
+#opa2 {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -50%;
+  top: 0px;
+  z-index: 2;
+  opacity: 0;
+  filter: alpha(opacity=0); }
+  #opa2 .bg1 {
+    background: url(http://img.zbird.cn/ww3/2017collections/opa2bg1.jpg) top center no-repeat;
+    width: 100%;
+    height: 926px;
+    position: relative;
+    z-index: 0; }
+  #opa2 .bg2 {
+    background: url(http://img.zbird.cn/ww3/2017collections/opa2bg2.jpg) top center no-repeat;
+    width: 100%;
+    height: 517px;
+    position: relative;
+    z-index: 0; }
+  #opa2 .bg3 {
+    background: url(http://img.zbird.cn/ww3/2017collections/opa2bg3.jpg) top center no-repeat;
+    width: 100%;
+    height: 572px;
+    position: relative;
+    z-index: 0; }
+
+#opa3 {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -50%;
+  top: 0px;
+  z-index: 2;
+  opacity: 0;
+  filter: alpha(opacity=0); }
+  #opa3 .bg1 {
+    background: url(http://img.zbird.cn/ww3/2017collections/opa3bg1.jpg) top center no-repeat;
+    width: 100%;
+    height: 783px;
+    position: relative;
+    z-index: 0; }
+  #opa3 .bg2 {
+    background: url(http://img.zbird.cn/ww3/2017collections/opa3bg2.jpg) top center no-repeat;
+    width: 100%;
+    height: 811px;
+    position: relative;
+    z-index: 0; }
+  #opa3 .bg3 {
+    background: url(http://img.zbird.cn/ww3/2017collections/opa3bg3.jpg) top center no-repeat;
+    width: 100%;
+    height: 860px;
+    position: relative;
+    z-index: 0; }
+    #opa3 .bg3 .bx-wrapper {
+      background: transparent;
+      border: none;
+      box-shadow: none; }
+
+.opa3bg1a1 {
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  left: 329px;
+  top: 96px;
+  z-index: 6; }
+
+.opa3bg1a2 {
+  width: 500px;
+  height: 502px;
+  position: absolute;
+  left: 89px;
+  top: 216px;
+  z-index: 6; }
+
+.opa3bg1a3 {
+  width: 500px;
+  height: 502px;
+  position: absolute;
+  left: 589px;
+  top: 206px;
+  z-index: 6; }
+
+.bx-wrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0; }
+
+.bx-viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 662px; }
+
+.slider2 {
+  width: 2215%;
+  position: relative;
+  transition-duration: 0s;
+  transform: translate3d(-2352px, 0px, 0px); }
+
+.bx-clone {
+  float: left;
+  list-style: none;
+  position: relative;
+  width: 1176px; }
+
+#opa3 .bg3 .slider2 .slide .an1 {
+  width: 1180px;
+  height: 662px;
+  background: url(http://img.zbird.cn/ww3/2017collections/an/bg3.1.jpg) center center no-repeat;
+  position: relative; }
+
+#opa3 .bg3 .slider2 .slide .an2 {
+  width: 1180px;
+  height: 662px;
+  background: url(http://img.zbird.cn/ww3/2017collections/an/bg3.2.jpg) center center no-repeat;
+  position: relative; }
+
+.slide {
+  float: left;
+  list-style: none;
+  position: relative;
+  width: 1176px; }
+
+.on {
+  float: left;
+  list-style: none;
+  position: relative;
+  width: 1176px; }
+
+.border {
+  display: block;
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; }
+
+#opa3 .bg3 .bx-wrapper .bx-controls-direction a {
+  margin-top: -235px; }
+
+#opa3 .bg3 .bx-wrapper .bx-prev {
+  width: 18px;
+  height: 33px;
+  left: 55px;
+  background: url(http://img.zbird.cn/ww3/2017collections/an/prev_hover.png) center center no-repeat; }
+
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  z-index: 9999; }
+
+#opa3 .bg3 .bx-wrapper .bx-next {
+  width: 18px;
+  height: 33px;
+  right: 55px;
+  background: url(http://img.zbird.cn/ww3/2017collections/an/next_hover.png) center center no-repeat; }
+
+#opa3 .bg3 .bx-wrapper .bx-pager {
+  width: 150px;
+  height: 20px;
+  text-align: right;
+  position: absolute;
+  right: 590px;
+  bottom: 20px;
+  z-index: 5; }
+
+.bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  padding-top: 20px; }
+
+.bx-wrapper .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block; }
+
+#opa3 .bg3 .bx-wrapper .bx-pager.bx-default-pager a.active {
+  width: 11px;
+  height: 12px;
+  background: url(http://img.zbird.cn/ww3/2017collections/an/gray.png) right center no-repeat; }
+
+.bx-wrapper .bx-pager-item {
+  font-size: 0;
+  line-height: 0; }
+
+#opa3 .bg3 .bx-wrapper .bx-pager.bx-default-pager a {
+  width: 11px;
+  height: 12px;
+  background: url(http://img.zbird.cn/ww3/2017collections/an/gray.png) left center no-repeat; }
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
+.opa3bg3a1 {
+  display: block;
+  width: 1050px;
+  height: 228px;
+  position: absolute;
+  left: 60px;
+  top: 0px;
+  z-index: 6; }
+
+.opa3bg3a2 {
+  display: block;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  left: 30px;
+  top: 250px;
+  z-index: 6; }
+
+.opa3bg3a3 {
+  display: block;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  left: 30px;
+  top: 360px;
+  z-index: 6; }
+
+.opa3bg3a4 {
+  display: block;
+  width: 275px;
+  height: 346px;
+  position: absolute;
+  left: 325px;
+  top: 260px;
+  z-index: 6; }
+
+.opa3bg3a5 {
+  display: block;
+  width: 515px;
+  height: 346px;
+  position: absolute;
+  left: 595px;
+  top: 260px;
+  z-index: 6; }
+
+#bottom_bor {
+  background: url(http://img.zbird.cn/ww3/2017collections/bottom_bor.jpg) top center no-repeat;
+  width: 100%;
+  height: 767px;
+  position: relative;
+  z-index: 0; }
+
+.bb_bimg {
+  width: 927px;
+  height: 414px;
+  position: absolute;
+  left: 125px;
+  top: 170px;
+  z-index: 5; }
+
+.b1 {
+  background: url(http://img.zbird.cn/ww3/2017collections/bottom_bor/b1.jpg) center center no-repeat;
+  width: 100%;
+  height: 100%; }
+
+.b2 {
+  background: url(http://img.zbird.cn/ww3/2017collections/bottom_bor/b2.jpg) center center no-repeat;
+  width: 100%;
+  height: 100%; }
+
+.b3 {
+  background: url(http://img.zbird.cn/ww3/2017collections/bottom_bor/b3.jpg) center center no-repeat;
+  width: 100%;
+  height: 100%; }
+
+.b4 {
+  background: url(http://img.zbird.cn/ww3/2017collections/bottom_bor/b4.jpg) center center no-repeat;
+  width: 100%;
+  height: 100%; }
+
+.b5 {
+  background: url(http://img.zbird.cn/ww3/2017collections/bottom_bor/b5.jpg) center center no-repeat;
+  width: 100%;
+  height: 100%; }
+
+.b6 {
+  background: url(http://img.zbird.cn/ww3/2017collections/bottom_bor/b6.jpg) center center no-repeat;
+  width: 100%;
+  height: 100%; }
+
+.b7 {
+  background: url(http://img.zbird.cn/ww3/2017collections/bottom_bor/b7.jpg) center center no-repeat;
+  width: 100%;
+  height: 100%; }
+
+.bb_img {
+  width: 935px;
+  height: 70px;
+  position: absolute;
+  left: 120px;
+  top: 615px;
+  z-index: 5; }
+
+.s1 {
+  background: url(http://img.zbird.cn/ww3/2017collections/bottom_bor/s1.jpg) left center no-repeat;
+  width: 124px;
+  height: 70px;
+  float: left; }
+
+.s2 {
+  background: url(http://img.zbird.cn/ww3/2017collections/bottom_bor/s2.jpg) left center no-repeat;
+  width: 124px;
+  height: 70px;
+  float: left; }
+
+.s3 {
+  background: url(http://img.zbird.cn/ww3/2017collections/bottom_bor/s3.jpg) left center no-repeat;
+  width: 124px;
+  height: 70px;
+  float: left; }
+
+.s4 {
+  background: url(http://img.zbird.cn/ww3/2017collections/bottom_bor/s4.jpg) left center no-repeat;
+  width: 124px;
+  height: 70px;
+  float: left; }
+
+.s5 {
+  background: url(http://img.zbird.cn/ww3/2017collections/bottom_bor/s5.jpg) left center no-repeat;
+  width: 124px;
+  height: 70px;
+  float: left; }
+
+.s6 {
+  background: url(http://img.zbird.cn/ww3/2017collections/bottom_bor/s6.jpg) left center no-repeat;
+  width: 124px;
+  height: 70px;
+  float: left; }
+
+.s7 {
+  background: url(http://img.zbird.cn/ww3/2017collections/bottom_bor/s7.jpg) left center no-repeat;
+  width: 124px;
+  height: 70px;
+  float: left; }
+
+.bb_img div {
+  cursor: pointer;
+  margin-left: 9px; }
+
+.bb_img div.hover {
+  background-position: right center; }
+
+#opa3:after {
+  content: '';
+  　　display: block;
+  　　height: 0;
+  　　clear: both;
+  　　overflow: hidden; }
+
+.g_hder_wp {
+  width: 1180px;
+  margin: 52px auto 0 auto;
+  position: relative;
+  z-index: 100; }
+
+.f_icon_top {
+  background: url(http://img.zbird.cn/ww3/footermono/icon_top.png) no-repeat left center;
+  width: 52px;
+  height: 52px;
+  display: block;
+  position: absolute;
+  top: -80px;
+  left: 565px; }
+
+.lft_pic {
+  width: 1180px;
+  height: 442px;
+  float: left;
+  background: url(http://img.zbird.cn/ww3/footermono/city_bg.jpg) no-repeat; }
+
+.g_rig_wp {
+  width: 534px;
+  height: 352px;
+  float: right;
+  padding-top: 90px;
+  position: relative;
+  z-index: 0; }
+
+.g_reg_txt {
+  margin-bottom: 24px; }
+  .g_reg_txt strong {
+    display: block;
+    font-size: 36px;
+    font-family: "宋体";
+    color: #000;
+    font-weight: normal; }
+  .g_reg_txt span {
+    color: #333;
+    font-family: Arial,"宋体";
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 45px; }
+
+.ipt_tel {
+  color: #999;
+  font-size: 12px;
+  font-family: Arial,"宋体";
+  padding: 10px 20px;
+  width: 235px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  height: 14px;
+  line-height: 14px; }
+
+input, select, textarea {
+  background-color: #fff;
+  color: #7f7f7f;
+  border: 1px solid #ccc;
+  text-align: left;
+  margin: 2px 0 2px 0; }
+
+.f_exp {
+  width: 275px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 9px;
+  position: relative;
+  z-index: 2; }
+
+.f_exp dt {
+  padding: 10px 20px;
+  width: 235px;
+  background: url(http://img.zbird.cn/ww3/store/150724/icon_drop_01.jpg) #fff right center no-repeat;
+  cursor: pointer;
+  color: #999;
+  height: 14px;
+  line-height: 14px; }
+
+.f_exp dd span {
+  padding: 0 12px;
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 22px;
+  text-align: center;
+  cursor: pointer; }
+
+.ipt_adds {
+  color: #333;
+  line-height: 35px;
+  height: 35px;
+  width: 342px;
+  text-align: left;
+  margin: 0 0 0 130px; }
+
+.btn_enter {
+  background: #f6827a;
+  color: #fff;
+  width: 155px;
+  height: 34px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 34px; }
+
+.ipt_tips {
+  color: #d00000;
+  line-height: 25px;
+  height: 25px;
+  width: 270px;
+  text-align: center;
+  margin: 0 auto; }
+
+.footer_title {
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  background: url(http://img.zbird.cn/ww3/footermono/footer_title.jpg) no-repeat center 35px;
+  clear: both; }
+
+.m_ft_ad_wp {
+  width: 1180px;
+  overflow: hidden;
+  padding: 20px 0 39px; }
+  .m_ft_ad_wp ul {
+    width: 1210px; }
+  .m_ft_ad_wp li {
+    float: left;
+    margin-right: 18px; }
+    .m_ft_ad_wp li img {
+      width: 382px;
+      height: 324px; }
+
+.f_exp_dt em {
+  font-weight: normal; }
+
+.m_seo {
+  text-align: left;
+  font-size: 12px;
+  color: #fefefe;
+  line-height: 24px;
+  clear: both;
+  padding-top: 10px; }
+
+.f_exp dd {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  background: #fff;
+  width: 262px;
+  margin-top: 1px;
+  color: #666;
+  font-size: 13px;
+  font-family: "宋体";
+  padding: 10px 0 10px 13px;
+  cursor: pointer; }
+
+.nav1_hover {
+  cursor: pointer;
+  width: 411px;
+  height: 132px;
+  position: absolute;
+  left: 0px;
+  top: -59px;
+  background: url(http://img.zbird.cn/ww3/2017collections/nav1_hover.png) top center no-repeat;
+  z-index: 15; }
+
+.nav3_hover {
+  cursor: pointer;
+  width: 411px;
+  height: 132px;
+  position: absolute;
+  left: 779px;
+  top: -59px;
+  background: url(http://img.zbird.cn/ww3/2017collections/nav3_hover.png) top center no-repeat;
+  z-index: 15; }
+
+.nav2_hover {
+  cursor: pointer;
+  width: 411px;
+  height: 132px;
+  position: absolute;
+  left: 387px;
+  top: -59px;
+  background: url(http://img.zbird.cn/ww3/2017collections/nav2_hover.png) top center no-repeat;
+  z-index: 15; }

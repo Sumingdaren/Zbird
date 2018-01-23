@@ -3,7 +3,7 @@ define(["jquery", "cookie"], function($) {
 	function car(ele) {}
 	car.prototype = {
 		constructor: car,
-		init: function(ele, show, remove, em, jump,logo,jiesuan) {
+		init: function(ele, show, remove, em, jump,logo,jiesuan,dl,zc,activity) {
 			// 初始化 选取元素
 			this.ele = ele;
 			this.show = show;
@@ -12,6 +12,9 @@ define(["jquery", "cookie"], function($) {
 			this.remove = remove;
 			this.logo = logo;
 			this.jiesuan = jiesuan;
+			this.activity = activity;
+			this.dl = dl;
+			this.zc = zc;
 			// 点击页面最上面的小购物车跳转到购物车
 			this.ele.on("click", $.proxy(this.move, this))
 			// 点击清空购物车把所有商品清空
@@ -25,12 +28,15 @@ define(["jquery", "cookie"], function($) {
 
 			this.logo.on("click",$.proxy(this.lo,this))
 			this.jiesuan.on("click",$.proxy(this.mm,this))
+			this.dl.on("click",$.proxy(this.mmp,this))
+			this.zc.on("click",$.proxy(this.mmm,this))
+			this.activity.on("click",$.proxy(this.hd,this))
 		},
 		move: function() {
 			window.location.href = 'http://localhost:81/dist/shopping.html';
 		},
 		link: function() {
-			$.cookie("jrgwc", null,{expires: -1,path: '/'})
+			$.cookie("jrgwc", null,{expires: -1,path: '/dist'})
 			window.location.reload()
 		},
 		bind: function() {
@@ -47,6 +53,15 @@ define(["jquery", "cookie"], function($) {
 		},
 		mm : function(){
 			window.location.href = 'http://localhost:81/dist/shopping.html';
+		},
+		mmp : function(){
+			window.location.href = 'http://localhost:81/dist/sign.html';
+		},
+		mmm : function(){
+			window.location.href = 'http://localhost:81/dist/register.html';
+		},
+		hd : function(){
+			window.location.href = 'http://localhost:81/dist/activit.html';
 		}
 	}
 	return car

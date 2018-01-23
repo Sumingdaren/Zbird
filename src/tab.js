@@ -1,4 +1,4 @@
-// 亮光
+// 吸顶 
 define(["jquery"], function($) {
 	function tab(ele) {}
 	tab.prototype = {
