@@ -17,7 +17,6 @@ define(["jquery"], function($) {
 			this.show();
 			 this.ele.on("mouseover",$.proxy(this.move,this))
 			 this.ele.on("mouseout",$.proxy(this.move2,this))
-			  console.log($(document))
 			},
 			showRight : function(){
 				this.num++;
