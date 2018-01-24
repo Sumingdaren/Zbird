@@ -40,8 +40,6 @@ define(["jquery", "cookie"], function($) {
 			var scookie = JSON.parse($.cookie("zs"));
 				var zm =  scookie.length -1;
 				var dataid = scookie[zm].id;
-				console.log(dataid)
-				
 				// 点击加入购物车的时候再次创建一个cookie 把 进入页面的cookie的id取出来然后在放进去
 				// 判断是否有这个cookie 如果没有就放进购物车 如果有就自增 
 				// 放进购物车的时候判断购物车的数量 遍历所有的数组 让里面点击的数量自增
