@@ -1,4 +1,4 @@
-// 小轮播图
+// 吸顶
 define(["jquery"], function($) {
 	function otop(ele) {}
 	otop.prototype = {

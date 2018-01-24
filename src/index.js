@@ -80,8 +80,8 @@ require(["scripts/config.js"], function() {
 		new dist().init($(".indexw_header_show"), $(".indexw_shop_num"))
 
 		// 所有的跳转页面
-		new car().init($(".indexw_header_div_1"), $(".shopcar_footer_left_2"), $(".shopcar_show_menu_all"), $(".ser_lnk2"), $(".indexw_nav_ul_2"),$(".indexw_header_middleL"),$(".jiesuan"),$(".dl"),$(".zc"),$(".activity"))
-		console.log($(".activity"))
+		new car().init($(".indexw_header_div_1"), $(".shopcar_footer_left_2"), $(".shopcar_show_menu_all"), $(".ser_lnk2"), $(".indexw_nav_ul_2"),$(".indexw_header_middleL"),$(".jiesuan"),$(".dl"),$(".zc"),$(".activity"),$("#expe_ct_dt"),$("#expe_ct_dd"),$(".shopcar_footer_total"),$(".qian"),$(".zuozhe"))
+			
 		// 注册
 		new register().init($("#phone"),$(".input_code"),$(".phone_mi"),$(".phone_mi2"),$(".p_pMsg1"),$(".p_pMsg2"),$(".p_pMsg3"),$(".p_pMsg4"),$("#get_checknum"),$("#regphone_submit"))
 

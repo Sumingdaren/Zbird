@@ -3,7 +3,7 @@ define(["jquery", "cookie"], function($) {
 	function car(ele) {}
 	car.prototype = {
 		constructor: car,
-		init: function(ele, show, remove, em, jump,logo,jiesuan,dl,zc,activity) {
+		init: function(ele, show, remove, em, jump,logo,jiesuan,dl,zc,activity,b1,b2,mo,qian,zuozhe) {
 			// 初始化 选取元素
 			this.ele = ele;
 			this.show = show;
@@ -15,6 +15,13 @@ define(["jquery", "cookie"], function($) {
 			this.activity = activity;
 			this.dl = dl;
 			this.zc = zc;
+			this.b1 = b1;
+			this.b2 = b2;
+			this.mo = mo;
+			this.qian = qian;
+			this.zuozhe = zuozhe;
+			this.num = 0;
+			this.nnn = 0;
 			// 点击页面最上面的小购物车跳转到购物车
 			this.ele.on("click", $.proxy(this.move, this))
 			// 点击清空购物车把所有商品清空
@@ -31,6 +38,9 @@ define(["jquery", "cookie"], function($) {
 			this.dl.on("click",$.proxy(this.mmp,this))
 			this.zc.on("click",$.proxy(this.mmm,this))
 			this.activity.on("click",$.proxy(this.hd,this))
+			this.b1.on("click",$.proxy(this.lp,this))
+			this.mo.on("click",$.proxy(this.sm,this))
+			this.zuozhe.on("click",$.proxy(this.zuo,this))
 		},
 		move: function() {
 			window.location.href = 'http://localhost:81/dist/shopping.html';
@@ -62,7 +72,29 @@ define(["jquery", "cookie"], function($) {
 		},
 		hd : function(){
 			window.location.href = 'http://localhost:81/dist/activit.html';
+		},
+		lp : function(){
+			this.num++;
+			if( this.num % 2 == 0 ){
+				this.b2.hide()
+			}else{
+				this.b2.show()
+			}
+		},
+		sm : function(){	
+			this.qian.show()
+			var nb = confirm("点击确定扫码向我付款")
+			if( nb == false ){
+				alert("取消也要扫码")
+			}
+		},
+		zuo : function(){
+			this.nnn++
+			if( this.nnn == 20 ){
+				this.qian.hide()
+			}
 		}
+
 	}
 	return car
 })
