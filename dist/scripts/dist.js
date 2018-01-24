@@ -62,10 +62,10 @@ define(["jquery", "cookie", "picture"], function($) {
 									// console.log(zs[index])
 									zs.splice(zs[index],1)
 									var acookie = JSON.stringify(zs)
-									$.cookie("jrgwc",acookie,{path:'/Zbird/dist'})
+									$.cookie("jrgwc",acookie,{path:'/dist'})
 									window.location.reload()
 									if( zs.length == 0 ){
-										$.cookie("jrgwc",'',{expires:-1,path:'/Zbird/dist'})
+										$.cookie("jrgwc",'',{expires:-1,path:'/dist'})
 									}
 							}))
 						})
