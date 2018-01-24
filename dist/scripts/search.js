@@ -35,7 +35,7 @@ define(["jquery"], function($) {
 						this.html = html;
 						var sum = data.s;
 						sum.forEach(function(add, index) {
-							html += '<li>' + data.s[index] + '</li>'
+							html += '<li class="lisp">' + data.s[index] + '</li>'
 						})
 						_this.show.html(html)
 					}

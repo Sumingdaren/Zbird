@@ -3,10 +3,11 @@ define(["jquery", "cookie"], function($) {
 	function shoppingcar(ele) {}
 	shoppingcar.prototype = {
 		constructor: shoppingcar,
-		init: function(ele, car, show) {
+		init: function(ele, car, show,rem) {
 			// 初始化 选取元素
 			this.callback;
 			this.ele = ele;
+			this.rem = rem;
 			this.make()
 			this.load(this.callback)
 			this.car = car;
@@ -122,7 +123,6 @@ define(["jquery", "cookie"], function($) {
 				// })
 			}
 					_this.ele.append(shuai)
-
 				var niu = "";
 				niu += '<div class="shopcar_footer">' +
 					'<div class="shopcar_footer_left">' +

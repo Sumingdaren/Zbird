@@ -28,6 +28,7 @@ require.config({
 		"figure" : "scripts/figure",
 		"tabs" : "scripts/tabs",
 		"top" : "scripts/top",
-		"coping" : "scripts/coping"
+		"coping" : "scripts/coping",
+		"rem" : "scripts/rem"
 	}
 })

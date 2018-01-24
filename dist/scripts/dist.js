@@ -66,7 +66,6 @@ define(["jquery", "cookie", "picture"], function($) {
 									window.location.reload()
 									if( zs.length == 0 ){
 										$.cookie("jrgwc",'',{expires:-1,path:'/dist'})
-										console.log($.cookie("jrgwc"))
 									}
 							}))
 						})

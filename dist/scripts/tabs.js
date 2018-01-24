@@ -10,9 +10,9 @@ define(["jquery"], function($) {
 			var _this = this;
 			var sum = this.ele.children();
 			var tem = this.show.children();
-			this.move(sum, tem, ele, show)
+			this.move(sum, tem)
 		},
-		move: function(sum, tem, ele, show) {
+		move: function(sum, tem) {
 			// 运动
 			sum.each(function(index, val) {
 				// 遍历所有的一级菜单 获取index 根据index 来显示和隐藏
