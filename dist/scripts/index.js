@@ -76,15 +76,18 @@ require(["scripts/config.js"], function() {
 		// 购物车界面 动态生出数据
 		new shoppingcar().init($(".shopcar_bg"), $(".indexw_shop_text"), $(".f_car_lst_tlt"),$(".shopcar_content_shop_border_close"))
 
-		// console.log($(".shopcar_content_shop_border_close"))
 
 		new rem().init($(".shopcar_content_shop_border_close"))
 		// 小购物车动态生成数据
 		new dist().init($(".indexw_header_show"), $(".indexw_shop_num"))
 
 		// 所有的跳转页面
-		new car().init($(".indexw_header_div_1"), $(".shopcar_footer_left_2"), $(".shopcar_show_menu_all"), $(".ser_lnk2"), $(".indexw_nav_ul_2"),$(".indexw_header_middleL"),$(".jiesuan"),$(".dl"),$(".zc"),$(".activity"),$(".a_shopping"),$(".fanhui"),$(".bangzhu"))
+		new car().init($(".indexw_header_div_1"), $(".shopcar_footer_left_2"), $(".shopcar_show_menu_all"), $(".ser_lnk2"), $(".indexw_nav_ul_2"),$(".indexw_header_middleL"),$(".jiesuan"),$(".dl"),$(".zc"),$(".activity"),$("#expe_ct_dt"),$("#expe_ct_dd"),$(".shopcar_footer_total"),$(".qian"),$(".zuozhe"),$(".a_shopping"),$(".fanhui"),$(".bangzhu"))
+			
+// =======
+		// new car().init($(".indexw_header_div_1"), $(".shopcar_footer_left_2"), $(".shopcar_show_menu_all"), $(".ser_lnk2"), $(".indexw_nav_ul_2"),$(".indexw_header_middleL"),$(".jiesuan"),$(".dl"),$(".zc"),$(".activity"),$(".a_shopping"),$(".fanhui"),$(".bangzhu"))
 
+// >>>>>>> dev
 		// 注册
 		new register().init($("#phone"),$(".input_code"),$(".phone_mi"),$(".phone_mi2"),$(".p_pMsg1"),$(".p_pMsg2"),$(".p_pMsg3"),$(".p_pMsg4"),$("#get_checknum"),$("#regphone_submit"))
 

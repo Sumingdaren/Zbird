@@ -11,7 +11,7 @@ gulp.task("html",()=>{
 			 	.pipe(connect.reload());//自动刷新;
 })
 gulp.task("watch",()=>{
-	gulp.watch(["scss/*.scss","*.html","src/*.js","libs/*.js"],["sass","html","js"]);
+	gulp.watch(["scss/*.scss","*.html","src/*.js","libs/*.js","images/**/*"],["sass","html","js","image"]);
 })
 gulp.task('server',function(){
     connect.server({
@@ -29,13 +29,20 @@ gulp.task("sass",()=>{
 
 gulp.task("default",["watch","server"]);
 
-// gulp.task('es6',() =>{
-// 	   return gulp.src('es6/*.js')
-// 	        .pipe(babel({
-// 	            presets: ['env']
-// 	        }))
-// 	        .pipe(gulp.dest('dist/scripts/'))
-// });
+gulp.task('es6',() =>{
+	   return gulp.src('es6/*.js')
+	        .pipe(babel({
+	            presets: ['env']
+	        }))
+	        .pipe(gulp.dest('dist/scripts/'))
+});
+
+gulp.task("image",()=>{
+     return gulp.src(['images/**/*'])
+
+    .pipe(gulp.dest('dist/images'));
+})
+
 gulp.task("js",()=>{
      return gulp.src(['src/*.js',"libs/*.js"])
     // .pipe(sass().on('error', sass.logError))
