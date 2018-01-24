@@ -72,7 +72,7 @@ define(["jquery", "cookie"], function($) {
 		},
 		link: function() {
 			// 点击清除购物车的时候把所有的cookie删除然后刷新页面
-			$.cookie("jrgwc", null,{expires: -1,path: '/dist'})
+			$.cookie("jrgwc", null,{expires: -1,path: '/Zbird/dist'})
 			window.location.reload()
 		},
 		bind: function() {

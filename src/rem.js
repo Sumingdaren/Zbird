@@ -31,7 +31,7 @@ define(["jquery","cookie"], function($) {
 					window.location.reload()
 					// 判断如果所有的cookie都消失的话就清空cookie
 					if( acookie.length == 0 ){
-						$.cookie("jrgwc",'',{expires:-1,path:'/dist'})
+						$.cookie("jrgwc",'',{expires:-1,path:'/Zbird/dist'})
 					}
 				})
 			})

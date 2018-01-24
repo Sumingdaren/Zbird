@@ -66,7 +66,7 @@ define(["jquery", "cookie"], function($) {
 					scookie = JSON.stringify(zs);
 					$.cookie("jrgwc", scookie)
 			}else{
-				$.cookie("jrgwc",'[{"id":' + dataid + ', "num" : 1}]',{path: '/dist'})
+				$.cookie("jrgwc",'[{"id":' + dataid + ', "num" : 1}]',{path: '/Zbird/dist'})
 			}
 			// if (zs != null) {
 				// 判断是否有cookie 解析json 然后遍历
