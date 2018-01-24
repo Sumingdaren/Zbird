@@ -76,7 +76,6 @@ require(["scripts/config.js"], function() {
 		// 购物车界面 动态生出数据
 		new shoppingcar().init($(".shopcar_bg"), $(".indexw_shop_text"), $(".f_car_lst_tlt"),$(".shopcar_content_shop_border_close"))
 
-		// console.log($(".shopcar_content_shop_border_close"))
 
 		new rem().init($(".shopcar_content_shop_border_close"))
 		// 小购物车动态生成数据
