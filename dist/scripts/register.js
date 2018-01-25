@@ -193,7 +193,8 @@ define(["jquery", "cookie"], function($) {
 				$.cookie(this.phone.val(), '[{"id":' + this.phone.val() + ', "password" : ' + password + '}]')
 				// http://localhost:81/dist/success.html
 				$.cookie("dlcg","1")
-				window.location.href = 'http://localhost:81/dist/success.html';
+				// window.location.href = 'http://localhost:81/dist/success.html';
+			window.location.href = 'https://sumingdaren.github.io/Zbird/dist/success.html';
 
 			}
 		},
