@@ -26,7 +26,7 @@ define(["jquery","cookie"], function($) {
 					// 在把分割好的数组转成字符串
 					var scookie = JSON.stringify(acookie)
 					// 最后赋值给cookie让cookie重新加载
-					$.cookie("jrgwc",scookie,{path:'/dist'})
+					$.cookie("jrgwc",scookie,{path:'/Zbird/dist'})
 					// 同时刷新页面
 					window.location.reload()
 					// 判断如果所有的cookie都消失的话就清空cookie

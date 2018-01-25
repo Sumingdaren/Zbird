@@ -74,7 +74,9 @@ define(["jquery", "cookie"], function($) {
 				});
 			}
 			// 列表跳详情
-			ele.find("a:first").attr('href', 'http://localhost:81/dist/details.html')
+			// ele.find("a:first").attr('href', 'http://localhost:81/dist/details.html')
+			ele.find("a:first").attr('href', 'https://sumingdaren.github.io/Zbird/dist/details.html')
+			
 		}
 	}
 	return details
